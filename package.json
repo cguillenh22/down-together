@@ -1,0 +1,18 @@
+{
+  "name": "down-together",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "generate:content": "node scripts/generate-articles.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.32.1"
+  }
+}

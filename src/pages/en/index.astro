@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const all = (await getCollection('articles'))
+  .filter((e) => e.slug.startsWith('en/') && e.data.reviewed)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const basico = all.filter((e) => e.data.level === 'basico');
+const avanzado = all.filter((e) => e.data.level === 'avanzado');
+
+function localSlug(entry) {
+  return entry.slug.replace(/^en\//, '');
+}
+---
+<Layout
+  lang="en"
+  title="Down Together — Down syndrome information in English"
+  description="A trusted English-language source on Down syndrome: fundamentals for families new to a diagnosis, plus news and research for those already informed."
+>
+  <h1>Down syndrome information</h1>
+  <p>
+    Content curated from verified associations and medical sources (NDSS,
+    DSA UK, CDSS, Down España, Down21, CDC, NIH), drafted with Claude and
+    reviewed by a human before publishing.
+  </p>
+
+  <h2 id="basico">The basics</h2>
+  <p>Frequently asked questions and fundamentals, for families new to a diagnosis.</p>
+  {basico.length === 0 && <p><em>No articles published in this section yet.</em></p>}
+  {basico.map((entry) => (
+    <div class="card">
+      <span class="tag">{entry.data.category}</span>
+      <h3><a class="title-link" href={`/en/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
+      <p>{entry.data.description}</p>
+    </div>
+  ))}
+
+  <h2 id="avanzado">News & research</h2>
+  <p>Updates and studies, for readers who already know the basics.</p>
+  {avanzado.length === 0 && <p><em>No articles published in this section yet.</em></p>}
+  {avanzado.map((entry) => (
+    <div class="card">
+      <span class="tag">{entry.data.category}</span>
+      <h3><a class="title-link" href={`/en/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
+      <p>{entry.data.description}</p>
+    </div>
+  ))}
+</Layout>

@@ -1,0 +1,79 @@
+{
+  "_comment": "Dominios verificados el 2026-07-23. Claude solo puede citar/buscar dentro de estos dominios al generar artículos. Añade nuevas fuentes aquí después de verificar la URL manualmente.",
+  "trusted_domains": [
+    "ndss.org",
+    "ndsccenter.org",
+    "downs-syndrome.org.uk",
+    "cdss.ca",
+    "sindromedown.org",
+    "down21.org",
+    "cdc.gov",
+    "nichd.nih.gov",
+    "pubmed.ncbi.nlm.nih.gov"
+  ],
+  "sources": [
+    {
+      "name": "National Down Syndrome Society (NDSS)",
+      "country": "Estados Unidos",
+      "url": "https://ndss.org",
+      "domain": "ndss.org",
+      "lang": "en"
+    },
+    {
+      "name": "National Down Syndrome Congress (NDSC)",
+      "country": "Estados Unidos",
+      "url": "https://ndsccenter.org",
+      "domain": "ndsccenter.org",
+      "lang": "en"
+    },
+    {
+      "name": "Down's Syndrome Association (DSA)",
+      "country": "Reino Unido",
+      "url": "https://www.downs-syndrome.org.uk",
+      "domain": "downs-syndrome.org.uk",
+      "lang": "en"
+    },
+    {
+      "name": "Canadian Down Syndrome Society (CDSS)",
+      "country": "Canadá",
+      "url": "https://cdss.ca",
+      "domain": "cdss.ca",
+      "lang": "en"
+    },
+    {
+      "name": "Down España (Federación Española de Síndrome de Down)",
+      "country": "España",
+      "url": "https://www.sindromedown.org",
+      "domain": "sindromedown.org",
+      "lang": "es"
+    },
+    {
+      "name": "Fundación Iberoamericana Down21",
+      "country": "España / Iberoamérica",
+      "url": "https://www.down21.org",
+      "domain": "down21.org",
+      "lang": "es"
+    },
+    {
+      "name": "CDC - Centers for Disease Control and Prevention",
+      "country": "Estados Unidos (gobierno)",
+      "url": "https://www.cdc.gov/birth-defects/about/down-syndrome.html",
+      "domain": "cdc.gov",
+      "lang": "en"
+    },
+    {
+      "name": "NICHD - Eunice Kennedy Shriver National Institute of Child Health and Human Development",
+      "country": "Estados Unidos (gobierno)",
+      "url": "https://www.nichd.nih.gov/health/topics/down",
+      "domain": "nichd.nih.gov",
+      "lang": "en"
+    },
+    {
+      "name": "PubMed (NIH) - literatura científica revisada por pares",
+      "country": "Estados Unidos (gobierno)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "lang": "en"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+name: Generar contenido diario (borrador)
+
+# Corre todos los días y abre un Pull Request con los artículos nuevos.
+# NADA se publica solo: el PR queda esperando tu revisión y merge manual.
+on:
+  schedule:
+    - cron: "0 12 * * *" # 12:00 UTC todos los días — ajusta a tu hora preferida
+  workflow_dispatch: {} # también puedes lanzarlo a mano desde la pestaña Actions
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias
+        run: npm install --no-save @anthropic-ai/sdk
+
+      - name: Generar artículos con Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DAILY_TOPIC_COUNT: "2"
+        run: node scripts/generate-articles.mjs
+
+      - name: Abrir Pull Request con los borradores
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Contenido generado por Claude — ${{ github.run_id }}"
+          branch: "contenido/borrador-${{ github.run_id }}"
+          title: "Borrador de contenido diario (revisar antes de aprobar)"
+          body: |
+            Artículos generados automáticamente a partir de fuentes verificadas
+            (ver scripts/sources.json).
+
+            **Antes de aprobar:**
+            1. Revisa cada archivo nuevo en `src/content/articles/es/` y `.../en/`.
+            2. Corrige lo que haga falta directamente en este PR.
+            3. Cambia `reviewed: false` → `reviewed: true` en cada archivo que apruebes.
+            4. Mergea este PR. Eso dispara el despliegue automático a GitHub Pages.
+
+            Si un artículo no cumple el estándar, simplemente borra ese par de
+            archivos (ES+EN) de este PR antes de mergear.
+          labels: contenido-pendiente-revision

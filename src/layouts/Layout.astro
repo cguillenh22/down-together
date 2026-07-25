@@ -1,0 +1,123 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  lang?: 'es' | 'en';
+}
+const { title, description = '', lang = 'es' } = Astro.props;
+
+const nav = {
+  es: {
+    brand: 'Down Juntos',
+    home: 'Inicio',
+    basico: 'Lo básico',
+    avanzado: 'Actualidad e investigación',
+    switch: 'English',
+    switchHref: '/en/',
+    support: 'Apoya este proyecto',
+  },
+  en: {
+    brand: 'Down Together',
+    home: 'Home',
+    basico: 'The basics',
+    avanzado: 'News & research',
+    switch: 'Español',
+    switchHref: '/es/',
+    support: 'Support this project',
+  },
+};
+const t = nav[lang];
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <style>
+      :root {
+        --accent: #2f6f4f;
+        --bg: #fbfaf7;
+        --text: #22262b;
+        --muted: #5b6570;
+        --card: #ffffff;
+        --border: #e4e1da;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 1.5rem;
+        border-bottom: 1px solid var(--border);
+        background: var(--card);
+      }
+      header a { color: var(--text); text-decoration: none; }
+      .brand { font-weight: 700; font-size: 1.1rem; color: var(--accent); }
+      nav a { margin-left: 1.25rem; font-size: 0.95rem; color: var(--muted); }
+      nav a:hover { color: var(--accent); }
+      main { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+      footer {
+        text-align: center;
+        padding: 2rem 1.5rem;
+        color: var(--muted);
+        font-size: 0.85rem;
+        border-top: 1px solid var(--border);
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .tag {
+        display: inline-block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: var(--accent);
+        background: #e9f3ee;
+        padding: 0.15rem 0.5rem;
+        border-radius: 999px;
+        margin-right: 0.5rem;
+      }
+      .source {
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px dashed var(--border);
+      }
+      a.title-link { color: var(--text); text-decoration: none; }
+      a.title-link:hover { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href={lang === 'es' ? '/es/' : '/en/'}>{t.brand}</a>
+      <nav>
+        <a href={lang === 'es' ? '/es/#basico' : '/en/#basico'}>{t.basico}</a>
+        <a href={lang === 'es' ? '/es/#avanzado' : '/en/#avanzado'}>{t.avanzado}</a>
+        <a href={t.switchHref}>{t.switch}</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>Contenido generado con asistencia de Claude a partir de fuentes verificadas, revisado y aprobado por un humano antes de publicarse. / Content drafted with Claude from verified sources, human-reviewed before publishing.</p>
+      <p>
+        <a href="https://ko-fi.com/downtogether" target="_blank" rel="noopener noreferrer">☕ {t.support}</a>
+      </p>
+    </footer>
+  </body>
+</html>

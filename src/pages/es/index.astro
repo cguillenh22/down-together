@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const all = (await getCollection('articles'))
+  .filter((e) => e.slug.startsWith('es/') && e.data.reviewed)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const basico = all.filter((e) => e.data.level === 'basico');
+const avanzado = all.filter((e) => e.data.level === 'avanzado');
+
+function localSlug(entry) {
+  return entry.slug.replace(/^es\//, '');
+}
+---
+<Layout
+  lang="es"
+  title="Down Juntos — Información sobre síndrome de Down en español"
+  description="Fuente en español sobre síndrome de Down: fundamentos para familias que recién reciben el diagnóstico, y noticias e investigación para quienes ya están informados."
+>
+  <h1>Información sobre síndrome de Down</h1>
+  <p>
+    Contenido curado a partir de asociaciones y fuentes médicas verificadas
+    (NDSS, DSA UK, CDSS, Down España, Down21, CDC, NIH), redactado con
+    asistencia de Claude y revisado por un humano antes de publicarse.
+  </p>
+
+  <h2 id="basico">Lo básico</h2>
+  <p>Preguntas frecuentes y fundamentos, pensado para quienes recién reciben el diagnóstico.</p>
+  {basico.length === 0 && <p><em>Aún no hay artículos publicados en esta sección.</em></p>}
+  {basico.map((entry) => (
+    <div class="card">
+      <span class="tag">{entry.data.category}</span>
+      <h3><a class="title-link" href={`/es/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
+      <p>{entry.data.description}</p>
+    </div>
+  ))}
+
+  <h2 id="avanzado">Actualidad e investigación</h2>
+  <p>Noticias, estudios y avances, para quienes ya conocen lo básico.</p>
+  {avanzado.length === 0 && <p><em>Aún no hay artículos publicados en esta sección.</em></p>}
+  {avanzado.map((entry) => (
+    <div class="card">
+      <span class="tag">{entry.data.category}</span>
+      <h3><a class="title-link" href={`/es/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
+      <p>{entry.data.description}</p>
+    </div>
+  ))}
+</Layout>

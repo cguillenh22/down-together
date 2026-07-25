@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = (await getCollection('articles')).filter(
+    (e) => e.slug.startsWith('es/') && e.data.reviewed
+  );
+  return entries.map((entry) => ({
+    params: { slug: entry.slug.replace(/^es\//, '') },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<Layout lang="es" title={`${entry.data.title} — Down Juntos`} description={entry.data.description}>
+  <span class="tag">{entry.data.category}</span>
+  <span class="tag">{entry.data.level === 'basico' ? 'Lo básico' : 'Actualidad e investigación'}</span>
+  <h1>{entry.data.title}</h1>
+  <Content />
+  <p class="source">
+    Fuente original: <a href={entry.data.sourceUrl} target="_blank" rel="noopener noreferrer">{entry.data.sourceName}</a>
+    · Publicado el {entry.data.pubDate.toLocaleDateString('es-ES')}
+  </p>
+</Layout>
