@@ -8,7 +8,7 @@ category: "investigacion"
 sourceName: "NICHD - Eunice Kennedy Shriver National Institute of Child Health and Human Development"
 sourceUrl: "https://www.nichd.nih.gov/newsroom/news/102324-INCLUDE-cohort"
 tags: ["investigacion", "NIH", "INCLUDE Project", "DS-Connect", "avanzado"]
-reviewed: false
+reviewed: true
 generatedBy: "claude"
 translationSlug: "el-proyecto-include-de-los-nih-lanza-un-estudio-de-cohorte-p"
 ---

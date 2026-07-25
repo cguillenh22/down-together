@@ -8,7 +8,7 @@ category: "inclusion-laboral"
 sourceName: "Down España (Sindromedown.org) / NDSS"
 sourceUrl: "https://www.sindromedown.org/conoce-down-espana-mapa-informacion-general/que-hacemos/empleo/"
 tags: ["inclusion-laboral", "empleo con apoyo", "sindrome de down", "basico", "familias"]
-reviewed: false
+reviewed: true
 generatedBy: "claude"
 etapa: "vida-adulta"
 translationSlug: "empleo-con-apoyo-como-las-personas-con-sindrome-de-down-acce"
