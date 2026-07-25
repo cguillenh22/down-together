@@ -2,6 +2,14 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
+const ETAPA_LABELS_EN = {
+  'primera-infancia': 'Early childhood',
+  infancia: 'Childhood',
+  adolescencia: 'Adolescence',
+  'vida-adulta': 'Adulthood',
+  general: 'All stages',
+};
+
 const all = (await getCollection('articles'))
   .filter((e) => e.slug.startsWith('en/') && e.data.reviewed)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -23,14 +31,17 @@ function localSlug(entry) {
     Content curated from verified associations and medical sources (NDSS,
     DSA UK, CDSS, Down España, Down21, CDC, NIH), drafted with Claude and
     reviewed by a human before publishing.
+    First time here? <a href="/en/start-here/">Start here</a>.
   </p>
 
   <h2 id="basico">The basics</h2>
   <p>Frequently asked questions and fundamentals, for families new to a diagnosis.</p>
   {basico.length === 0 && <p><em>No articles published in this section yet.</em></p>}
   {basico.map((entry) => (
-    <div class="card">
+    <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`}>
       <span class="tag">{entry.data.category}</span>
+      <span class="tag">{ETAPA_LABELS_EN[entry.data.etapa]}</span>
+      {entry.data.pillar && <span class="tag pillar-badge">📌 In-depth guide</span>}
       <h3><a class="title-link" href={`/en/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
       <p>{entry.data.description}</p>
     </div>
@@ -40,8 +51,10 @@ function localSlug(entry) {
   <p>Updates and studies, for readers who already know the basics.</p>
   {avanzado.length === 0 && <p><em>No articles published in this section yet.</em></p>}
   {avanzado.map((entry) => (
-    <div class="card">
+    <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`}>
       <span class="tag">{entry.data.category}</span>
+      <span class="tag">{ETAPA_LABELS_EN[entry.data.etapa]}</span>
+      {entry.data.pillar && <span class="tag pillar-badge">📌 In-depth guide</span>}
       <h3><a class="title-link" href={`/en/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
       <p>{entry.data.description}</p>
     </div>

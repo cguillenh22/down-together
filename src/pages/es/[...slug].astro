@@ -2,6 +2,14 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 
+const ETAPA_LABELS_ES = {
+  'primera-infancia': 'Primera infancia',
+  infancia: 'Infancia',
+  adolescencia: 'Adolescencia',
+  'vida-adulta': 'Vida adulta',
+  general: 'Todas las etapas',
+};
+
 export async function getStaticPaths() {
   const entries = (await getCollection('articles')).filter(
     (e) => e.slug.startsWith('es/') && e.data.reviewed
@@ -14,14 +22,41 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+
+// Busca la versión en inglés del mismo artículo por translationSlug, para
+// que "Cambiar idioma" lleve al artículo traducido y no solo al home.
+const allEntries = await getCollection('articles');
+const translated = allEntries.find(
+  (e) => e.slug.startsWith('en/') && e.data.reviewed && e.data.translationSlug === entry.data.translationSlug
+);
+const switchHrefOverride = translated ? `/en/${translated.slug.replace(/^en\//, '')}/` : undefined;
 ---
-<Layout lang="es" title={`${entry.data.title} — Down Juntos`} description={entry.data.description}>
+<Layout
+  lang="es"
+  title={`${entry.data.title} — Down Juntos`}
+  description={entry.data.description}
+  switchHrefOverride={switchHrefOverride}
+>
   <span class="tag">{entry.data.category}</span>
   <span class="tag">{entry.data.level === 'basico' ? 'Lo básico' : 'Actualidad e investigación'}</span>
+  <span class="tag">{ETAPA_LABELS_ES[entry.data.etapa]}</span>
+  {entry.data.pillar && <span class="tag">📌 Guía completa</span>}
   <h1>{entry.data.title}</h1>
   <Content />
+
+  {entry.data.actionLabel && entry.data.actionUrl && (
+    <p class="cta">
+      <a href={entry.data.actionUrl} target="_blank" rel="noopener noreferrer">
+        {entry.data.actionLabel} →
+      </a>
+    </p>
+  )}
+
   <p class="source">
     Fuente original: <a href={entry.data.sourceUrl} target="_blank" rel="noopener noreferrer">{entry.data.sourceName}</a>
     · Publicado el {entry.data.pubDate.toLocaleDateString('es-ES')}
+    {entry.data.updatedDate && (
+      <> · Actualizado el {entry.data.updatedDate.toLocaleDateString('es-ES')}</>
+    )}
   </p>
 </Layout>

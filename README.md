@@ -96,6 +96,18 @@ Cuando llega el PR de contenido:
 4. Si un artículo no cumple el estándar, borra ese par de archivos del PR.
 5. Mergea el PR. El deploy a GitHub Pages se dispara solo.
 
+## Arquitectura de contenido
+
+Cada artículo tiene dos ejes independientes, además de la categoría:
+
+- **`level`** (básico/avanzado): controla el TONO — cuánto se explica desde cero.
+- **`etapa`** (primera-infancia / infancia / adolescencia / vida-adulta / general): controla A QUIÉN le sirve según la etapa de vida del hijo/a. Un padre de un adolescente no necesita "básico de recién nacido" — necesita contenido de SU etapa.
+- **`pillar`** (true/false): las guías profundas y evergreen (`pillar: true`) se curan a mano — el script automático (`generate-articles.mjs`) solo genera piezas cortas de actualidad (`pillar: false`). Para crear un pillar nuevo, escribe el `.md` directamente con `pillar: true` y más extensión (800-1500 palabras).
+- **`translationSlug`**: el mismo valor en la versión ES y EN de un artículo — así el botón de cambio de idioma lleva a la traducción real, no solo al home.
+- **`actionLabel` / `actionUrl`** (opcionales): si la fuente ofrece algo accionable (inscribirse, descargar un reporte, un formulario), el generador lo captura y se muestra como botón destacado en el artículo.
+
+Páginas de apoyo ya incluidas: `/es/empieza-aqui/` y `/en/start-here/` (embudo de entrada según situación del lector), y `/es/sobre-el-proyecto/` y `/en/about/` (transparencia: fuentes, proceso, cómo reportar errores).
+
 ## Fuentes confiables
 
 Están listadas y documentadas en `scripts/sources.json` (dominio verificado
