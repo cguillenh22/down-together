@@ -10,6 +10,7 @@ sourceUrl: "https://www.nichd.nih.gov/newsroom/news/102324-INCLUDE-cohort"
 tags: ["investigacion", "NIH", "INCLUDE", "cohorte", "avanzado"]
 reviewed: false
 generatedBy: "claude"
+translationSlug: "nuevo-estudio-de-cohorte-del-nih-seguira-la-salud-de-persona"
 ---
 
 ## What Is the DS-CDP

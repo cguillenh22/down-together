@@ -10,6 +10,8 @@ sourceUrl: "https://www.sindromedown.org/conoce-down-espana-mapa-informacion-gen
 tags: ["inclusion-laboral", "empleo con apoyo", "sindrome de down", "basico", "familias"]
 reviewed: false
 generatedBy: "claude"
+etapa: "vida-adulta"
+translationSlug: "empleo-con-apoyo-como-las-personas-con-sindrome-de-down-acce"
 ---
 
 ## Why talk about work when thinking about Down syndrome?
