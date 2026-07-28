@@ -12,7 +12,7 @@ sourceUrl: "https://ndsccenter.org/file_download/33d8c65a-ecb2-4e0d-8cad-d1c7a3a
 actionLabel: "Leer la Declaración de Posición sobre Tutela Legal (PDF, NDSC)"
 actionUrl: "https://ndsccenter.org/file_download/33d8c65a-ecb2-4e0d-8cad-d1c7a3ae67cc"
 tags: ["legal-derechos", "adolescencia", "tutela-legal", "toma-de-decisiones-con-apoyo", "avanzado"]
-reviewed: false
+reviewed: true
 generatedBy: "claude"
 translationSlug: "antes-de-los-18-lo-que-dice-ndsc-sobre-la-tutela-legal-y-sus"
 ---
