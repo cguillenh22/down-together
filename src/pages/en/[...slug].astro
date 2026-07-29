@@ -2,15 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 import HreflangHead from '../../components/HreflangHead.astro';
 import ArticleSchema from '../../components/ArticleSchema.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SourceCard from '../../components/SourceCard.astro';
+import RelatedArticles from '../../components/RelatedArticles.astro';
 import { getCollection, render } from 'astro:content';
+import { CATEGORY_LABELS, ETAPA_LABELS, categoryHref } from '../../lib/taxonomy.js';
 
-const ETAPA_LABELS_EN = {
-  'primera-infancia': 'Early childhood',
-  infancia: 'Childhood',
-  adolescencia: 'Adolescence',
-  'vida-adulta': 'Adulthood',
-  general: 'All stages',
-};
+const ETAPA_LABELS_EN = ETAPA_LABELS.en;
 
 export async function getStaticPaths() {
   const entries = (await getCollection('articles')).filter(
@@ -44,7 +42,14 @@ const currentPath = `/en/${entry.slug.replace(/^en\//, '')}/`;
     <HreflangHead lang="en" path={currentPath} translatedPath={switchHrefOverride} />
     <ArticleSchema entry={entry} />
   </Fragment>
-  <span class="tag">{entry.data.category}</span>
+  <Breadcrumbs
+    items={[
+      { label: 'Home', href: '/en/' },
+      { label: CATEGORY_LABELS.en[entry.data.category], href: categoryHref('en', entry.data.category) },
+      { label: entry.data.title },
+    ]}
+  />
+  <a class="tag" href={categoryHref('en', entry.data.category)}>{CATEGORY_LABELS.en[entry.data.category]}</a>
   <span class="tag">{entry.data.level === 'basico' ? 'The basics' : 'News & research'}</span>
   <span class="tag">{ETAPA_LABELS_EN[entry.data.etapa]}</span>
   {entry.data.pillar && <span class="tag">📌 In-depth guide</span>}
@@ -59,11 +64,6 @@ const currentPath = `/en/${entry.slug.replace(/^en\//, '')}/`;
     </p>
   )}
 
-  <p class="source">
-    Original source: <a href={entry.data.sourceUrl} target="_blank" rel="noopener noreferrer">{entry.data.sourceName}</a>
-    · Published {entry.data.pubDate.toLocaleDateString('en-US')}
-    {entry.data.updatedDate && (
-      <> · Updated {entry.data.updatedDate.toLocaleDateString('en-US')}</>
-    )}
-  </p>
+  <SourceCard entry={entry} lang="en" />
+  <RelatedArticles entry={entry} allEntries={allEntries} lang="en" />
 </Layout>

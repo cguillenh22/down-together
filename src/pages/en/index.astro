@@ -1,14 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import { CATEGORIES, CATEGORY_LABELS, ETAPA_LABELS, categoryHref } from '../../lib/taxonomy.js';
 
-const ETAPA_LABELS_EN = {
-  'primera-infancia': 'Early childhood',
-  infancia: 'Childhood',
-  adolescencia: 'Adolescence',
-  'vida-adulta': 'Adulthood',
-  general: 'All stages',
-};
+const ETAPA_LABELS_EN = ETAPA_LABELS.en;
 
 const all = (await getCollection('articles'))
   .filter((e) => e.slug.startsWith('en/') && e.data.reviewed)
@@ -34,12 +29,18 @@ function localSlug(entry) {
     First time here? <a href="/en/start-here/">Start here</a>.
   </p>
 
+  <nav class="category-nav" aria-label="Categories">
+    {CATEGORIES.map((cat) => (
+      <a href={categoryHref('en', cat)} class="category-pill">{CATEGORY_LABELS.en[cat]}</a>
+    ))}
+  </nav>
+
   <h2 id="basico">The basics</h2>
   <p>Frequently asked questions and fundamentals, for families new to a diagnosis.</p>
   {basico.length === 0 && <p><em>No articles published in this section yet.</em></p>}
   {basico.map((entry) => (
     <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`}>
-      <span class="tag">{entry.data.category}</span>
+      <a class="tag" href={categoryHref('en', entry.data.category)}>{CATEGORY_LABELS.en[entry.data.category]}</a>
       <span class="tag">{ETAPA_LABELS_EN[entry.data.etapa]}</span>
       {entry.data.pillar && <span class="tag pillar-badge">📌 In-depth guide</span>}
       <h3><a class="title-link" href={`/en/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
@@ -52,7 +53,7 @@ function localSlug(entry) {
   {avanzado.length === 0 && <p><em>No articles published in this section yet.</em></p>}
   {avanzado.map((entry) => (
     <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`}>
-      <span class="tag">{entry.data.category}</span>
+      <a class="tag" href={categoryHref('en', entry.data.category)}>{CATEGORY_LABELS.en[entry.data.category]}</a>
       <span class="tag">{ETAPA_LABELS_EN[entry.data.etapa]}</span>
       {entry.data.pillar && <span class="tag pillar-badge">📌 In-depth guide</span>}
       <h3><a class="title-link" href={`/en/${localSlug(entry)}/`}>{entry.data.title}</a></h3>

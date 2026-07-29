@@ -1,4 +1,4 @@
-# Down Together / Down Juntos
+# Down Together
 
 Fuente bilingüe (español/inglés) sobre síndrome de Down. Contenido dividido en
 dos niveles — **Lo básico** (fundamentos, preguntas frecuentes) y **Actualidad
@@ -135,5 +135,5 @@ scripts/sources.json           Lista de fuentes confiables (dominios verificados
 - **Derechos de autor:** el script está instruido para sintetizar y citar, no para copiar párrafos de la fuente. Aun así, revisa que cada artículo no reproduzca texto casi literal de la fuente original.
 - **No es asesoría médica:** los artículos deben describir lo que dicen las fuentes, no dar recomendaciones personalizadas. Revisa que se mantenga ese tono.
 - **Costo:** cada corrida diaria hace unas pocas llamadas a la API de Claude con búsqueda web (por defecto 2 temas × 1 llamada c/u). El costo es bajo, pero puedes monitorearlo en tu consola de Anthropic.
-- **Nombre:** ya está fijado como **Down Together** (EN) / **Down Juntos** (ES) en `src/layouts/Layout.astro` y en los `<title>` de cada página. Si más adelante quieres cambiarlo, esos son los archivos a tocar.
+- **Nombre:** "Down Together" es la marca única en ambos idiomas (definida en `src/layouts/Layout.astro` y en los `<title>` de cada página). Si más adelante quieres cambiarlo, esos son los archivos a tocar.
 - **Monetización:** el sitio no tiene publicidad ni afiliados — solo el enlace de donación en el footer de `Layout.astro`, ya activo y apuntando a [ko-fi.com/downtogether](https://ko-fi.com/downtogether) (conectado a PayPal Business). `.org` no es un requisito legal para monetizar ni un indicador de organización sin fines de lucro — es solo una extensión de dominio; si más adelante quieres estatus de fundación/asociación formal (para donaciones deducibles o grants), es un trámite legal aparte, no relacionado con el TLD.

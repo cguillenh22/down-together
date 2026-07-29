@@ -1,0 +1,22 @@
+---
+interface Props {
+  entry: any;
+  lang: 'es' | 'en';
+}
+const { entry, lang } = Astro.props;
+
+const t =
+  lang === 'es'
+    ? { label: 'Fuente verificada', cta: 'Ver fuente original', published: 'Publicado el', updated: 'Actualizado el' }
+    : { label: 'Verified source', cta: 'View original source', published: 'Published', updated: 'Updated' };
+const dateLocale = lang === 'es' ? 'es-ES' : 'en-US';
+---
+<div class="source-card">
+  <p class="source-label">✓ {t.label}</p>
+  <p class="source-name">{entry.data.sourceName}</p>
+  <a class="source-link" href={entry.data.sourceUrl} target="_blank" rel="noopener noreferrer">{t.cta} →</a>
+  <p class="source-dates">
+    {t.published} {entry.data.pubDate.toLocaleDateString(dateLocale)}
+    {entry.data.updatedDate && <> · {t.updated} {entry.data.updatedDate.toLocaleDateString(dateLocale)}</>}
+  </p>
+</div>

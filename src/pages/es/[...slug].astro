@@ -2,15 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 import HreflangHead from '../../components/HreflangHead.astro';
 import ArticleSchema from '../../components/ArticleSchema.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SourceCard from '../../components/SourceCard.astro';
+import RelatedArticles from '../../components/RelatedArticles.astro';
 import { getCollection, render } from 'astro:content';
+import { CATEGORY_LABELS, ETAPA_LABELS, categoryHref } from '../../lib/taxonomy.js';
 
-const ETAPA_LABELS_ES = {
-  'primera-infancia': 'Primera infancia',
-  infancia: 'Infancia',
-  adolescencia: 'Adolescencia',
-  'vida-adulta': 'Vida adulta',
-  general: 'Todas las etapas',
-};
+const ETAPA_LABELS_ES = ETAPA_LABELS.es;
 
 export async function getStaticPaths() {
   const entries = (await getCollection('articles')).filter(
@@ -36,7 +34,7 @@ const currentPath = `/es/${entry.slug.replace(/^es\//, '')}/`;
 ---
 <Layout
   lang="es"
-  title={`${entry.data.title} — Down Juntos`}
+  title={`${entry.data.title} — Down Together`}
   description={entry.data.description}
   switchHrefOverride={switchHrefOverride}
 >
@@ -44,7 +42,14 @@ const currentPath = `/es/${entry.slug.replace(/^es\//, '')}/`;
     <HreflangHead lang="es" path={currentPath} translatedPath={switchHrefOverride} />
     <ArticleSchema entry={entry} />
   </Fragment>
-  <span class="tag">{entry.data.category}</span>
+  <Breadcrumbs
+    items={[
+      { label: 'Inicio', href: '/es/' },
+      { label: CATEGORY_LABELS.es[entry.data.category], href: categoryHref('es', entry.data.category) },
+      { label: entry.data.title },
+    ]}
+  />
+  <a class="tag" href={categoryHref('es', entry.data.category)}>{CATEGORY_LABELS.es[entry.data.category]}</a>
   <span class="tag">{entry.data.level === 'basico' ? 'Lo básico' : 'Actualidad e investigación'}</span>
   <span class="tag">{ETAPA_LABELS_ES[entry.data.etapa]}</span>
   {entry.data.pillar && <span class="tag">📌 Guía completa</span>}
@@ -59,11 +64,6 @@ const currentPath = `/es/${entry.slug.replace(/^es\//, '')}/`;
     </p>
   )}
 
-  <p class="source">
-    Fuente original: <a href={entry.data.sourceUrl} target="_blank" rel="noopener noreferrer">{entry.data.sourceName}</a>
-    · Publicado el {entry.data.pubDate.toLocaleDateString('es-ES')}
-    {entry.data.updatedDate && (
-      <> · Actualizado el {entry.data.updatedDate.toLocaleDateString('es-ES')}</>
-    )}
-  </p>
+  <SourceCard entry={entry} lang="es" />
+  <RelatedArticles entry={entry} allEntries={allEntries} lang="es" />
 </Layout>

@@ -7,7 +7,7 @@ level: basico
 etapa: general
 pillar: true
 category: testimonios
-sourceName: "Down Juntos"
+sourceName: "Down Together"
 sourceUrl: "https://ndss.org"
 tags: ["bienvenida", "sobre-el-proyecto"]
 reviewed: true
