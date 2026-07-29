@@ -11,6 +11,7 @@ tags: ["inclusion-laboral", "empleo con apoyo", "sindrome de down", "basico", "f
 reviewed: true
 generatedBy: "claude"
 etapa: "vida-adulta"
+pais: general
 translationSlug: "empleo-con-apoyo-como-las-personas-con-sindrome-de-down-acce"
 ---
 

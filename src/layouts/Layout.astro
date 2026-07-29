@@ -202,6 +202,21 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       }
       a.title-link { color: var(--text); text-decoration: none; }
       a.title-link:hover { color: var(--accent); }
+      .disclaimer {
+        margin-top: 2rem;
+        padding: 0.9rem 1.1rem;
+        background: #fff8ec;
+        border: 1px solid #f0dfb8;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        color: #6b4f00;
+      }
+      .source-list { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+      .source-list li { margin-bottom: 0.3rem; }
+      .source-list a { color: var(--accent); font-weight: 600; text-decoration: none; }
+      .source-list a:hover { text-decoration: underline; }
+      .source-country { color: var(--muted); font-size: 0.85rem; }
+      .reviewer-line { margin-top: 0.3rem; }
     </style>
   </head>
   <body>

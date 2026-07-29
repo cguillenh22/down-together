@@ -1,39 +1,44 @@
 ---
-// Reutiliza `updatedDate` (ya existe en el schema, pensado para "última
-// revisión/actualización") como dateModified, en vez de añadir un campo
-// nuevo redundante. Autor/revisor está fijo porque hoy hay una sola
-// persona a cargo del contenido; si eso cambia, vale la pena moverlo a un
-// campo del content collection.
+// reviewerName/reviewedDate ahora son campos reales del schema (brecha
+// YMYL); si una pieza no los tiene aún (contenido anterior a su
+// introducción), cae de vuelta a Carlos como revisor único del proyecto.
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
   entry: CollectionEntry<'articles'>;
 }
 const { entry } = Astro.props;
-const isHealthOrLegal = entry.data.category === 'salud' || entry.data.category === 'legal-derechos';
+const d = entry.data;
+const isHealthOrLegal = d.category === 'salud' || d.category === 'legal-derechos';
+
+const citation =
+  d.sources && d.sources.length > 0
+    ? d.sources.map((s) => ({ '@type': 'WebPage', name: s.name, url: s.url }))
+    : d.sourceUrl
+      ? { '@type': 'WebPage', name: d.sourceName, url: d.sourceUrl }
+      : undefined;
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': isHealthOrLegal ? 'MedicalWebPage' : 'Article',
-  headline: entry.data.title,
-  description: entry.data.description,
-  inLanguage: entry.data.lang,
-  datePublished: entry.data.pubDate,
-  dateModified: entry.data.updatedDate ?? entry.data.pubDate,
-  author: {
-    '@type': 'Person',
-    name: 'Carlos Guillén',
-    description: 'Padre de un hijo con síndrome de Down. Fundador y editor de Down Together.',
-  },
+  headline: d.title,
+  description: d.description,
+  inLanguage: d.lang,
+  datePublished: d.pubDate,
+  dateModified: d.reviewedDate ?? d.updatedDate ?? d.pubDate,
+  author:
+    d.category === 'testimonios' && d.authorName
+      ? { '@type': 'Person', name: d.authorName }
+      : {
+          '@type': 'Person',
+          name: 'Carlos Guillén',
+          description: 'Padre de un hijo con síndrome de Down. Fundador y editor de Down Together.',
+        },
   reviewedBy: {
     '@type': 'Person',
-    name: 'Carlos Guillén',
+    name: d.reviewerName ?? 'Carlos Guillén',
   },
-  citation: {
-    '@type': 'WebPage',
-    name: entry.data.sourceName,
-    url: entry.data.sourceUrl,
-  },
+  ...(citation ? { citation } : {}),
   publisher: { '@type': 'Organization', name: 'Down Together', url: 'https://downtogether.org' },
 };
 ---

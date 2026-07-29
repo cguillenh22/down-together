@@ -46,13 +46,15 @@ const sourcesConfig = JSON.parse(
 );
 const TRUSTED_DOMAINS = sourcesConfig.trusted_domains;
 
+// "testimonios" queda fuera de la rotación a propósito: la fuente de esas
+// piezas es una persona, no una institución, y no se generan
+// automáticamente (ver down-together-piloto-5-articulos.md).
 const CATEGORIES = [
   'salud',
   'educacion',
   'desarrollo',
   'inclusion-laboral',
   'investigacion',
-  'testimonios',
   'legal-derechos',
 ];
 
@@ -122,7 +124,18 @@ function frontmatter(fields) {
   const lines = ['---'];
   for (const [key, value] of Object.entries(fields)) {
     if (value === undefined || value === null || value === '') continue;
-    if (Array.isArray(value)) {
+    if (Array.isArray(value) && value.length > 0 && typeof value[0] === 'object') {
+      // Array de objetos (ej. "sources") -> secuencia YAML en bloque.
+      lines.push(`${key}:`);
+      for (const item of value) {
+        const [firstKey, ...restKeys] = Object.keys(item);
+        lines.push(`  - ${firstKey}: ${JSON.stringify(item[firstKey])}`);
+        for (const k of restKeys) {
+          if (item[k] === undefined || item[k] === null) continue;
+          lines.push(`    ${k}: ${JSON.stringify(item[k])}`);
+        }
+      }
+    } else if (Array.isArray(value)) {
       lines.push(`${key}: [${value.map((v) => `"${v}"`).join(', ')}]`);
     } else if (typeof value === 'boolean' || typeof value === 'number') {
       lines.push(`${key}: ${value}`);
@@ -136,37 +149,65 @@ function frontmatter(fields) {
   return lines.join('\n');
 }
 
+// Categorías donde la ley/el sistema varía por país y por lo tanto la
+// pieza debe comparar jurisdicciones (ver down-together-resolucion-schema-y-generador.md).
+// "educacion" es un caso intermedio: solo es multi-país si el ángulo es de
+// derechos/sistema, no si es puramente pedagógico — se lo dejamos decidir
+// al modelo con la regla explícita en el prompt, en vez de forzarlo aquí.
+const SIEMPRE_MULTI_PAIS = ['legal-derechos', 'inclusion-laboral'];
+
 async function generateTopic(level, category, etapa, recentTitles) {
-  const wordRange = level === 'basico' ? '400-600' : '300-500';
   const avoidBlock =
     recentTitles.length > 0
       ? `\nTemas ya cubiertos recientemente (NO repitas ninguno de estos, elige un ángulo o tema distinto):\n- ${recentTitles.join('\n- ')}\n`
       : '';
+  const multiPaisHint = SIEMPRE_MULTI_PAIS.includes(category)
+    ? '\nEsta categoría casi siempre requiere tratamiento multi-país (ver reglas de "pais" abajo) — asúmelo salvo que el tema sea genuinamente universal.\n'
+    : '';
 
   const prompt = `Eres un redactor de contenido para "Down Together", un sitio bilingüe (español/inglés) que \
-reúne información confiable sobre síndrome de Down para dos públicos: familias que recién reciben un diagnóstico \
-("basico") y personas que ya conocen lo esencial y quieren actualidad/investigación ("avanzado"). El sitio también \
-organiza el contenido por etapa de vida del hijo/a (independiente del nivel).
+reúne información confiable sobre síndrome de Down para familias, desde el diagnóstico hasta la vida adulta. \
+Nace de la experiencia de un padre — el objetivo es ser la fuente que a él le hubiera gustado tener: cálida y \
+directa, nunca clínica ni fría, realista sin ser alarmista.
 
 Tarea: busca información reciente y verificable SOLO dentro de estos dominios de confianza: ${TRUSTED_DOMAINS.join(', ')}.
 Nivel objetivo: ${level === 'basico' ? 'básico (preguntas frecuentes, fundamentos, tono cálido y claro, sin jerga médica sin explicar)' : 'avanzado (noticias, investigación, o profundización — asume que el lector ya conoce lo esencial)'}.
 Categoría: ${category}.
 Etapa de vida objetivo: ${etapa} (si es "general", el contenido aplica a cualquier etapa; si no, enfoca el tema específicamente en esa etapa — por ejemplo "adolescencia" implica temas como transición, autonomía, pubertad, no contenido de recién nacidos).
-${avoidBlock}
-Reglas estrictas:
-- NO copies ni parafrasees casi textualmente párrafos completos de la fuente. Sintetiza y explica con tus propias palabras.
-- Cita SIEMPRE la fuente exacta (nombre de la organización y URL real que hayas encontrado con la búsqueda).
-- Si es contenido de salud, no des consejo médico personalizado; describe lo que dicen las fuentes e invita a consultar a un profesional cuando aplique.
-- Escribe el artículo completo en español Y en inglés (traducción fiel, no un resumen distinto).
-- Extensión: ${wordRange} palabras por idioma, en formato Markdown simple (puedes usar subtítulos con ## y listas).
-- El título debe ser específico, no genérico.
-- GEO (para que motores como ChatGPT/Perplexity/AI Overviews puedan citarte): el primer párrafo (2-3 líneas) debe responder de forma directa y concreta la pregunta que trae al lector, ANTES de dar contexto o antecedentes — nada de empezar con generalidades tipo "el síndrome de Down es una condición...".
-- Cuando tenga sentido, usa los subtítulos (##) en forma de pregunta real, tal como alguien la escribiría en un buscador (ej. "¿Cuándo debe hacerse el ecocardiograma?"), en vez de títulos genéricos de sección.
-- No dejes todas las citas para el final: cuando menciones un dato o cifra concreta de la fuente, indica de dónde sale en el mismo párrafo (ej. "según [fuente], ..."), no solo en la línea de fuente al pie.
-- IMPORTANTE — acción concreta: si la página fuente ofrece algo accionable (inscribirse a un evento/webinar, descargar un reporte/PDF, un formulario, una línea de ayuda, una guía descargable), identifícalo y captúralo en "action_label"/"action_url" con la URL directa a esa acción (no la home del sitio). Si la fuente no ofrece nada accionable, deja esos dos campos como null — no inventes una acción que no existe.
-- Termina el cuerpo del artículo (en ambos idiomas) con una sección corta "## ¿Qué puedes hacer ahora?" con 1-3 sugerencias concretas y prácticas para el lector (puede incluir la acción de la fuente si existe, y/o un siguiente paso razonable aunque no venga de la fuente, como "habla con el pediatra sobre esto").
+${avoidBlock}${multiPaisHint}
+Estructura obligatoria del cuerpo (en ambos idiomas, sin techo fijo de palabras — cada bloque se extiende lo que
+el tema necesite, la pregunta central debe quedar completamente respondida, sin relleno). Usa negrita para la
+etiqueta de cada bloque, como en estos ejemplos, no encabezados ##:
 
-Tu ÚNICA salida final debe ser un bloque \`\`\`json con exactamente esta forma (sin comentarios adicionales fuera del bloque):
+1. **Respuesta rápida** (2-4 líneas): responde la pregunta central de inmediato, en lenguaje llano — nada de
+   empezar con generalidades tipo "el síndrome de Down es una condición...".
+2. **Por qué importa**: contexto breve, sin alarmismo.
+3. **Qué dice la fuente**: cuerpo con datos concretos y la cita cerca de cada afirmación (no solo al final).
+   Si la categoría requiere multi-país (ver reglas abajo), cubre cada país por separado con un sub-párrafo en
+   cursiva tipo "*Estados Unidos.*", cada uno con su propia fuente verificada.
+4. **¿Qué puedes hacer ahora?**: acción concreta y realista, específica por país si la pieza es multi-país.
+5. **Para profundizar**: enlace(s) a la fuente primaria con una línea de qué van a encontrar ahí.
+
+Reglas de fuente y país (asigna "pais" según esto, es obligatorio):
+- Si la categoría es salud, desarrollo o investigación: usa una sola fuente ("source_name"/"source_url"), y
+  "pais": "general" (el contenido no depende de jurisdicción).
+- Si la categoría es legal-derechos o inclusion-laboral, o si es educación sobre derechos/sistemas (no
+  pedagógica pura): usa "sources" (2-3 países, mínimo EE. UU., España y Reino Unido cuando exista fuente real
+  para ese país, cada una verificada contra el dominio real, no solo mencionada), y "pais": "multi".
+- Solo usa "pais": "es"/"us"/"uk" si la pieza trata explícitamente un único país (caso poco común dado lo
+  anterior) — confirma que de verdad no aplica a los demás antes de usarlo.
+- Verifica vigencia: si la fuente es una ley o guía, confirma que no fue reemplazada por una versión más
+  reciente antes de citarla.
+
+Reglas generales:
+- NO copies ni parafrasees casi textualmente párrafos completos de la fuente. Sintetiza y explica con tus propias palabras.
+- Si es contenido de salud o legal-derechos, no des recomendación personalizada (dosis, diagnóstico, trámite específico); describe lo que dicen las fuentes.
+- Escribe el artículo completo en español Y en inglés (traducción fiel del mismo mensaje, no una traducción literal forzada ni un resumen distinto).
+- El título debe ser específico, no genérico.
+- Cuando tenga sentido, los sub-encabezados dentro de un bloque pueden ir en forma de pregunta real, tal como alguien la escribiría en un buscador.
+- IMPORTANTE — acción concreta: si la página fuente ofrece algo accionable (inscribirse a un evento/webinar, descargar un reporte/PDF, un formulario, una línea de ayuda, una guía descargable), identifícalo y captúralo en "action_label"/"action_url" con la URL directa a esa acción (no la home del sitio). Si la fuente no ofrece nada accionable, deja esos dos campos como null — no inventes una acción que no existe.
+
+Tu ÚNICA salida final debe ser un bloque \`\`\`json con exactamente esta forma (sin comentarios adicionales fuera del bloque). Usa "sources" en vez de "source_name"/"source_url" cuando "pais" sea "multi" (deja los otros dos como null en ese caso); usa "source_name"/"source_url" y deja "sources" como null en cualquier otro caso:
 
 \`\`\`json
 {
@@ -176,8 +217,10 @@ Tu ÚNICA salida final debe ser un bloque \`\`\`json con exactamente esta forma 
   "title_en": "...",
   "description_en": "...",
   "body_en_markdown": "...",
-  "source_name": "...",
-  "source_url": "https://...",
+  "pais": "general" | "es" | "us" | "uk" | "multi",
+  "source_name": "..." ,
+  "source_url": "https://..." ,
+  "sources": [{ "name": "...", "url": "https://...", "country": "US" }] ,
   "action_label": "..." ,
   "action_url": "https://..." ,
   "tags": ["...", "..."]
@@ -230,14 +273,17 @@ async function main() {
     const slug = slugify(data.title_es || data.title_en || `articulo-${i}`);
     const filename = `${date}-${slug}.md`;
 
+    const hasSources = Array.isArray(data.sources) && data.sources.length > 0;
     const commonFields = {
       pubDate: date,
       level,
       etapa,
       pillar: false, // los pillars se curan a mano, este script solo genera actualidad
       category,
-      sourceName: data.source_name,
-      sourceUrl: data.source_url,
+      pais: data.pais,
+      sourceName: hasSources ? undefined : data.source_name,
+      sourceUrl: hasSources ? undefined : data.source_url,
+      sources: hasSources ? data.sources : undefined,
       actionLabel: data.action_label || undefined,
       actionUrl: data.action_url || undefined,
       tags: data.tags || [],
