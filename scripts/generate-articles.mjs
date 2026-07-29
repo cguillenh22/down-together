@@ -160,6 +160,9 @@ Reglas estrictas:
 - Escribe el artículo completo en español Y en inglés (traducción fiel, no un resumen distinto).
 - Extensión: ${wordRange} palabras por idioma, en formato Markdown simple (puedes usar subtítulos con ## y listas).
 - El título debe ser específico, no genérico.
+- GEO (para que motores como ChatGPT/Perplexity/AI Overviews puedan citarte): el primer párrafo (2-3 líneas) debe responder de forma directa y concreta la pregunta que trae al lector, ANTES de dar contexto o antecedentes — nada de empezar con generalidades tipo "el síndrome de Down es una condición...".
+- Cuando tenga sentido, usa los subtítulos (##) en forma de pregunta real, tal como alguien la escribiría en un buscador (ej. "¿Cuándo debe hacerse el ecocardiograma?"), en vez de títulos genéricos de sección.
+- No dejes todas las citas para el final: cuando menciones un dato o cifra concreta de la fuente, indica de dónde sale en el mismo párrafo (ej. "según [fuente], ..."), no solo en la línea de fuente al pie.
 - IMPORTANTE — acción concreta: si la página fuente ofrece algo accionable (inscribirse a un evento/webinar, descargar un reporte/PDF, un formulario, una línea de ayuda, una guía descargable), identifícalo y captúralo en "action_label"/"action_url" con la URL directa a esa acción (no la home del sitio). Si la fuente no ofrece nada accionable, deja esos dos campos como null — no inventes una acción que no existe.
 - Termina el cuerpo del artículo (en ambos idiomas) con una sección corta "## ¿Qué puedes hacer ahora?" con 1-3 sugerencias concretas y prácticas para el lector (puede incluir la acción de la fuente si existe, y/o un siguiente paso razonable aunque no venga de la fuente, como "habla con el pediatra sobre esto").
 
