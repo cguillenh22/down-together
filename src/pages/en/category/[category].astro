@@ -1,0 +1,38 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, CATEGORY_LABELS, ETAPA_LABELS } from '../../../lib/taxonomy.js';
+
+export async function getStaticPaths() {
+  return CATEGORIES.map((category) => ({ params: { category } }));
+}
+
+const { category } = Astro.params;
+const label = CATEGORY_LABELS.en[category];
+
+const entries = (await getCollection('articles'))
+  .filter((e) => e.slug.startsWith('en/') && e.data.reviewed && e.data.category === category)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+function localSlug(entry) {
+  return entry.slug.replace(/^en\//, '');
+}
+---
+<Layout
+  lang="en"
+  title={`${label} — Down Together`}
+  description={`Articles about ${label.toLowerCase()} related to Down syndrome, from verified sources.`}
+>
+  <Breadcrumbs items={[{ label: 'Home', href: '/en/' }, { label }]} />
+  <h1>{label}</h1>
+  {entries.length === 0 && <p><em>No articles published in this category yet.</em></p>}
+  {entries.map((entry) => (
+    <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`}>
+      <span class="tag">{ETAPA_LABELS.en[entry.data.etapa]}</span>
+      {entry.data.pillar && <span class="tag pillar-badge">📌 In-depth guide</span>}
+      <h3><a class="title-link" href={`/en/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
+      <p>{entry.data.description}</p>
+    </div>
+  ))}
+</Layout>

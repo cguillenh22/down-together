@@ -143,7 +143,7 @@ async function generateTopic(level, category, etapa, recentTitles) {
       ? `\nTemas ya cubiertos recientemente (NO repitas ninguno de estos, elige un ángulo o tema distinto):\n- ${recentTitles.join('\n- ')}\n`
       : '';
 
-  const prompt = `Eres un redactor de contenido para "Down Together / Down Juntos", un sitio bilingüe (español/inglés) que \
+  const prompt = `Eres un redactor de contenido para "Down Together", un sitio bilingüe (español/inglés) que \
 reúne información confiable sobre síndrome de Down para dos públicos: familias que recién reciben un diagnóstico \
 ("basico") y personas que ya conocen lo esencial y quieren actualidad/investigación ("avanzado"). El sitio también \
 organiza el contenido por etapa de vida del hijo/a (independiente del nivel).

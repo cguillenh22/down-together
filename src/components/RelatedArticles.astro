@@ -1,0 +1,41 @@
+---
+import { CATEGORY_LABELS } from '../lib/taxonomy.js';
+
+interface Props {
+  entry: any;
+  allEntries: any[];
+  lang: 'es' | 'en';
+}
+const { entry, allEntries, lang } = Astro.props;
+const prefix = `${lang}/`;
+
+function localSlug(e: any) {
+  return e.slug.replace(new RegExp(`^${lang}/`), '');
+}
+
+const related = allEntries
+  .filter(
+    (e) =>
+      e.slug.startsWith(prefix) &&
+      e.data.reviewed &&
+      e.slug !== entry.slug &&
+      e.data.category === entry.data.category
+  )
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const heading = lang === 'es' ? 'También te puede interesar' : 'You might also like';
+---
+{related.length > 0 && (
+  <section class="related">
+    <h2>{heading}</h2>
+    <div class="related-grid">
+      {related.map((r) => (
+        <a class="related-card" href={`/${lang}/${localSlug(r)}/`}>
+          <span class="tag">{CATEGORY_LABELS[lang][r.data.category]}</span>
+          <h3>{r.data.title}</h3>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

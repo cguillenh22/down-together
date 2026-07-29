@@ -1,14 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import { CATEGORIES, CATEGORY_LABELS, ETAPA_LABELS, categoryHref } from '../../lib/taxonomy.js';
 
-const ETAPA_LABELS_ES = {
-  'primera-infancia': 'Primera infancia',
-  infancia: 'Infancia',
-  adolescencia: 'Adolescencia',
-  'vida-adulta': 'Vida adulta',
-  general: 'Todas las etapas',
-};
+const ETAPA_LABELS_ES = ETAPA_LABELS.es;
 
 const all = (await getCollection('articles'))
   .filter((e) => e.slug.startsWith('es/') && e.data.reviewed)
@@ -23,7 +18,7 @@ function localSlug(entry) {
 ---
 <Layout
   lang="es"
-  title="Down Juntos — Información sobre síndrome de Down en español"
+  title="Down Together — Información sobre síndrome de Down en español"
   description="Fuente en español sobre síndrome de Down: fundamentos para familias que recién reciben el diagnóstico, y noticias e investigación para quienes ya están informados."
 >
   <h1>Información sobre síndrome de Down</h1>
@@ -34,12 +29,18 @@ function localSlug(entry) {
     ¿Primera vez aquí? <a href="/es/empieza-aqui/">Empieza por acá</a>.
   </p>
 
+  <nav class="category-nav" aria-label="Categorías">
+    {CATEGORIES.map((cat) => (
+      <a href={categoryHref('es', cat)} class="category-pill">{CATEGORY_LABELS.es[cat]}</a>
+    ))}
+  </nav>
+
   <h2 id="basico">Lo básico</h2>
   <p>Preguntas frecuentes y fundamentos, pensado para quienes recién reciben el diagnóstico.</p>
   {basico.length === 0 && <p><em>Aún no hay artículos publicados en esta sección.</em></p>}
   {basico.map((entry) => (
     <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`}>
-      <span class="tag">{entry.data.category}</span>
+      <a class="tag" href={categoryHref('es', entry.data.category)}>{CATEGORY_LABELS.es[entry.data.category]}</a>
       <span class="tag">{ETAPA_LABELS_ES[entry.data.etapa]}</span>
       {entry.data.pillar && <span class="tag pillar-badge">📌 Guía completa</span>}
       <h3><a class="title-link" href={`/es/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
@@ -52,7 +53,7 @@ function localSlug(entry) {
   {avanzado.length === 0 && <p><em>Aún no hay artículos publicados en esta sección.</em></p>}
   {avanzado.map((entry) => (
     <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`}>
-      <span class="tag">{entry.data.category}</span>
+      <a class="tag" href={categoryHref('es', entry.data.category)}>{CATEGORY_LABELS.es[entry.data.category]}</a>
       <span class="tag">{ETAPA_LABELS_ES[entry.data.etapa]}</span>
       {entry.data.pillar && <span class="tag pillar-badge">📌 Guía completa</span>}
       <h3><a class="title-link" href={`/es/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
