@@ -1,0 +1,18 @@
+---
+// Recibe las rutas ya resueltas por la página (que ya sabe si existe
+// traducción vía translationSlug) en vez de volver a consultar la
+// colección completa aquí.
+interface Props {
+  lang: 'es' | 'en';
+  path: string; // ej. "/es/2026-07-25-algun-slug/"
+  translatedPath?: string; // ej. "/en/2026-07-25-algun-slug/"
+}
+const { lang, path, translatedPath } = Astro.props;
+const otherLang = lang === 'es' ? 'en' : 'es';
+const defaultPath = lang === 'es' ? path : translatedPath ?? path;
+---
+<link rel="alternate" hreflang={lang} href={new URL(path, Astro.site)} />
+{translatedPath && (
+  <link rel="alternate" hreflang={otherLang} href={new URL(translatedPath, Astro.site)} />
+)}
+<link rel="alternate" hreflang="x-default" href={new URL(defaultPath, Astro.site)} />

@@ -1,5 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import HreflangHead from '../../components/HreflangHead.astro';
+import ArticleSchema from '../../components/ArticleSchema.astro';
 import { getCollection, render } from 'astro:content';
 
 const ETAPA_LABELS_ES = {
@@ -30,6 +32,7 @@ const translated = allEntries.find(
   (e) => e.slug.startsWith('en/') && e.data.reviewed && e.data.translationSlug === entry.data.translationSlug
 );
 const switchHrefOverride = translated ? `/en/${translated.slug.replace(/^en\//, '')}/` : undefined;
+const currentPath = `/es/${entry.slug.replace(/^es\//, '')}/`;
 ---
 <Layout
   lang="es"
@@ -37,6 +40,10 @@ const switchHrefOverride = translated ? `/en/${translated.slug.replace(/^en\//, 
   description={entry.data.description}
   switchHrefOverride={switchHrefOverride}
 >
+  <Fragment slot="head">
+    <HreflangHead lang="es" path={currentPath} translatedPath={switchHrefOverride} />
+    <ArticleSchema entry={entry} />
+  </Fragment>
   <span class="tag">{entry.data.category}</span>
   <span class="tag">{entry.data.level === 'basico' ? 'Lo básico' : 'Actualidad e investigación'}</span>
   <span class="tag">{ETAPA_LABELS_ES[entry.data.etapa]}</span>

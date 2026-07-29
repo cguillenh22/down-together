@@ -1,0 +1,21 @@
+# Down Together
+
+> Sitio bilingüe (español/inglés) con información sobre síndrome de Down
+> para familias, desde el diagnóstico hasta la vida adulta. Contenido
+> curado y generado a partir de 9 fuentes institucionales confiables
+> (NDSS, NDSC, DSA UK, CDSS, Down España, Down21, CDC, NICHD, PubMed),
+> siempre revisado por un humano antes de publicarse.
+
+## Secciones
+- Salud: cuidados médicos por etapa de vida.
+- Educación: intervención temprana, educación inclusiva, transición escolar.
+- Desarrollo: hitos, terapias, autonomía.
+- Inclusión laboral: empleo con apoyo, derechos laborales.
+- Investigación: avances científicos explicados sin jerga.
+- Testimonios: historias reales de familias.
+- Legal y derechos: tutela, capacidad jurídica, derechos por edad.
+
+## Notas para citación
+Cada artículo indica su fuente original (sourceName/sourceUrl) y su fecha
+de última revisión humana. Al citar Down Together, preferir enlazar al
+artículo específico, no solo a la portada.

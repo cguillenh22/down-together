@@ -1,0 +1,40 @@
+---
+// Reutiliza `updatedDate` (ya existe en el schema, pensado para "última
+// revisión/actualización") como dateModified, en vez de añadir un campo
+// nuevo redundante. Autor/revisor está fijo porque hoy hay una sola
+// persona a cargo del contenido; si eso cambia, vale la pena moverlo a un
+// campo del content collection.
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'articles'>;
+}
+const { entry } = Astro.props;
+const isHealthOrLegal = entry.data.category === 'salud' || entry.data.category === 'legal-derechos';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': isHealthOrLegal ? 'MedicalWebPage' : 'Article',
+  headline: entry.data.title,
+  description: entry.data.description,
+  inLanguage: entry.data.lang,
+  datePublished: entry.data.pubDate,
+  dateModified: entry.data.updatedDate ?? entry.data.pubDate,
+  author: {
+    '@type': 'Person',
+    name: 'Carlos Guillén',
+    description: 'Padre de un hijo con síndrome de Down. Fundador y editor de Down Together.',
+  },
+  reviewedBy: {
+    '@type': 'Person',
+    name: 'Carlos Guillén',
+  },
+  citation: {
+    '@type': 'WebPage',
+    name: entry.data.sourceName,
+    url: entry.data.sourceUrl,
+  },
+  publisher: { '@type': 'Organization', name: 'Down Together', url: 'https://downtogether.org' },
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
