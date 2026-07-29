@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+
+# Bots de recuperación de IA (responden preguntas en tiempo real) — permitidos
+# a propósito: la misión del sitio es alcance máximo, ser citado en
+# respuestas de IA es descubribilidad, no una fuga de contenido.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Bots de entrenamiento de modelos — también permitidos aquí porque no hay
+# modelo de negocio que proteger y más alcance favorece la misión. Si
+# prefieres bloquearlos, cambia "Allow: /" por "Disallow: /" en cada uno.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://downtogether.org/sitemap-index.xml
