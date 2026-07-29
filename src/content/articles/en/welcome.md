@@ -12,6 +12,7 @@ sourceUrl: "https://ndss.org"
 tags: ["welcome", "about-the-project"]
 reviewed: true
 generatedBy: "humano"
+pais: general
 translationSlug: "bienvenida-sobre-el-proyecto"
 ---
 

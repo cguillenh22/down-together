@@ -33,15 +33,39 @@ const articles = defineCollection({
       'testimonios',
       'legal-derechos',
     ]),
-    sourceName: z.string(),
-    sourceUrl: z.string().url(),
+    // Fuente institucional única. Para piezas que comparan varios países,
+    // usa `sources` en su lugar (tiene prioridad sobre estos dos en el render).
+    sourceName: z.string().optional(),
+    sourceUrl: z.string().url().optional(),
+    // Piezas multi-país (legal-derechos, o educación/inclusión-laboral sobre
+    // derechos/sistemas): una fuente por país, cada una verificada.
+    sources: z
+      .array(
+        z.object({
+          name: z.string(),
+          url: z.string().url(),
+          country: z.string().optional(), // "US" | "ES" | "UK" | ...
+        })
+      )
+      .optional(),
+    // Solo para category: "testimonios" — la fuente es la persona, no una
+    // institución. Reemplaza sourceName/sourceUrl para esa categoría.
+    authorName: z.string().optional(),
     // Acción concreta disponible en la fuente (inscribirse, descargar reporte, etc.)
     // Si la fuente no ofrece ninguna, se deja sin definir.
     actionLabel: z.string().optional(),
     actionUrl: z.string().url().optional(),
     tags: z.array(z.string()).default([]),
     reviewed: z.boolean().default(false), // true solo cuando un humano aprobó el PR
+    // Brecha YMYL: quién revisó y cuándo, visible en el artículo (no anónimo).
+    reviewerName: z.string().optional(),
+    reviewedDate: z.date().optional(),
     generatedBy: z.string().default('claude'),
+    // Dimensión de filtrado (como category o etapa), no solo metadata: si el
+    // contenido depende de jurisdicción. "general" = universal (salud,
+    // desarrollo, investigación, testimonios). "es"/"us"/"uk" = un solo país.
+    // "multi" = compara varios (ver `sources` para el detalle).
+    pais: z.enum(['general', 'es', 'us', 'uk', 'multi']),
     // Identificador compartido entre la versión ES y la versión EN del mismo
     // artículo (ej. "que-es-sindrome-down"). Debe coincidir exactamente en
     // ambos archivos para que el selector de idioma enlace al traducido.

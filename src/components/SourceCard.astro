@@ -4,19 +4,81 @@ interface Props {
   lang: 'es' | 'en';
 }
 const { entry, lang } = Astro.props;
+const d = entry.data;
 
 const t =
   lang === 'es'
-    ? { label: 'Fuente verificada', cta: 'Ver fuente original', published: 'Publicado el', updated: 'Actualizado el' }
-    : { label: 'Verified source', cta: 'View original source', published: 'Published', updated: 'Updated' };
+    ? {
+        label: 'Fuente verificada',
+        authorLabel: 'Testimonio de',
+        cta: 'Ver fuente original',
+        published: 'Publicado el',
+        updated: 'Actualizado el',
+        reviewedBy: 'Revisado por',
+        on: 'el',
+        disclaimerSalud:
+          'Esto no es asesoría médica. Describe lo que dicen las fuentes citadas — consulta siempre con el pediatra o especialista de tu hijo/a antes de tomar decisiones sobre su salud.',
+        disclaimerLegal:
+          'Esto no es asesoría legal. Las leyes cambian y varían por país o estado — consulta con un abogado especializado en tu jurisdicción para tu situación específica.',
+      }
+    : {
+        label: 'Verified source',
+        authorLabel: 'Shared by',
+        cta: 'View original source',
+        published: 'Published',
+        updated: 'Updated',
+        reviewedBy: 'Reviewed by',
+        on: 'on',
+        disclaimerSalud:
+          "This isn't medical advice. It describes what the cited sources say — always check with your child's pediatrician or specialist before making health decisions.",
+        disclaimerLegal:
+          "This isn't legal advice. Laws change and vary by country or state — consult a lawyer licensed in your jurisdiction for your specific situation.",
+      };
+
 const dateLocale = lang === 'es' ? 'es-ES' : 'en-US';
+const reviewerName = d.reviewerName ?? 'Carlos Guillén';
+const reviewedDate = d.reviewedDate ?? d.updatedDate ?? d.pubDate;
+const isTestimonio = d.category === 'testimonios';
+const showDisclaimer = d.category === 'salud' || d.category === 'legal-derechos';
 ---
+{showDisclaimer && (
+  <p class="disclaimer">
+    ⚠️ {d.category === 'salud' ? t.disclaimerSalud : t.disclaimerLegal}
+  </p>
+)}
+
 <div class="source-card">
-  <p class="source-label">✓ {t.label}</p>
-  <p class="source-name">{entry.data.sourceName}</p>
-  <a class="source-link" href={entry.data.sourceUrl} target="_blank" rel="noopener noreferrer">{t.cta} →</a>
+  {isTestimonio && d.authorName ? (
+    <>
+      <p class="source-label">{t.authorLabel}</p>
+      <p class="source-name">{d.authorName}</p>
+    </>
+  ) : d.sources && d.sources.length > 0 ? (
+    <>
+      <p class="source-label">✓ {t.label}</p>
+      <ul class="source-list">
+        {d.sources.map((s: any) => (
+          <li>
+            <a href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a>
+            {s.country && <span class="source-country"> ({s.country})</span>}
+          </li>
+        ))}
+      </ul>
+    </>
+  ) : (
+    <>
+      <p class="source-label">✓ {t.label}</p>
+      <p class="source-name">{d.sourceName}</p>
+      {d.sourceUrl && (
+        <a class="source-link" href={d.sourceUrl} target="_blank" rel="noopener noreferrer">{t.cta} →</a>
+      )}
+    </>
+  )}
   <p class="source-dates">
-    {t.published} {entry.data.pubDate.toLocaleDateString(dateLocale)}
-    {entry.data.updatedDate && <> · {t.updated} {entry.data.updatedDate.toLocaleDateString(dateLocale)}</>}
+    {t.published} {d.pubDate.toLocaleDateString(dateLocale)}
+    {d.updatedDate && <> · {t.updated} {d.updatedDate.toLocaleDateString(dateLocale)}</>}
+  </p>
+  <p class="source-dates reviewer-line">
+    {t.reviewedBy} {reviewerName} {t.on} {reviewedDate.toLocaleDateString(dateLocale)}
   </p>
 </div>

@@ -10,6 +10,7 @@ sourceUrl: "https://www.nichd.nih.gov/newsroom/news/102324-INCLUDE-cohort"
 tags: ["investigacion", "NIH", "INCLUDE Project", "DS-Connect", "avanzado"]
 reviewed: true
 generatedBy: "claude"
+pais: general
 translationSlug: "el-proyecto-include-de-los-nih-lanza-un-estudio-de-cohorte-p"
 ---
 
