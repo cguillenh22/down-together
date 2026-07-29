@@ -48,7 +48,9 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <slot name="head" />
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "853e837f72674205847ee30c592163c0"}'></script>
     <style>
       :root {
         --accent: #2f6f4f;
