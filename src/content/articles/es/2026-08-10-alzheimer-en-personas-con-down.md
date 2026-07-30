@@ -4,7 +4,7 @@ description: "Información sobre Alzheimer en personas con Down"
 pubDate: 2026-08-10
 lang: "es"
 level: "avanzado"
-etapa: "adultez"
+etapa: "vida-adulta"
 pillar: false
 category: "salud"
 pais: general

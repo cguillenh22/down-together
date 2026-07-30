@@ -4,7 +4,7 @@ description: "Información sobre Empleo apoyado: programas de entrenamiento"
 pubDate: 2026-08-19
 lang: "es"
 level: "avanzado"
-etapa: "adultez"
+etapa: "vida-adulta"
 pillar: false
 category: "inclusion-laboral"
 pais: general

@@ -4,7 +4,7 @@ description: "Información sobre Voluntariado: contribución y oportunidades"
 pubDate: 2026-09-04
 lang: "en"
 level: "basico"
-etapa: "adultez"
+etapa: "vida-adulta"
 pillar: false
 category: "inclusion-laboral"
 pais: general

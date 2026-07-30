@@ -4,7 +4,7 @@ description: "Información sobre Planificación futura: tutela y herencia"
 pubDate: 2026-08-25
 lang: "en"
 level: "avanzado"
-etapa: "adultez"
+etapa: "vida-adulta"
 pillar: false
 category: "legal-derechos"
 pais: general

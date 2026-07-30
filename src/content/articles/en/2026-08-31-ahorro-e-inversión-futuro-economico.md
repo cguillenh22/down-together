@@ -4,7 +4,7 @@ description: "Información sobre Ahorro e inversión: futuro económico"
 pubDate: 2026-08-31
 lang: "en"
 level: "avanzado"
-etapa: "adultez"
+etapa: "vida-adulta"
 pillar: false
 category: "legal-derechos"
 pais: general

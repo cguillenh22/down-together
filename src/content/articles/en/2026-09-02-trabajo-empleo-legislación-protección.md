@@ -4,7 +4,7 @@ description: "Información sobre Trabajo y empleo: legislación y protección"
 pubDate: 2026-09-02
 lang: "en"
 level: "avanzado"
-etapa: "adultez"
+etapa: "vida-adulta"
 pillar: false
 category: "inclusion-laboral"
 pais: general

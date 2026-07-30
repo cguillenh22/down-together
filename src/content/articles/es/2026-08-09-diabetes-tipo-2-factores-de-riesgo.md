@@ -4,7 +4,7 @@ description: "Información sobre Diabetes tipo 2: factores de riesgo"
 pubDate: 2026-08-09
 lang: "es"
 level: "avanzado"
-etapa: "adultez"
+etapa: "vida-adulta"
 pillar: false
 category: "salud"
 pais: general

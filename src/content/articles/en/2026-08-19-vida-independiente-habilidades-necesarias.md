@@ -4,7 +4,7 @@ description: "Información sobre Vida independiente: habilidades necesarias"
 pubDate: 2026-08-19
 lang: "en"
 level: "avanzado"
-etapa: "adultez"
+etapa: "vida-adulta"
 pillar: false
 category: "educacion"
 pais: general

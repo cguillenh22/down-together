@@ -4,7 +4,7 @@ description: "Información sobre Transición a servicios para adultos"
 pubDate: 2026-08-28
 lang: "es"
 level: "avanzado"
-etapa: "adultez"
+etapa: "vida-adulta"
 pillar: false
 category: "educacion"
 pais: general

@@ -4,7 +4,7 @@ description: "Información sobre Hipertensión en adultos: monitoreo"
 pubDate: 2026-08-09
 lang: "es"
 level: "avanzado"
-etapa: "adultez"
+etapa: "vida-adulta"
 pillar: false
 category: "salud"
 pais: general
