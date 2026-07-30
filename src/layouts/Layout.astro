@@ -1097,6 +1097,241 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
           transition-duration: 0.15s;
         }
       }
+      /* FASE 5: PERFECTION + PREMIUM DETAILS */
+      /* Advanced color palette */
+      :root {
+        --gradient-primary: linear-gradient(135deg, var(--blue), var(--orange));
+        --gradient-secondary: linear-gradient(135deg, var(--yellow), var(--orange));
+        --gradient-accent: linear-gradient(135deg, var(--blue), var(--purple));
+      }
+      /* Multi-layer shadows */
+      .shadow-xl {
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05),
+                    0 4px 8px rgba(0,0,0,0.1),
+                    0 8px 16px rgba(0,0,0,0.15),
+                    0 16px 32px rgba(0,0,0,0.2);
+      }
+      .shadow-2xl {
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+                    0 8px 16px rgba(0,0,0,0.15),
+                    0 16px 32px rgba(0,0,0,0.2),
+                    0 32px 64px rgba(0,0,0,0.25);
+      }
+      /* Inset shadows for depth */
+      .inset-shadow {
+        box-shadow: inset 0 2px 4px rgba(0,0,0,0.05),
+                    inset 0 -2px 4px rgba(255,255,255,0.1);
+      }
+      /* Micro-typography details */
+      .text-micro {
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .text-tiny {
+        font-size: 0.625rem;
+        letter-spacing: 0.15em;
+        font-weight: 600;
+      }
+      /* Advanced spacing scale */
+      .space-xs { margin: 0.25rem; }
+      .space-sm { margin: 0.5rem; }
+      .space-md { margin: 1rem; }
+      .space-lg { margin: 1.5rem; }
+      .space-xl { margin: 2rem; }
+      .space-2xl { margin: 3rem; }
+      .space-3xl { margin: 4rem; }
+      /* Grid pattern background */
+      .grid-pattern {
+        background-image:
+          linear-gradient(rgba(37, 99, 235, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(37, 99, 235, 0.05) 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+      /* Subtle noise texture */
+      .texture-noise {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise" seed="2"/><feColorMatrix in="noise" type="saturate" values="0.2"/></filter><rect width="100" height="100" fill="rgba(37,99,235,0.03)" filter="url(%23noise)"/></svg>');
+      }
+      /* Gradient text outline */
+      .text-outline-gradient {
+        -webkit-text-stroke: 1px transparent;
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+      }
+      /* Enhanced card with gradient border */
+      .card-gradient-border {
+        position: relative;
+        background: var(--bg-light);
+        border-radius: 12px;
+        padding: 2px;
+      }
+      .card-gradient-border::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 12px;
+        padding: 2px;
+        background: var(--gradient-primary);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: intersect;
+        pointer-events: none;
+      }
+      /* Animated border rotation */
+      @keyframes borderRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .border-rotating {
+        border: 2px solid transparent;
+        background: linear-gradient(var(--bg-light), var(--bg-light)) padding-box,
+                    conic-gradient(from 0deg, var(--blue), var(--orange), var(--blue)) border-box;
+        animation: borderRotate 4s linear infinite;
+      }
+      /* Layered text shadow */
+      .text-shadow-depth {
+        text-shadow: 0 1px 1px rgba(0,0,0,0.1),
+                     0 2px 2px rgba(0,0,0,0.1),
+                     0 4px 4px rgba(0,0,0,0.1),
+                     0 8px 8px rgba(0,0,0,0.1);
+      }
+      /* Advanced hover scale variations */
+      .hover-scale-sm:hover { transform: scale(1.02); }
+      .hover-scale-md:hover { transform: scale(1.05); }
+      .hover-scale-lg:hover { transform: scale(1.1); }
+      .hover-scale-xl:hover { transform: scale(1.15); }
+      /* Smooth color transitions */
+      .color-transition {
+        background: var(--blue);
+        transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .color-transition:hover {
+        background: var(--orange);
+      }
+      /* Advanced opacity variations */
+      .opacity-10 { opacity: 0.1; }
+      .opacity-20 { opacity: 0.2; }
+      .opacity-30 { opacity: 0.3; }
+      .opacity-40 { opacity: 0.4; }
+      .opacity-50 { opacity: 0.5; }
+      .opacity-60 { opacity: 0.6; }
+      .opacity-70 { opacity: 0.7; }
+      .opacity-80 { opacity: 0.8; }
+      .opacity-90 { opacity: 0.9; }
+      /* Rounded corners advanced */
+      .rounded-xs { border-radius: 2px; }
+      .rounded-sm { border-radius: 4px; }
+      .rounded-md { border-radius: 8px; }
+      .rounded-lg { border-radius: 12px; }
+      .rounded-xl { border-radius: 16px; }
+      .rounded-2xl { border-radius: 24px; }
+      .rounded-3xl { border-radius: 32px; }
+      .rounded-full { border-radius: 9999px; }
+      /* Border width variations */
+      .border-0 { border: none; }
+      .border-1 { border: 1px solid var(--border-light); }
+      .border-2 { border: 2px solid var(--border-light); }
+      .border-3 { border: 3px solid var(--border-light); }
+      .border-4 { border: 4px solid var(--border-light); }
+      /* Advanced transform combinations */
+      .transform-hover {
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .transform-hover:hover {
+        transform: translateY(-8px) rotateX(5deg) scale(1.03);
+      }
+      /* Gradient animation loop */
+      @keyframes gradientLoop {
+        0% { background-position: 0% 50%; }
+        25% { background-position: 100% 50%; }
+        50% { background-position: 100% 100%; }
+        75% { background-position: 0% 100%; }
+        100% { background-position: 0% 50%; }
+      }
+      .gradient-animated {
+        background-size: 300% 300%;
+        animation: gradientLoop 8s ease infinite;
+      }
+      /* Blur effects */
+      .blur-sm { filter: blur(2px); }
+      .blur-md { filter: blur(4px); }
+      .blur-lg { filter: blur(8px); }
+      .blur-xl { filter: blur(12px); }
+      /* Brightness variations */
+      .brightness-75 { filter: brightness(0.75); }
+      .brightness-90 { filter: brightness(0.9); }
+      .brightness-110 { filter: brightness(1.1); }
+      .brightness-125 { filter: brightness(1.25); }
+      /* Saturation control */
+      .saturate-50 { filter: saturate(0.5); }
+      .saturate-75 { filter: saturate(0.75); }
+      .saturate-125 { filter: saturate(1.25); }
+      .saturate-150 { filter: saturate(1.5); }
+      /* Hue rotation */
+      .hue-rotate-15 { filter: hue-rotate(15deg); }
+      .hue-rotate-30 { filter: hue-rotate(30deg); }
+      .hue-rotate-45 { filter: hue-rotate(45deg); }
+      /* Contrast enhancement */
+      .contrast-75 { filter: contrast(0.75); }
+      .contrast-125 { filter: contrast(1.25); }
+      .contrast-150 { filter: contrast(1.5); }
+      /* Advanced gradients */
+      .gradient-radial {
+        background: radial-gradient(circle at 30% 30%, var(--blue), var(--purple) 100%);
+      }
+      .gradient-conic {
+        background: conic-gradient(from 0deg, var(--blue), var(--orange), var(--purple), var(--blue));
+      }
+      /* SVG filter effects */
+      .filter-sepia { filter: sepia(30%); }
+      .filter-invert { filter: invert(1); }
+      .filter-grayscale { filter: grayscale(100%); }
+      /* Advanced backdrop filters */
+      .backdrop-blur-xs { backdrop-filter: blur(2px); }
+      .backdrop-blur-sm { backdrop-filter: blur(4px); }
+      .backdrop-blur-md { backdrop-filter: blur(8px); }
+      .backdrop-blur-lg { backdrop-filter: blur(12px); }
+      .backdrop-blur-xl { backdrop-filter: blur(16px); }
+      /* Mix blend modes */
+      .blend-multiply { mix-blend-mode: multiply; }
+      .blend-screen { mix-blend-mode: screen; }
+      .blend-overlay { mix-blend-mode: overlay; }
+      .blend-darken { mix-blend-mode: darken; }
+      .blend-lighten { mix-blend-mode: lighten; }
+      .blend-color-dodge { mix-blend-mode: color-dodge; }
+      .blend-color-burn { mix-blend-mode: color-burn; }
+      /* Will-change performance hints */
+      .will-change-transform { will-change: transform; }
+      .will-change-opacity { will-change: opacity; }
+      .will-change-scroll { will-change: scroll-position; }
+      /* GPU acceleration */
+      .gpu-accelerate {
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+      }
+      /* Line clamp */
+      .line-clamp-1 {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
       body {
         margin: 0;
         font-family: 'Inter', -apple-system, "Segoe UI", Roboto, sans-serif;
