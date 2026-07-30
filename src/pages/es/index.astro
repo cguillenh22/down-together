@@ -22,8 +22,114 @@ function localSlug(entry) {
   title="Down Together — Información sobre síndrome de Down en español"
   description="Fuente en español sobre síndrome de Down: fundamentos para familias que recién reciben el diagnóstico, y noticias e investigación para quienes ya están informados."
 >
-  <!-- HERO URGIDA: Para personas en crisis (40% del tráfico) -->
-  <section class="hero-urgida">
+  <!-- PÁGINA CON SIDEBAR -->
+  <div class="page-with-sidebar">
+    <!-- SIDEBAR NAVIGATION (Desktop sticky, Mobile toggle) -->
+    <aside class="sidebar-nav">
+      <button id="toggle-sidebar" class="toggle-sidebar-btn" aria-label="Toggle navigation">☰</button>
+
+      <nav class="sidebar-content">
+        <h3>🔍 Filtros</h3>
+
+        <!-- Filtro por categoría -->
+        <div class="filter-group">
+          <label class="filter-label">📂 Categoría</label>
+          <div class="filter-options">
+            <label class="filter-checkbox">
+              <input type="radio" name="category" value="all" checked /> Todas
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="category" value="salud" /> 🏥 Salud
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="category" value="educacion" /> 📚 Educación
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="category" value="desarrollo" /> 👶 Desarrollo
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="category" value="inclusion-laboral" /> 💼 Inclusión Laboral
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="category" value="investigacion" /> 🔬 Investigación
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="category" value="testimonios" /> 💬 Testimonios
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="category" value="legal-derechos" /> ⚖️ Legal y Derechos
+            </label>
+          </div>
+        </div>
+
+        <!-- Filtro por etapa -->
+        <div class="filter-group">
+          <label class="filter-label">🎂 Etapa de vida</label>
+          <div class="filter-options">
+            <label class="filter-checkbox">
+              <input type="radio" name="etapa" value="all" checked /> Todas
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="etapa" value="embarazo" /> 🤰 Embarazo
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="etapa" value="recien-nacido" /> 👶 0-3 años
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="etapa" value="infancia" /> 👧 3-8 años
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="etapa" value="pre-adolescencia" /> 👦 8-12 años
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="etapa" value="adolescencia" /> 🧑 12-18 años
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="etapa" value="vida-adulta" /> 👨 18+ años
+            </label>
+          </div>
+        </div>
+
+        <!-- Filtro por nivel -->
+        <div class="filter-group">
+          <label class="filter-label">📖 Nivel</label>
+          <div class="filter-options">
+            <label class="filter-checkbox">
+              <input type="radio" name="level" value="all" checked /> Todos
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="level" value="basico" /> 🌱 Lo básico (nuevo)
+            </label>
+            <label class="filter-checkbox">
+              <input type="radio" name="level" value="avanzado" /> 📈 Actualidad (experto)
+            </label>
+          </div>
+        </div>
+
+        <button id="clear-filters" class="clear-filters-btn">Limpiar filtros</button>
+      </nav>
+
+      <!-- QUICK STATS -->
+      <div class="sidebar-stats">
+        <div class="stat-item">
+          <span class="stat-label">Artículos</span>
+          <span class="stat-value" id="article-count">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Categorías</span>
+          <span class="stat-value">7</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Etapas</span>
+          <span class="stat-value">6</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- HERO URGIDA: Para personas en crisis (40% del tráfico) -->
+      <section class="hero-urgida">
     <div class="hero-urgida-content">
       <h1 class="gradient-text-primary">Acabas de recibir el diagnóstico</h1>
       <p class="hero-urgida-subtitle">No estás solo. Aquí encontrarás respuestas verificadas, escritas por expertos y revisadas por humanos.</p>
@@ -114,7 +220,7 @@ function localSlug(entry) {
   <p>Preguntas frecuentes y fundamentos, pensado para quienes recién reciben el diagnóstico.</p>
   {basico.length === 0 && <p><em>Aún no hay artículos publicados en esta sección.</em></p>}
   {basico.map((entry) => (
-    <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`}>
+    <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`} data-category={entry.data.category} data-etapa={entry.data.etapa} data-level="basico">
       <a class="tag" href={categoryHref('es', entry.data.category)}>{CATEGORY_LABELS.es[entry.data.category]}</a>
       <span class="tag">{ETAPA_LABELS_ES[entry.data.etapa]}</span>
       {entry.data.pillar && <span class="tag pillar-badge">📌 Guía completa</span>}
@@ -127,7 +233,7 @@ function localSlug(entry) {
   <p>Noticias, estudios y avances, para quienes ya conocen lo básico.</p>
   {avanzado.length === 0 && <p><em>Aún no hay artículos publicados en esta sección.</em></p>}
   {avanzado.map((entry) => (
-    <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`}>
+    <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`} data-category={entry.data.category} data-etapa={entry.data.etapa} data-level="avanzado">
       <a class="tag" href={categoryHref('es', entry.data.category)}>{CATEGORY_LABELS.es[entry.data.category]}</a>
       <span class="tag">{ETAPA_LABELS_ES[entry.data.etapa]}</span>
       {entry.data.pillar && <span class="tag pillar-badge">📌 Guía completa</span>}
@@ -445,6 +551,157 @@ function localSlug(entry) {
       margin-bottom: 1.5rem;
     }
 
+    /* SIDEBAR NAVIGATION */
+    .page-with-sidebar {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .sidebar-nav {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+      background: var(--bg-alt);
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 2px solid var(--border-light);
+    }
+
+    .toggle-sidebar-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .sidebar-content h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .filter-label {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+    }
+
+    .filter-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .filter-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .filter-checkbox:hover {
+      color: var(--blue);
+    }
+
+    .filter-checkbox input {
+      cursor: pointer;
+      accent-color: var(--blue);
+    }
+
+    .clear-filters-btn {
+      padding: 0.75rem 1rem;
+      background: linear-gradient(135deg, var(--blue), var(--orange));
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .clear-filters-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .sidebar-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.75rem;
+      padding-top: 1.5rem;
+      border-top: 2px solid var(--border-light);
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--blue), var(--orange));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @media (max-width: 1024px) {
+      .page-with-sidebar {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .sidebar-nav {
+        position: static;
+        display: none;
+      }
+
+      .sidebar-nav.active {
+        display: block;
+      }
+
+      .toggle-sidebar-btn {
+        display: block;
+      }
+    }
+
     @media (max-width: 640px) {
       .hero-urgida {
         padding: 2rem 1rem;
@@ -472,4 +729,77 @@ function localSlug(entry) {
       }
     }
   </style>
+
+  <!-- CLOSE MAIN CONTENT AND PAGE WITH SIDEBAR -->
+    </main>
+  </div>
+
+  <!-- FILTER & ANALYTICS SCRIPT -->
+  <script is:inline>
+    const filterRadios = document.querySelectorAll('input[type="radio"]');
+    const clearBtn = document.getElementById('clear-filters');
+    const toggleSidebarBtn = document.getElementById('toggle-sidebar');
+    const sidebarNav = document.querySelector('.sidebar-nav');
+    const articleCount = document.getElementById('article-count');
+
+    // Toggle sidebar en mobile
+    if (toggleSidebarBtn) {
+      toggleSidebarBtn.addEventListener('click', () => {
+        sidebarNav.classList.toggle('active');
+      });
+    }
+
+    // Event listeners para filtros
+    filterRadios.forEach(radio => {
+      radio.addEventListener('change', applyFilters);
+    });
+
+    // Limpiar filtros
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        filterRadios.forEach(r => {
+          if (r.value === 'all') r.checked = true;
+        });
+        applyFilters();
+      });
+    }
+
+    function applyFilters() {
+      const category = document.querySelector('input[name="category"]:checked')?.value || 'all';
+      const etapa = document.querySelector('input[name="etapa"]:checked')?.value || 'all';
+      const level = document.querySelector('input[name="level"]:checked')?.value || 'all';
+
+      const cards = document.querySelectorAll('.card');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category') || '';
+        const cardEtapa = card.getAttribute('data-etapa') || '';
+        const cardLevel = card.getAttribute('data-level') || '';
+
+        const matchCategory = category === 'all' || cardCategory === category;
+        const matchEtapa = etapa === 'all' || cardEtapa === etapa;
+        const matchLevel = level === 'all' || cardLevel === level;
+
+        if (matchCategory && matchEtapa && matchLevel) {
+          card.style.display = 'block';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (articleCount) {
+        articleCount.textContent = visibleCount;
+      }
+
+      // Analytics
+      console.log(`Filters applied: category=${category}, etapa=${etapa}, level=${level}, visible=${visibleCount}`);
+    }
+
+    // Inicializar contador
+    if (articleCount) {
+      articleCount.textContent = document.querySelectorAll('.card').length;
+    }
+  </script>
 </Layout>
