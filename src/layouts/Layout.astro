@@ -61,6 +61,18 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
         document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
       });
+      // Scroll animations
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.style.animation = 'fadeInUp 0.6s ease-out';
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.card, .related-card').forEach(el => observer.observe(el));
+      });
     </script>
     <style is:global>
       :root {
@@ -89,6 +101,18 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes slideInDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+      }
       body {
         margin: 0;
         font-family: 'Inter', -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -119,15 +143,31 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       main { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
       footer {
         margin-top: 4rem;
-        padding: 3rem 1.5rem 2rem;
-        background: var(--bg-alt);
-        border-top: 2px solid var(--border-light);
+        padding: 3.5rem 1.5rem 2rem;
+        background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg-light) 100%);
+        border-top: 3px solid var(--border-light);
         color: var(--text-muted);
         font-size: 0.85rem;
       }
+      footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto 2rem;
+      }
+      .footer-section h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 1rem;
+      }
+      .footer-section p { margin: 0.5rem 0; line-height: 1.6; }
+      .footer-section a { color: var(--blue); font-weight: 600; text-decoration: none; transition: var(--transition); }
+      .footer-section a:hover { color: var(--orange); text-decoration: underline; }
+      .footer-divider { border-top: 1px solid var(--border-light); padding-top: 1.5rem; margin-top: 1.5rem; text-align: center; }
       footer > p { margin: 0.5rem 0; }
-      footer a { color: var(--blue); font-weight: 600; text-decoration: none; transition: var(--transition); }
-      footer a:hover { color: var(--orange); text-decoration: underline; }
       .card {
         background: var(--bg-light);
         border: 2px solid var(--border-light);
@@ -136,8 +176,26 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         margin-bottom: 1rem;
         box-shadow: var(--shadow-sm);
         transition: var(--transition);
+        position: relative;
+        overflow: hidden;
       }
-      .card:hover { border-color: var(--blue); box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+      .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--blue) 0%, var(--yellow) 50%, var(--orange) 100%);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .card:hover {
+        border-color: var(--blue);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-4px);
+      }
+      .card:hover::before { opacity: 1; }
       .card-pillar {
         border-left: 4px solid var(--green);
         background: linear-gradient(to right, rgba(16, 185, 129, 0.05), transparent);
