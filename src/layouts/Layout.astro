@@ -52,6 +52,13 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Fuse.js for advanced search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
     <slot name="head" />
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "853e837f72674205847ee30c592163c0"}'></script>
     <script>
@@ -2141,9 +2148,171 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
           padding-bottom: 80px;
         }
       }
+      /* PHASE 4: ANALYTICS + SEO + DARK MODE TOGGLE */
+      .theme-toggle {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        background: var(--bg-alt);
+        border: 2px solid var(--border-light);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        transition: var(--transition);
+        z-index: 99;
+      }
+      .theme-toggle:hover {
+        transform: scale(1.1);
+        border-color: var(--blue);
+        box-shadow: var(--shadow-md);
+      }
+      .search-advanced {
+        background: var(--bg-alt);
+        border: 2px solid var(--border-light);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+      }
+      .search-advanced-input {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid var(--border-light);
+        border-radius: 8px;
+        font-size: 1rem;
+        background: var(--bg-light);
+        color: var(--text-dark);
+        margin-bottom: 1rem;
+      }
+      .search-advanced-input:focus {
+        outline: none;
+        border-color: var(--blue);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+      }
+      .search-filters {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
+      .search-filter-tag {
+        padding: 0.5rem 1rem;
+        background: var(--blue);
+        color: white;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: var(--transition);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .search-filter-tag:hover {
+        background: var(--orange);
+      }
+      .search-filter-tag.active {
+        background: var(--orange);
+        box-shadow: var(--shadow-md);
+      }
+      .search-results-advanced {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+      .search-result-card {
+        background: var(--bg-light);
+        border: 2px solid var(--border-light);
+        border-radius: 8px;
+        padding: 1rem;
+        transition: var(--transition);
+        text-decoration: none;
+        color: var(--text-dark);
+      }
+      .search-result-card:hover {
+        border-color: var(--blue);
+        box-shadow: var(--shadow-md);
+        transform: translateY(-4px);
+      }
+      .search-result-card h4 {
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+      }
+      .search-result-card small {
+        display: block;
+        color: var(--text-muted);
+        margin-bottom: 0.5rem;
+      }
+      .search-result-score {
+        display: inline-block;
+        background: rgba(37, 99, 235, 0.2);
+        color: var(--blue);
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.7rem;
+        font-weight: 700;
+      }
+      .read-time-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--blue), var(--orange));
+        color: white;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 0.5rem 0;
+      }
+      .related-articles-smart {
+        background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(249, 115, 22, 0.05));
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+        border: 2px solid rgba(37, 99, 235, 0.1);
+      }
+      .related-articles-smart h3 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .related-grid-smart {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+      }
+      .related-card-item {
+        background: var(--bg-light);
+        border: 2px solid var(--border-light);
+        border-radius: 8px;
+        padding: 1.25rem;
+        transition: var(--transition);
+      }
+      .related-card-item:hover {
+        border-color: var(--blue);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-6px);
+      }
+      .related-card-item a {
+        text-decoration: none;
+        color: var(--text-dark);
+        font-weight: 700;
+        transition: color 0.3s;
+      }
+      .related-card-item a:hover {
+        color: var(--blue);
+      }
+      .match-score {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        margin-top: 0.5rem;
+      }
     </style>
 
-    <!-- PHASE 3 ENGAGEMENT SCRIPT -->
+    <!-- PHASE 4 ADVANCED FEATURES SCRIPT -->
     <script is:inline>
       const FAVORITES_KEY = 'downtogether_favorites';
 
@@ -2223,10 +2392,205 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         }
       }
 
+      // ==================== DARK MODE TOGGLE ====================
+      function initDarkModeToggle() {
+        const toggle = document.querySelector('.theme-toggle');
+        if (!toggle) {
+          const btn = document.createElement('button');
+          btn.className = 'theme-toggle';
+          btn.innerHTML = '🌙';
+          btn.title = 'Toggle dark mode';
+          btn.setAttribute('aria-label', 'Toggle dark mode');
+          document.body.appendChild(btn);
+
+          btn.addEventListener('click', () => {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            const newTheme = isDark ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            btn.innerHTML = isDark ? '🌙' : '☀️';
+            trackEvent('theme_toggle', newTheme);
+          });
+
+          const saved = localStorage.getItem('theme') || 'dark';
+          document.documentElement.setAttribute('data-theme', saved);
+          btn.innerHTML = saved === 'dark' ? '☀️' : '🌙';
+        }
+      }
+
+      // ==================== GOOGLE ANALYTICS ====================
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', {
+        'page_path': window.location.pathname,
+        'page_title': document.title
+      });
+
+      function trackEvent(action, label, value) {
+        try {
+          if (window.gtag) {
+            gtag('event', action, {
+              'event_category': 'engagement',
+              'event_label': label,
+              'value': value
+            });
+          }
+        } catch (e) {
+          console.log(`[Event] ${action}: ${label}`);
+        }
+      }
+
+      // ==================== ADVANCED SEARCH (FUSE.JS) ====================
+      let fuseIndex = null;
+
+      function initAdvancedSearch() {
+        const searchContainer = document.querySelector('.search-advanced');
+        if (!searchContainer) return;
+
+        const input = searchContainer.querySelector('.search-advanced-input');
+        const resultsDiv = document.querySelector('.search-results-advanced');
+
+        if (!input || !resultsDiv) return;
+
+        // Get all articles for Fuse.js
+        const articles = Array.from(document.querySelectorAll('.card')).map(card => ({
+          id: card.getAttribute('data-category') + '-' + Math.random(),
+          title: card.querySelector('h3 a')?.textContent || '',
+          description: card.querySelector('p')?.textContent || '',
+          category: card.getAttribute('data-category'),
+          etapa: card.getAttribute('data-etapa'),
+          level: card.getAttribute('data-level'),
+          url: card.querySelector('h3 a')?.href || '#',
+          element: card
+        }));
+
+        // Fuse.js options
+        const options = {
+          keys: ['title', 'description', 'category'],
+          threshold: 0.4,
+          includeScore: true
+        };
+
+        fuseIndex = new Fuse(articles, options);
+
+        input.addEventListener('input', (e) => {
+          const query = e.target.value;
+          if (query.length < 2) {
+            resultsDiv.innerHTML = '';
+            return;
+          }
+
+          const results = fuseIndex.search(query).slice(0, 12);
+
+          resultsDiv.innerHTML = results.map(r => `
+            <a href="${r.item.url}" class="search-result-card">
+              <h4>${r.item.title}</h4>
+              <small>${r.item.description.substring(0, 60)}...</small>
+              <span class="search-result-score">Match: ${Math.round(r.score * 100)}%</span>
+            </a>
+          `).join('');
+
+          trackEvent('search', query);
+        });
+      }
+
+      // ==================== SCHEMA.ORG STRUCTURED DATA ====================
+      function addStructuredData() {
+        const schema = {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Down Together",
+          "url": window.location.origin,
+          "description": "Información verificada sobre síndrome de Down",
+          "inLanguage": document.documentElement.lang,
+          "author": {
+            "@type": "Organization",
+            "name": "Down Together",
+            "sameAs": [
+              "https://twitter.com/downtogether",
+              "https://facebook.com/downtogether"
+            ]
+          }
+        };
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(schema);
+        document.head.appendChild(script);
+      }
+
+      // ==================== SMART RELATED ARTICLES ====================
+      function initSmartRelated() {
+        const articles = Array.from(document.querySelectorAll('.card'));
+        const currentArticle = document.querySelector('article') || document.querySelector('main .card:first-child');
+
+        if (!currentArticle || articles.length < 2) return;
+
+        const currentCategory = currentArticle.getAttribute('data-category');
+        const currentEtapa = currentArticle.getAttribute('data-etapa');
+
+        const related = articles
+          .filter(a => a !== currentArticle)
+          .map(a => ({
+            element: a,
+            score: (a.getAttribute('data-category') === currentCategory ? 2 : 0) +
+                   (a.getAttribute('data-etapa') === currentEtapa ? 1 : 0)
+          }))
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 3);
+
+        if (related.length === 0) return;
+
+        const section = document.createElement('section');
+        section.className = 'related-articles-smart';
+        section.innerHTML = `
+          <h3>📚 Artículos relacionados</h3>
+          <div class="related-grid-smart">
+            ${related.map(r => `
+              <div class="related-card-item">
+                <a href="${r.element.querySelector('h3 a')?.href || '#'}">
+                  ${r.element.querySelector('h3')?.textContent || 'Article'}
+                </a>
+                <div class="match-score">Match: ${r.score}/3</div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+
+        const mainContent = document.querySelector('main');
+        if (mainContent) mainContent.appendChild(section);
+
+        trackEvent('smart_related', currentCategory);
+      }
+
+      // ==================== READ TIME ESTIMATOR ====================
+      function estimateReadTime() {
+        const text = document.body.innerText;
+        const wordsPerMinute = 200;
+        const words = text.split(/\s+/).length;
+        return Math.ceil(words / wordsPerMinute);
+      }
+
+      function initReadTime() {
+        const minutes = estimateReadTime();
+        const badges = document.querySelectorAll('.read-time-badge');
+        badges.forEach(badge => {
+          badge.textContent = `⏱️ ${minutes} min read`;
+        });
+      }
+
+      // ==================== INITIALIZATION ====================
       document.addEventListener('DOMContentLoaded', () => {
         initFavorites();
         initSharing();
         initBottomNav();
+        initDarkModeToggle();
+        initAdvancedSearch();
+        initSmartRelated();
+        initReadTime();
+        addStructuredData();
+
         window.addEventListener('scroll', updateProgressBar);
         trackEvent('page_view', window.location.pathname);
       });
