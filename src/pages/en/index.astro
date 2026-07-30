@@ -11,6 +11,7 @@ const all = (await getCollection('articles'))
 
 const basico = all.filter((e) => e.data.level === 'basico');
 const avanzado = all.filter((e) => e.data.level === 'avanzado');
+const pillar = all.filter((e) => e.data.pillar).slice(0, 5);
 
 function localSlug(entry) {
   return entry.slug.replace(/^en\//, '');
@@ -21,19 +22,93 @@ function localSlug(entry) {
   title="Down Together — Down syndrome information in English"
   description="A trusted English-language source on Down syndrome: fundamentals for families new to a diagnosis, plus news and research for those already informed."
 >
-  <h1>Down syndrome information</h1>
-  <p>
-    Content curated from verified associations and medical sources (NDSS,
-    DSA UK, CDSS, Down España, Down21, CDC, NIH), drafted with Claude and
-    reviewed by a human before publishing.
-    First time here? <a href="/en/start-here/">Start here</a>.
-  </p>
+  <!-- HERO URGIDA: For people in crisis (40% of traffic) -->
+  <section class="hero-urgida">
+    <div class="hero-urgida-content">
+      <h1 class="gradient-text-primary">You just got the diagnosis</h1>
+      <p class="hero-urgida-subtitle">You're not alone. Here you'll find verified answers, written by experts and reviewed by humans.</p>
 
-  <nav class="category-nav" aria-label="Categories">
-    {CATEGORIES.map((cat) => (
-      <a href={categoryHref('en', cat)} class="category-pill">{CATEGORY_LABELS.en[cat]}</a>
-    ))}
-  </nav>
+      <div class="hero-urgida-ctas">
+        <a href="/en/start-here/" class="cta-primary">🎯 First steps (read this first)</a>
+        <a href="#featured" class="cta-secondary">📚 Essential guides</a>
+        <a href="#por-etapa" class="cta-tertiary">🔍 Search by age/stage</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK SEARCH -->
+  <section class="search-hero">
+    <input type="text" id="quick-search" class="quick-search-input" placeholder="Search: 'education', 'health', 'rights', 'adolescence'..." />
+    <div id="search-results" class="search-results hidden"></div>
+  </section>
+
+  <!-- LIFE STAGE NAVIGATOR -->
+  <section id="por-etapa" class="etapa-navigator">
+    <h2>How old is your child?</h2>
+    <p>Find articles specific to each life stage</p>
+    <div class="etapa-grid">
+      <a href="#" class="etapa-card" data-etapa="embarazo">
+        <span class="etapa-icon">🤰</span>
+        <strong>Pregnancy</strong>
+        <small>Prenatal diagnosis</small>
+      </a>
+      <a href="#" class="etapa-card" data-etapa="recien-nacido">
+        <span class="etapa-icon">👶</span>
+        <strong>0-3 years</strong>
+        <small>Early steps</small>
+      </a>
+      <a href="#" class="etapa-card" data-etapa="infancia">
+        <span class="etapa-icon">👧</span>
+        <strong>3-8 years</strong>
+        <small>Key development</small>
+      </a>
+      <a href="#" class="etapa-card" data-etapa="pre-adolescencia">
+        <span class="etapa-icon">👦</span>
+        <strong>8-12 years</strong>
+        <small>Primary school</small>
+      </a>
+      <a href="#" class="etapa-card" data-etapa="adolescencia">
+        <span class="etapa-icon">🧑</span>
+        <strong>12-18 years</strong>
+        <small>Transition</small>
+      </a>
+      <a href="#" class="etapa-card" data-etapa="vida-adulta">
+        <span class="etapa-icon">👨</span>
+        <strong>18+ years</strong>
+        <small>Independent living</small>
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURED ARTICLES (TOP 5 PILLARS) -->
+  {pillar.length > 0 && (
+    <section id="featured" class="featured-section">
+      <h2>📌 Essential Guides (Read first)</h2>
+      <p>The 5 most important articles to understand Down syndrome</p>
+      <div class="featured-grid">
+        {pillar.map((entry) => (
+          <article class="featured-card premium-card">
+            <span class="badge-new">Essential</span>
+            <span class="tag">{CATEGORY_LABELS.en[entry.data.category]}</span>
+            <span class="tag">{ETAPA_LABELS_EN[entry.data.etapa]}</span>
+            <h3><a href={`/en/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
+            <p>{entry.data.description}</p>
+            <a href={`/en/${localSlug(entry)}/`} class="read-more">Read article →</a>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- CATEGORIES QUICK ACCESS -->
+  <section class="categories-quick">
+    <h2>Explore by topic</h2>
+    <nav class="category-nav" aria-label="Categories">
+      {CATEGORIES.map((cat) => (
+        <a href={categoryHref('en', cat)} class="category-pill">{CATEGORY_LABELS.en[cat]}</a>
+      ))}
+    </nav>
+  </section>
 
   <h2 id="basico">The basics</h2>
   <p>Frequently asked questions and fundamentals, for families new to a diagnosis.</p>
@@ -60,4 +135,341 @@ function localSlug(entry) {
       <p>{entry.data.description}</p>
     </div>
   ))}
+
+  <!-- SEARCH AND FILTERS IN JAVASCRIPT -->
+  <script is:inline define:vars={{ articles: JSON.stringify(all.map(e => ({ title: e.data.title, description: e.data.description, category: e.data.category, etapa: e.data.etapa, url: `/en/${e.slug.replace(/^en\//, '')}/`, pillar: e.data.pillar }))) }}>
+    const allArticles = JSON.parse(articles);
+    const searchInput = document.getElementById('quick-search');
+    const searchResults = document.getElementById('search-results');
+    const etapaCards = document.querySelectorAll('.etapa-card');
+
+    // Quick search
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        if (query.length < 2) {
+          searchResults.classList.add('hidden');
+          return;
+        }
+
+        const results = allArticles.filter(a =>
+          a.title.toLowerCase().includes(query) ||
+          a.description.toLowerCase().includes(query) ||
+          a.category.toLowerCase().includes(query)
+        ).slice(0, 5);
+
+        searchResults.innerHTML = results.map(r =>
+          `<a href="${r.url}" class="search-result-item">
+            <strong>${r.title}</strong>
+            <small>${r.description}</small>
+          </a>`
+        ).join('');
+        searchResults.classList.toggle('hidden', results.length === 0);
+      });
+    }
+
+    // Filter by life stage
+    etapaCards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        const etapa = card.dataset.etapa;
+        const filtered = allArticles.filter(a => a.etapa === etapa);
+
+        // Scroll to basics section and filter visually
+        document.getElementById('basico')?.scrollIntoView({ behavior: 'smooth' });
+
+        // Visual marker
+        etapaCards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+      });
+    });
+  </script>
+
+  <style>
+    .hero-urgida {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+      border: 2px solid var(--border-light);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .hero-urgida h1 {
+      font-size: 2.5rem;
+      margin: 0 0 1rem;
+    }
+
+    .hero-urgida-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-urgida-ctas {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .cta-primary, .cta-secondary, .cta-tertiary {
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: var(--transition);
+      display: inline-block;
+    }
+
+    .cta-primary {
+      background: linear-gradient(135deg, var(--blue), var(--orange));
+      color: white;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .cta-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
+    }
+
+    .cta-secondary {
+      background: var(--bg-alt);
+      color: var(--text-dark);
+      border: 2px solid var(--blue);
+    }
+
+    .cta-secondary:hover {
+      background: var(--blue);
+      color: white;
+    }
+
+    .cta-tertiary {
+      background: transparent;
+      color: var(--blue);
+      border: 2px solid var(--blue);
+    }
+
+    .cta-tertiary:hover {
+      background: var(--blue);
+      color: white;
+    }
+
+    .search-hero {
+      margin: 2rem 0;
+      position: relative;
+    }
+
+    .quick-search-input {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid var(--border-light);
+      border-radius: 12px;
+      font-size: 1rem;
+      background: var(--bg-alt);
+      color: var(--text-dark);
+      transition: var(--transition);
+    }
+
+    .quick-search-input:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--bg-light);
+      border: 2px solid var(--border-light);
+      border-top: none;
+      border-radius: 0 0 12px 12px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 10;
+    }
+
+    .search-results.hidden {
+      display: none;
+    }
+
+    .search-result-item {
+      display: block;
+      padding: 1rem;
+      border-bottom: 1px solid var(--border-light);
+      text-decoration: none;
+      color: var(--text-dark);
+      transition: var(--transition);
+    }
+
+    .search-result-item:hover {
+      background: var(--bg-alt);
+      color: var(--blue);
+    }
+
+    .etapa-navigator {
+      background: var(--bg-alt);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+
+    .etapa-navigator h2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .etapa-navigator > p {
+      text-align: center;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .etapa-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+
+    .etapa-card {
+      background: var(--bg-light);
+      border: 2px solid var(--border-light);
+      border-radius: 12px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-dark);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .etapa-card:hover, .etapa-card.active {
+      border-color: var(--blue);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .etapa-icon {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .etapa-card strong {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .etapa-card small {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .featured-section {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(249, 115, 22, 0.05) 100%);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 3rem 0;
+      border: 2px solid rgba(37, 99, 235, 0.2);
+    }
+
+    .featured-section h2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .featured-section > p {
+      text-align: center;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .featured-card {
+      background: var(--bg-light);
+      border: 2px solid var(--border-light);
+      border-radius: 12px;
+      padding: 1.5rem;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .featured-card:hover {
+      border-color: var(--blue);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-8px);
+    }
+
+    .featured-card h3 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    .featured-card p {
+      font-size: 0.95rem;
+      margin: 0.5rem 0;
+      color: var(--text-muted);
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .read-more:hover {
+      color: var(--orange);
+    }
+
+    .categories-quick {
+      background: var(--bg-alt);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+
+    .categories-quick h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 640px) {
+      .hero-urgida {
+        padding: 2rem 1rem;
+      }
+
+      .hero-urgida h1 {
+        font-size: 1.75rem;
+      }
+
+      .hero-urgida-ctas {
+        flex-direction: column;
+      }
+
+      .cta-primary, .cta-secondary, .cta-tertiary {
+        width: 100%;
+        text-align: center;
+      }
+
+      .etapa-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </Layout>
