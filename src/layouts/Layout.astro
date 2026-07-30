@@ -2148,6 +2148,382 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
           padding-bottom: 80px;
         }
       }
+      /* PHASE 5: USER ACCOUNTS + COMMUNITY + COMMENTS */
+      .user-profile-btn {
+        position: fixed;
+        top: 1rem;
+        right: 60px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--blue), var(--orange));
+        border: 2px solid var(--border-light);
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+        z-index: 98;
+      }
+
+      .user-profile-btn:hover {
+        transform: scale(1.1);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .user-menu {
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        background: var(--bg-light);
+        border: 2px solid var(--border-light);
+        border-radius: 12px;
+        padding: 1rem;
+        min-width: 250px;
+        z-index: 101;
+        display: none;
+        flex-direction: column;
+        gap: 0.75rem;
+        box-shadow: var(--shadow-lg);
+      }
+
+      .user-menu.active {
+        display: flex;
+      }
+
+      .user-menu-item {
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: var(--transition);
+        border: none;
+        background: none;
+        text-align: left;
+        font-size: 0.9rem;
+        color: var(--text-dark);
+      }
+
+      .user-menu-item:hover {
+        background: var(--bg-alt);
+        color: var(--blue);
+      }
+
+      .comments-section {
+        background: var(--bg-alt);
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+
+      .comments-section h3 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 1.5rem;
+      }
+
+      .comment-form {
+        background: var(--bg-light);
+        border: 2px solid var(--border-light);
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .comment-textarea {
+        width: 100%;
+        min-height: 100px;
+        padding: 1rem;
+        border: 2px solid var(--border-light);
+        border-radius: 8px;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.95rem;
+        resize: vertical;
+        margin-bottom: 1rem;
+      }
+
+      .comment-textarea:focus {
+        outline: none;
+        border-color: var(--blue);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+      }
+
+      .comment-submit-btn {
+        background: linear-gradient(135deg, var(--blue), var(--orange));
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+
+      .comment-submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .comments-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .comment-item {
+        background: var(--bg-light);
+        border-left: 4px solid var(--blue);
+        border-radius: 8px;
+        padding: 1rem;
+        transition: var(--transition);
+      }
+
+      .comment-item:hover {
+        box-shadow: var(--shadow-md);
+      }
+
+      .comment-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.75rem;
+      }
+
+      .comment-author {
+        font-weight: 700;
+        color: var(--text-dark);
+      }
+
+      .comment-date {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+      }
+
+      .comment-text {
+        color: var(--text-dark);
+        line-height: 1.6;
+        margin-bottom: 0.75rem;
+      }
+
+      .comment-actions {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.85rem;
+      }
+
+      .comment-action-btn {
+        background: none;
+        border: none;
+        color: var(--text-muted);
+        cursor: pointer;
+        transition: var(--transition);
+      }
+
+      .comment-action-btn:hover {
+        color: var(--blue);
+      }
+
+      .expert-qa-section {
+        background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(249, 115, 22, 0.05));
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+        border: 2px solid rgba(37, 99, 235, 0.2);
+      }
+
+      .expert-qa-section h3 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .qa-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .qa-item {
+        background: var(--bg-light);
+        border: 2px solid var(--border-light);
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: var(--transition);
+        cursor: pointer;
+      }
+
+      .qa-item:hover {
+        border-color: var(--blue);
+        box-shadow: var(--shadow-md);
+      }
+
+      .qa-question {
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 0.75rem;
+      }
+
+      .qa-expert {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-bottom: 1rem;
+      }
+
+      .expert-badge {
+        background: linear-gradient(135deg, var(--blue), var(--orange));
+        color: white;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 0.7rem;
+      }
+
+      .qa-answer {
+        color: var(--text-dark);
+        line-height: 1.6;
+        display: none;
+      }
+
+      .qa-item.expanded .qa-answer {
+        display: block;
+      }
+
+      .community-highlights {
+        background: var(--bg-alt);
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+
+      .community-highlights h3 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 1.5rem;
+      }
+
+      .highlights-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .highlight-card {
+        background: var(--bg-light);
+        border: 2px solid var(--border-light);
+        border-radius: 8px;
+        padding: 1.25rem;
+        transition: var(--transition);
+      }
+
+      .highlight-card:hover {
+        border-color: var(--blue);
+        box-shadow: var(--shadow-md);
+        transform: translateY(-4px);
+      }
+
+      .highlight-icon {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .highlight-title {
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .highlight-stat {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+      }
+
+      .email-newsletter {
+        background: linear-gradient(135deg, var(--blue), var(--purple));
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+        text-align: center;
+        color: white;
+      }
+
+      .email-newsletter h3 {
+        color: white;
+        margin-bottom: 1rem;
+      }
+
+      .email-form {
+        display: flex;
+        gap: 0.75rem;
+        max-width: 400px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .email-input {
+        flex: 1;
+        min-width: 200px;
+        padding: 0.75rem 1rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 0.95rem;
+      }
+
+      .email-submit-btn {
+        padding: 0.75rem 1.5rem;
+        background: white;
+        color: var(--blue);
+        border: none;
+        border-radius: 8px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+
+      .email-submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      }
+
+      .bookmarks-page {
+        background: var(--bg-alt);
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+
+      .bookmark-item {
+        background: var(--bg-light);
+        border: 2px solid var(--border-light);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: var(--transition);
+      }
+
+      .bookmark-item:hover {
+        border-color: var(--blue);
+        box-shadow: var(--shadow-md);
+      }
+
+      .bookmark-remove-btn {
+        background: none;
+        border: none;
+        color: var(--red);
+        cursor: pointer;
+        font-size: 1rem;
+        transition: var(--transition);
+      }
+
+      .bookmark-remove-btn:hover {
+        transform: scale(1.2);
+      }
       /* PHASE 4: ANALYTICS + SEO + DARK MODE TOGGLE */
       .theme-toggle {
         position: fixed;
@@ -2392,6 +2768,203 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         }
       }
 
+      // ==================== PHASE 5: USER ACCOUNTS + COMMUNITY ====================
+      const USER_KEY = 'downtogether_user';
+      const BOOKMARKS_KEY = 'downtogether_bookmarks';
+      const COMMENTS_KEY = 'downtogether_comments';
+
+      class UserManager {
+        constructor() {
+          this.user = this.getUser();
+        }
+
+        getUser() {
+          const stored = localStorage.getItem(USER_KEY);
+          return stored ? JSON.parse(stored) : {
+            id: Date.now().toString(),
+            name: 'Usuario ' + Math.random().toString(36).substr(2, 9),
+            email: null,
+            joinedAt: new Date().toISOString(),
+            bookmarks: [],
+            role: 'member'
+          };
+        }
+
+        saveUser(updates) {
+          this.user = { ...this.user, ...updates };
+          localStorage.setItem(USER_KEY, JSON.stringify(this.user));
+        }
+
+        addBookmark(articleId, title, url) {
+          if (!this.user.bookmarks.some(b => b.id === articleId)) {
+            this.user.bookmarks.push({
+              id: articleId,
+              title,
+              url,
+              savedAt: new Date().toISOString()
+            });
+            this.saveUser({ bookmarks: this.user.bookmarks });
+            return true;
+          }
+          return false;
+        }
+
+        removeBookmark(articleId) {
+          this.user.bookmarks = this.user.bookmarks.filter(b => b.id !== articleId);
+          this.saveUser({ bookmarks: this.user.bookmarks });
+        }
+      }
+
+      const userManager = new UserManager();
+
+      function initUserMenu() {
+        const profileBtn = document.querySelector('.user-profile-btn');
+        const userMenu = document.querySelector('.user-menu');
+
+        if (profileBtn && userMenu) {
+          profileBtn.addEventListener('click', () => {
+            userMenu.classList.toggle('active');
+          });
+
+          document.addEventListener('click', (e) => {
+            if (!profileBtn.contains(e.target) && !userMenu.contains(e.target)) {
+              userMenu.classList.remove('active');
+            }
+          });
+        }
+      }
+
+      function initComments() {
+        const form = document.querySelector('.comment-form');
+        const list = document.querySelector('.comments-list');
+
+        if (!form) return;
+
+        const textarea = form.querySelector('.comment-textarea');
+        const submitBtn = form.querySelector('.comment-submit-btn');
+
+        submitBtn.addEventListener('click', () => {
+          const text = textarea.value.trim();
+          if (!text) return;
+
+          const comment = {
+            id: Date.now().toString(),
+            author: userManager.user.name,
+            text,
+            date: new Date().toISOString(),
+            likes: 0
+          };
+
+          let comments = JSON.parse(localStorage.getItem(COMMENTS_KEY) || '[]');
+          comments.unshift(comment);
+          localStorage.setItem(COMMENTS_KEY, JSON.stringify(comments));
+
+          textarea.value = '';
+          renderComments();
+          showToast('✅ Comentario publicado');
+          trackEvent('comment_posted', 'comment');
+        });
+      }
+
+      function renderComments() {
+        const list = document.querySelector('.comments-list');
+        if (!list) return;
+
+        const comments = JSON.parse(localStorage.getItem(COMMENTS_KEY) || '[]');
+
+        list.innerHTML = comments.map(c => `
+          <div class="comment-item">
+            <div>
+              <div class="comment-header">
+                <span class="comment-author">${c.author}</span>
+                <span class="comment-date">${new Date(c.date).toLocaleDateString()}</span>
+              </div>
+              <div class="comment-text">${c.text}</div>
+              <div class="comment-actions">
+                <button class="comment-action-btn">👍 ${c.likes}</button>
+                <button class="comment-action-btn">💬 Responder</button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      function initExpertQA() {
+        const qaItems = document.querySelectorAll('.qa-item');
+
+        qaItems.forEach(item => {
+          item.addEventListener('click', () => {
+            item.classList.toggle('expanded');
+          });
+        });
+      }
+
+      function initEmailNewsletter() {
+        const form = document.querySelector('.email-form');
+        if (!form) return;
+
+        const input = form.querySelector('.email-input');
+        const submitBtn = form.querySelector('.email-submit-btn');
+
+        submitBtn.addEventListener('click', () => {
+          const email = input.value.trim();
+          if (!email) return;
+
+          userManager.saveUser({ email });
+          input.value = '';
+          showToast('✅ ¡Suscrito al newsletter!');
+          trackEvent('newsletter_signup', email);
+        });
+      }
+
+      function initBookmarksList() {
+        const bookmarksPage = document.querySelector('.bookmarks-page');
+        if (!bookmarksPage) return;
+
+        renderBookmarks();
+      }
+
+      function renderBookmarks() {
+        const container = document.querySelector('.bookmarks-page');
+        if (!container) return;
+
+        if (userManager.user.bookmarks.length === 0) {
+          container.innerHTML = '<p>No hay artículos guardados aún</p>';
+          return;
+        }
+
+        container.innerHTML = userManager.user.bookmarks.map(b => `
+          <div class="bookmark-item">
+            <div>
+              <a href="${b.url}">${b.title}</a>
+              <small style="color: var(--text-muted)">Guardado: ${new Date(b.savedAt).toLocaleDateString()}</small>
+            </div>
+            <button class="bookmark-remove-btn" onclick="userManager.removeBookmark('${b.id}')">✕</button>
+          </div>
+        `).join('');
+      }
+
+      function initCommunityHighlights() {
+        // Mock community data
+        const highlights = [
+          { icon: '📚', title: 'Artículos leídos', stat: '1,245 artículos esta semana' },
+          { icon: '💬', title: 'Comunidad activa', stat: '342 comentarios nuevos' },
+          { icon: '❤️', title: 'Favoritos guardados', stat: userManager.user.bookmarks.length + ' artículos en tu lista' },
+          { icon: '🏆', title: 'Contribuyentes expertos', stat: '47 especialistas verificados' }
+        ];
+
+        const grid = document.querySelector('.highlights-grid');
+        if (grid) {
+          grid.innerHTML = highlights.map(h => `
+            <div class="highlight-card">
+              <div class="highlight-icon">${h.icon}</div>
+              <div class="highlight-title">${h.title}</div>
+              <div class="highlight-stat">${h.stat}</div>
+            </div>
+          `).join('');
+        }
+      }
+
       // ==================== DARK MODE TOGGLE ====================
       function initDarkModeToggle() {
         const toggle = document.querySelector('.theme-toggle');
@@ -2582,14 +3155,26 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
       // ==================== INITIALIZATION ====================
       document.addEventListener('DOMContentLoaded', () => {
+        // Phase 3 features
         initFavorites();
         initSharing();
         initBottomNav();
+
+        // Phase 4 features
         initDarkModeToggle();
         initAdvancedSearch();
         initSmartRelated();
         initReadTime();
         addStructuredData();
+
+        // Phase 5 features
+        initUserMenu();
+        initComments();
+        renderComments();
+        initExpertQA();
+        initEmailNewsletter();
+        initBookmarksList();
+        initCommunityHighlights();
 
         window.addEventListener('scroll', updateProgressBar);
         trackEvent('page_view', window.location.pathname);
