@@ -1,0 +1,237 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  String    @id @default(uuid())
+  email               String    @unique
+  name                String
+  passwordHash        String
+  avatarUrl           String?
+  role                String    @default("member") // member, expert, moderator, admin
+  verified            Boolean   @default(false)
+  expertBio           String?
+  expertCredentials   String[]
+  emailVerified       Boolean   @default(false)
+  emailSubscribed     Boolean   @default(true)
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  lastLogin           DateTime?
+  deletedAt           DateTime?
+
+  // Relations
+  comments            Comment[]
+  bookmarks           Bookmark[]
+  expertQA            ExpertQA[]
+  notifications       Notification[]
+  refreshTokens       RefreshToken[]
+  activities          UserActivity[]
+  expertVerification  ExpertVerification?
+  moderationLog       ModerationLog[]
+
+  @@index([email])
+  @@index([role])
+  @@map("users")
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  token     String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@map("refresh_tokens")
+}
+
+model EmailVerification {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@map("email_verifications")
+}
+
+model Comment {
+  id                String    @id @default(uuid())
+  articleId         String
+  userId            String
+  user              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  content           String
+  status            String    @default("pending") // pending, approved, rejected, spam
+  likesCount        Int       @default(0)
+  repliesCount      Int       @default(0)
+  parentCommentId   String?
+  parentComment     Comment?  @relation("CommentReplies", fields: [parentCommentId], references: [id], onDelete: Cascade)
+  replies           Comment[] @relation("CommentReplies")
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  moderatedAt       DateTime?
+  moderatedBy       String?
+  deletedAt         DateTime?
+
+  // Relations
+  moderationLog     ModerationLog[]
+
+  @@index([articleId])
+  @@index([userId])
+  @@index([status])
+  @@index([parentCommentId])
+  @@map("comments")
+}
+
+model CommentLike {
+  id        String   @id @default(uuid())
+  commentId String
+  userId    String
+  createdAt DateTime @default(now())
+
+  @@unique([commentId, userId])
+  @@index([commentId])
+  @@index([userId])
+  @@map("comment_likes")
+}
+
+model Bookmark {
+  id             String   @id @default(uuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  articleId      String
+  articleTitle   String
+  articleUrl     String
+  createdAt      DateTime @default(now())
+
+  @@unique([userId, articleId])
+  @@index([userId])
+  @@index([articleId])
+  @@map("bookmarks")
+}
+
+model ExpertQA {
+  id              String   @id @default(uuid())
+  question        String
+  answer          String
+  expertId        String
+  expert          User     @relation(fields: [expertId], references: [id])
+  category        String
+  viewsCount      Int      @default(0)
+  helpfulCount    Int      @default(0)
+  published       Boolean  @default(false)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  // Relations
+  edits           ExpertQAEdit[]
+
+  @@index([expertId])
+  @@index([category])
+  @@index([published])
+  @@map("expert_qa")
+}
+
+model ExpertQAEdit {
+  id        String   @id @default(uuid())
+  qaId      String
+  qa        ExpertQA @relation(fields: [qaId], references: [id], onDelete: Cascade)
+  oldAnswer String
+  newAnswer String
+  editedBy  String
+  createdAt DateTime @default(now())
+
+  @@index([qaId])
+  @@map("expert_qa_edits")
+}
+
+model ExpertQAHelpful {
+  id        String   @id @default(uuid())
+  qaId      String
+  userId    String
+  createdAt DateTime @default(now())
+
+  @@unique([qaId, userId])
+  @@index([qaId])
+  @@map("expert_qa_helpful")
+}
+
+model ExpertVerification {
+  id              String   @id @default(uuid())
+  userId          String   @unique
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  credentials     String
+  specialty       String
+  yearsExperience Int?
+  bio             String?
+  status          String   @default("pending") // pending, approved, rejected
+  verifiedBy      String?
+  createdAt       DateTime @default(now())
+  verifiedAt      DateTime?
+
+  @@index([status])
+  @@map("expert_verification")
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type      String   // comment_reply, comment_like, newsletter, qa_answer, expert_verified
+  title     String
+  message   String?
+  link      String?
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([read])
+  @@map("notifications")
+}
+
+model EmailSubscription {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  subscribed   Boolean  @default(true)
+  category     String   @default("all") // all, health, education, legal, weekly_digest
+  token        String   @unique
+  createdAt    DateTime @default(now())
+  unsubscribedAt DateTime?
+
+  @@map("email_subscriptions")
+}
+
+model ModerationLog {
+  id          String   @id @default(uuid())
+  commentId   String
+  comment     Comment  @relation(fields: [commentId], references: [id], onDelete: Cascade)
+  moderatorId String
+  moderator   User     @relation(fields: [moderatorId], references: [id])
+  action      String   // approved, rejected, flagged, removed
+  reason      String?
+  createdAt   DateTime @default(now())
+
+  @@index([commentId])
+  @@index([moderatorId])
+  @@map("moderation_log")
+}
+
+model UserActivity {
+  id            String   @id @default(uuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  activityType  String   // article_read, comment_posted, bookmark_saved, qa_viewed, shared
+  articleId     String?
+  metadata      Json?
+  createdAt     DateTime @default(now())
+
+  @@index([userId])
+  @@index([activityType])
+  @@map("user_activity")
+}

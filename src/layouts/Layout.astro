@@ -57,7 +57,9 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    {import.meta.env.PUBLIC_GA_ID && (
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
+    )}
 
     <slot name="head" />
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "853e837f72674205847ee30c592163c0"}'></script>

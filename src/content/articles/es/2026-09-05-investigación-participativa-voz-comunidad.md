@@ -16,12 +16,45 @@ generatedBy: "claude"
 translationSlug: "investigación-participativa-voz-comunidad"
 ---
 
-**Respuesta rápida.** Investigación participativa: voz de la comunidad is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Investigación participativa incluye voces de personas con síndrome de Down. Sus perspectivas importan. Investigación SIN su voz es incompleta.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Qué Es
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+Investigación donde personas con discapacidad son co-investigadores, no solo sujetos estudiados.
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Beneficios
+
+✅ Voz auténtica
+✅ Perspectiva real
+✅ Investigación más útil
+✅ Empoderamiento
+✅ Respeto a dignidad
+
+## Áreas De Investigación
+
+- Educación
+- Empleo
+- Salud mental
+- Inclusión social
+- Calidad de vida
+
+## Cómo Participar
+
+- Organizaciones buscan participantes
+- Contribuye perspectiva
+- Datos son compensados
+- Voz es escuchada
+
+## Lo Más Importante
+
+Personas con síndrome de Down entienden su realidad mejor que otros.
+
+Su voz debe liderar investigación sobre ellos.
+
+Nada de nosotros sin nosotros.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07
