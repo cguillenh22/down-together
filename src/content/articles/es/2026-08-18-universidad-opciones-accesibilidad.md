@@ -16,12 +16,78 @@ generatedBy: "claude"
 translationSlug: "universidad-opciones-accesibilidad"
 ---
 
-**Respuesta rápida.** Universidad: opciones y accesibilidad is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Universidad es posible para algunos estudiantes con síndrome de Down. Opciones varían desde programas especiales hasta auditar clases. Accesibilidad es clave.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Realidad De Universidad
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**¿Quién puede ir?**
+- Estudiantes con capacidad académica intermedia+
+- Debe poder comunicarse
+- Debe poder funcionar en ambiente grupal
+- No todos, pero algunos
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**¿Quién no puede?**
+- Dificultad cognitiva severa
+- Necesidad de apoyo 1-a-1 constante
+
+## Opciones
+
+### Programas Especiales
+
+- Universidades ofrecen programas para estudiantes con discapacidad
+- Clases especializadas en vida independiente
+- Experiencia universitaria sin grado
+- Certificado de participación
+
+### Auditar Clases
+
+- Asiste a clase regular
+- NO recibe grado
+- Aprende contenido
+- Experiencia de campus
+
+### Grado Modificado
+
+- Currícula adaptada
+- Menos requisitos
+- Más tiempo si necesario
+- Grado modificado (vs regular)
+
+### Grado Completo
+
+- Raro pero posible
+- Estudiante academicamente capaz
+- Apoyo universitario
+- Grado completo
+
+## Accesibilidad
+
+**Disponible**:
+- Notas escritas
+- Tiempo extendido en exámenes
+- Tutorías
+- Apoyo de pares
+- Ambiente accesible
+
+**Importante**: Comunicar necesidades a universidad antes
+
+## Financiamiento
+
+- Seguros estudiante con discapacidad
+- Becas especiales
+- Programas vocacionales
+- Subvenciones federales
+
+## Lo Más Importante
+
+Universidad es posible para algunos.
+
+No es grado tradicional, pero es experiencia valiosa.
+
+Socialización y aprendizaje son beneficios reales.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

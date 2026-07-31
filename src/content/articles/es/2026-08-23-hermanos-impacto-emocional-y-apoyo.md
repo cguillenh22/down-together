@@ -16,12 +16,61 @@ generatedBy: "claude"
 translationSlug: "hermanos-impacto-emocional-y-apoyo"
 ---
 
-**Respuesta rápida.** Hermanos: impacto emocional y apoyo is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Hermanos se ven afectados emocional y prácticamente. Algunos sienten abandono, otros responsabilidad futura. Apoyo específico es importante.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Impactos Emocionales
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Iniciales**:
+- Confusión ("¿Qué significa?")
+- Miedo ("¿Me va a pasar?")
+- Celos ("Atención al hermano")
+- Culpa ("¿Por qué yo estoy bien?")
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Largo plazo**:
+- Responsabilidad futura ("Voy a tener que cuidarlo")
+- Resentimiento ("Mi vida cambió sin pedirme")
+- Orgullo ("Mi hermano es increíble")
+- Conexión ("Somos equipo")
+
+## Señales De Que Necesita Apoyo
+
+- Cambio en calificaciones
+- Retracción social
+- Conducta agresiva
+- Depresión/ansiedad
+- Expresión de resentimiento
+
+## Cómo Apoyar
+
+**Comunicación clara**:
+- Explica diagnóstico de forma apropiada
+- Responde preguntas honestamente
+
+**Tiempo juntos**:
+- Actividades sin hermano con SD
+- Validación de sentimientos
+
+**Responsabilidades claras**:
+- NO carga futura sobre hermano ahora
+- "Es responsabilidad de padres, no tuya"
+
+**Conexión con otros**:
+- Grupos de hermanos
+- Pares que entienden
+
+**Terapia si necesario**:
+- Si cambios significativos
+
+## Lo Más Importante
+
+Hermanos también necesitan apoyo.
+
+Sus sentimientos son válidos.
+
+Cuidar de ellos es inversión en familia.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

@@ -16,12 +16,58 @@ generatedBy: "claude"
 translationSlug: "relacion-de-pareja-impacto-del-diagnostico"
 ---
 
-**Respuesta rápida.** Relación de pareja: impacto del diagnóstico is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Diagnóstico de síndrome de Down afecta relación de pareja. Puede fortalecer o fracturar. Comunicación y apoyo son críticos.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Impactos Comunes
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Desalineación**:
+- Pareja procesa diferente
+- Uno llora, otro actúa
+- Diferentes expectativas
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Estrés**:
+- Carga física/emocional
+- Menos tiempo juntos
+- Menos intimidad
+
+**Resentimiento**:
+- Culpa dirigida a pareja
+- Sentimiento de abandono
+- Falta de comprensión
+
+## Señales De Tensión
+
+- Comunicación pobre
+- Falta de intimidad
+- Discusiones frecuentes
+- Sentimientos de soledad
+
+## Cómo Fortalecer Pareja
+
+✅ **Comunicación**: Habla honestamente
+✅ **Terapia de pareja**: Profesional neutral
+✅ **Apoyo mutuo**: No contra-, con-pareja
+✅ **Tiempo juntos**: Sin niños ocasionalmente
+✅ **Comunidad**: Pareja conoce otros padres
+✅ **Validación**: Entender procesamiento diferente
+
+## Prevención De Separación
+
+- Busca apoyo TEMPRANO (no esperes crisis)
+- Terapia de pareja es inversión
+- Aceptar que procesos diferente NO significa estar equivocado
+- Mantener intimidad (importante)
+
+## Lo Más Importante
+
+Muchas parejas se divorcian después de diagnóstico.
+
+Pero muchas se fortalecen.
+
+La diferencia es comunicación y apoyo.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07
