@@ -53,6 +53,21 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
     <link rel="canonical" href={canonicalUrl} />
 
+    <!-- Bilingual hreflang links -->
+    {lang === 'es' ? (
+      <>
+        <link rel="alternate" hreflang="es" href={canonicalUrl.toString()} />
+        <link rel="alternate" hreflang="en" href={new URL(canonicalUrl.pathname.replace('/es/', '/en/'), Astro.site)} />
+        <link rel="alternate" hreflang="x-default" href={new URL(canonicalUrl.pathname.replace('/es/', '/'), Astro.site)} />
+      </>
+    ) : (
+      <>
+        <link rel="alternate" hreflang="en" href={canonicalUrl.toString()} />
+        <link rel="alternate" hreflang="es" href={new URL(canonicalUrl.pathname.replace('/en/', '/es/'), Astro.site)} />
+        <link rel="alternate" hreflang="x-default" href={new URL(canonicalUrl.pathname.replace('/en/', '/'), Astro.site)} />
+      </>
+    )}
+
     <!-- OpenGraph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -131,11 +146,22 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
       });
       // Lazy load images (performance optimization)
-      document.addEventListener('DOMContentLoaded', () => {
+      function setupLazyImages() {
         document.querySelectorAll('img:not([loading])').forEach(img => {
           img.loading = 'lazy';
           img.decoding = 'async';
         });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupLazyImages);
+      } else {
+        setupLazyImages();
+      }
+      // Also run on interactive in case images load late
+      document.addEventListener('readystatechange', () => {
+        if (document.readyState === 'interactive') {
+          setupLazyImages();
+        }
       });
 
       // Scroll animations
