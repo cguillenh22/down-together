@@ -16,12 +16,68 @@ generatedBy: "claude"
 translationSlug: "obesidad-en-ninos-con-down-prevencion"
 ---
 
-**Respuesta rápida.** Obesidad en niños: prevención is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Obesidad es común en síndrome de Down (30-50% de casos) debido a metabolismo lento y bajo tono. Prevención es más fácil que tratar obesidad. Comienza temprano.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Por Qué Riesgo Aumentado
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Factores**:
+- Metabolismo más lento
+- Bajo tono = menos movimiento natural
+- Riesgo de hipotiroidismo (ralentiza metabolismo)
+- Factores genéticos
+- Medicamentos (pueden aumentar apetito)
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Prevención (Comienza Temprano)
+
+### Nutrición
+
+✅ Frutas y verduras frecuentes
+✅ Proteína en cada comida
+✅ Limite bebidas azucaradas
+✅ Porciones apropiadas
+✅ Agua en lugar de zumo
+
+❌ Evita alimentos ultraprocesados
+❌ Evita zumos (azúcar pura)
+❌ Evita dulces/postres frecuentes
+
+### Movimiento
+
+✅ Terapia física consistente
+✅ Juego activo diariamente
+✅ Actividades que disfruta (nadar, correr, bailar)
+✅ Tiempo en familia (caminar juntos)
+
+### Screening
+
+✅ Monitoreo de peso desde nacimiento
+✅ Gráficos de crecimiento apropiados para SD (existen)
+✅ Discusión con pediatra si hay preocupación
+
+## Si Ya Hay Obesidad
+
+**NO hagas dieta restrictiva**
+
+**SÍ incrementa**:
+- Movimiento gradual
+- Nutrición (no restricción)
+- Actividades divertidas
+
+**Considera**:
+- Pediatra especializado
+- Nutricionista
+- Endocrinólogo si hay hipotiroidismo
+
+## Lo Más Importante
+
+Prevención es más fácil que reversión.
+
+Hábitos saludables desde temprano = salud de por vida.
+
+Movimiento y nutrición, no restricción.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

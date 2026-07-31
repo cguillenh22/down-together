@@ -16,12 +16,82 @@ generatedBy: "claude"
 translationSlug: "salud-reproductive-en-adolescentes"
 ---
 
-**Respuesta rápida.** Salud reproductiva en adolescentes is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Adolescentes con síndrome de Down tienen cuerpos que cambian como cualquier otro. Educación sexual apropiada, desarrollo corporal, y protección son importantes. No es tema tabú.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Desarrollo Corporal
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+### Pubertad en Síndrome de Down
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Cuándo ocurre**: Similar a población general (10-14 años típicamente)
+
+**Qué cambia**:
+- Crecimiento de cuerpo
+- Vello corporal
+- Cambios hormonales
+- Mensturación (chicas)
+- Erecciones (chicos)
+
+**En SD**: Ocurre típicamente EN TIEMPO O LIGERAMENTE RETRASADO
+
+## Menstruación
+
+### Chicas
+
+**Edad típica**: 12-14 años (como población general)
+
+**Qué esperar**: Sangrado mensual, calambres, cambio de humor
+
+**Preparación**:
+- Explica qué es menstruación
+- Enseña higiene
+- Opciones: toallas, tampones, copas menstruales
+
+**Algunos consideran**:
+- Anticonceptivos para regulación
+- Anticonceptivos para anticoncepción (si aplica)
+
+### Chicos
+
+**Cambios**: Vello, crecimiento de pene, erecciones espontáneas
+
+**Preparación**:
+- Explica cambios normales
+- Enseña higiene
+- Privacidad importante
+
+## Educación Sexual
+
+**No es negociable** - es necesaria
+
+**Contenido**:
+- Respeto al cuerpo de otros
+- Consentimiento
+- Relaciones sanas
+- Protección contra abuso
+- Anticoncepción si aplica
+
+**Lenguaje**: Simple, honesto, sin vergüenza
+
+## Protección Contra Abuso
+
+**Riesgo aumentado** en discapacidad intelectual
+
+**Enseña**:
+- Partes del cuerpo (nombres reales)
+- "Nadie puede tocar tu cuerpo sin permiso"
+- Diferencia entre toque "bueno" y "malo"
+- A quién recurrir si incomodo
+
+## Lo Más Importante
+
+Adolescentes con SD tienen cuerpos que funcionan.
+
+Educación sexual NO causa problemas - falta de educación SÍ.
+
+Sé honesto, simple, sin vergüenza.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

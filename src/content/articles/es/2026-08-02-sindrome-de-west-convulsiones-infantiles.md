@@ -16,12 +16,66 @@ generatedBy: "claude"
 translationSlug: "sindrome-de-west-convulsiones-infantiles"
 ---
 
-**Respuesta rápida.** Síndrome de West: convulsiones infantiles is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Síndrome de West (espasmos infantiles) puede ocurrir en síndrome de Down (5-10% de casos). Es condición seria pero tratable. Detección temprana es crítica.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## ¿Qué Es?
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Síndrome de West** = tipo de epilepsia infantil caracterizada por espasmos
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Espasmos**: Contracciones musculares breves (1-2 segundos)
+
+**Típicamente ocurre**: Antes de 12 meses de edad
+
+## Signos De Alerta
+
+- Espasmos corporales repetitivos (cabeza, brazos, tronco se contraen juntos)
+- Ocurren en clusters (múltiples en fila)
+- A menudo después de despertar
+- Comportamiento de "saludo militar" (brazos levantados)
+
+## Aunque Sea Poco Común
+
+**En síndrome de Down**: 5-10% de casos
+
+**Si lo ves**: NO es muerte de tu hijo, pero NECESITA evaluación urgente
+
+## Evaluación
+
+**Si sospechas**:
+- Llama pediatra INMEDIATAMENTE
+- Posiblemente EEG urgente
+- MRI cerebral
+- Neurología pediátrica
+
+## Tratamiento
+
+**Medicamentos**:
+- ACTH (hormona)
+- Prednisolona
+- Anticonvulsivos (Depakote, etc.)
+
+**Terapia**:
+- Educación específica
+- Monitoreo neurológico
+
+## Prognosis
+
+**Algunos responden bien** a medicamentos
+
+**Otros tienen** desarrollo retrasado permanente
+
+**Detección e intervención temprana** = mejor resultado
+
+## Lo Más Importante
+
+Síndrome de West es raro en síndrome de Down.
+
+Si ves espasmos: busca evaluación neurológica URGENTEMENTE.
+
+No diagnostiques en casa - confía en médicos.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

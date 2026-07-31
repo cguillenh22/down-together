@@ -16,12 +16,67 @@ generatedBy: "claude"
 translationSlug: "hipotiroidismo-en-ninos-sintomas"
 ---
 
-**Respuesta rápida.** Hipotiroidismo en niños: síntomas is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Hipotiroidismo es muy común en síndrome de Down (10-50% de casos). Si tu hijo fue diagnosticado, es manejable con levotiroxina. Esta guía enumera síntomas y manejo.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Síntomas De Hipotiroidismo No Tratado
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Bebés/Niños Pequeños**:
+- Letargo excesivo
+- Mala ganancia de peso
+- Baja temperatura corporal (frío siempre)
+- Constipación
+- Hinchazón facial
+- Piel seca
+- Llanto ronco/profundo
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Niños Mayores**:
+- Fatiga extrema
+- Ganancia de peso rápida
+- Piel seca
+- Cabello frágil
+- Uñas quebradizas
+- Depresión/cambio de humor
+- Letargo
+
+## Diferencia: Hipotiroidismo vs Bajo Tono
+
+**Bajo tono**: Debilidad muscular (estructura), persiste
+
+**Hipotiroidismo**: Fatiga metabólica, REVERSIBLE con medicamento
+
+**Importancia**: Hipotiroidismo es TRATADO - bajo tono no
+
+## Manejo
+
+**Medicamento**: Levotiroxina
+
+**Dosis**: Basada en peso, edad, TSH
+
+**Cómo tomar**: Pastilla (o líquido para bebés)
+
+**En ayunas**: Mejor absorción (mínimo 30 min antes de comer)
+
+## Monitoreo
+
+**TSH cada**:
+- 6 semanas después de comenzar
+- 6 semanas después de ajuste de dosis
+- Luego cada 6-12 meses
+
+**Objetivo**: TSH en rango normal para edad
+
+## Lo Más Importante
+
+Hipotiroidismo es común pero MUY TRATABLE.
+
+Con medicamento, desarrollo es NORMAL.
+
+Sin medicamento, daño es PERMANENTE.
+
+Monitoreo regular es crítico.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07
