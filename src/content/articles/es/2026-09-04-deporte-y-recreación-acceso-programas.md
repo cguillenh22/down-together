@@ -16,12 +16,60 @@ generatedBy: "claude"
 translationSlug: "deporte-y-recreación-acceso-programas"
 ---
 
-**Respuesta rápida.** Deporte y recreación: acceso a programas is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Deporte y recreación son derechos. Programas adaptados existen. Acceso mejora salud física y mental. Es inversión importante.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Beneficios
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+✅ Salud física
+✅ Confianza
+✅ Socialización
+✅ Diversión
+✅ Habilidades
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Deportes Adaptados
+
+- Natación
+- Atletismo
+- Basquetbol en silla de ruedas
+- Fútbol 5
+- Equitación terapéutica
+- Special Olympics
+
+## Programas
+
+**Escuela**:
+- Educación física adaptada
+- Clubes deportivos
+
+**Comunidad**:
+- Programas municipales
+- Organizaciones privadas
+- Special Olympics
+
+## Cómo Acceder
+
+1. Identifica deporte/interés
+2. Busca programas accesibles
+3. Consulta capacidad de hijo
+4. Comienza gradualmente
+
+## Financiamiento
+
+- Subsidios
+- Seguros
+- Organizaciones
+- Familia
+
+## Lo Más Importante
+
+Deporte es derecho y medicina.
+
+Todos pueden participar de alguna forma.
+
+Transforma cuerpo y mente.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

@@ -16,12 +16,49 @@ generatedBy: "claude"
 translationSlug: "discriminación-en-educación-recursos-legales"
 ---
 
-**Respuesta rápida.** Discriminación en educación: recursos legales is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Discriminación en escuela es ilegal. Si tu hijo es rechazado, discriminado o no recibe apoyo debido a discapacidad, tienes recursos legales.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Tipos De Discriminación
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+- Rechazo de admisión
+- Falta de adaptaciones
+- Acoso
+- Segregación
+- Negligencia de necesidades
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Señales De Discriminación
+
+- Rechazo a admitir
+- Presión para "educación especial"
+- Sin adaptaciones ofrecidas
+- Trato diferente sin justificación
+- Bullying no abordado
+
+## Cómo Responder
+
+1. **Documenta**: Incidentes, fechas, testigos
+2. **Comunica**: Carta formal a escuela
+3. **Solicita acción**: Especifica qué quieres
+4. **Espera respuesta**: Plazo razonable
+5. **Escala si necesario**: Abogado/autoridades
+
+## Recursos Legales
+
+- Abogado especializado
+- Agencia de derechos civiles
+- Organización defensora
+- Mediación
+
+## Lo Más Importante
+
+Discriminación es ilegal.
+
+No debes aceptarla.
+
+Recursos legales existen y funcionan.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

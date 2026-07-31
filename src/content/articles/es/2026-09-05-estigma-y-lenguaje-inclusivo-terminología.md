@@ -16,12 +16,55 @@ generatedBy: "claude"
 translationSlug: "estigma-y-lenguaje-inclusivo-terminología"
 ---
 
-**Respuesta rápida.** Estigma y lenguaje inclusivo: terminología is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Estigma es barrera mayor que síndrome de Down. Lenguaje importa. Palabras pueden incluir o excluir. Terminología correcta normaliza.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Lenguaje A Evitar
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+❌ "Mongolismo" (arcaico, ofensivo)
+❌ "Retardo mental" (dehumaniza)
+❌ "Sufre de síndrome de Down" (implica sufrimiento)
+❌ "Víctima de síndrome de Down"
+❌ "Anormal"
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Lenguaje Inclusivo
+
+✅ "Síndrome de Down"
+✅ "Persona con síndrome de Down"
+✅ "Tiene síndrome de Down"
+✅ "Discapacidad intelectual" (neutral)
+✅ "Diferente" (descripción, no juicio)
+
+## Por Qué Importa
+
+**Lenguaje refleja**:
+- Respeto
+- Dignidad
+- Igualdad
+- Aceptación
+
+**Lenguaje neativo causa**:
+- Estigma
+- Exclusión
+- Baja autoestima
+- Prejuicio
+
+## Cómo Educar
+
+- Corrige con amabilidad
+- Explica por qué importa
+- Modela lenguaje correcto
+- Celebra cambio
+
+## Lo Más Importante
+
+Palabras importan profundamente.
+
+Lenguaje inclusivo normaliza síndrome de Down.
+
+Educación cambia cultura.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

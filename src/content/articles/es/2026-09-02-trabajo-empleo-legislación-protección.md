@@ -16,12 +16,49 @@ generatedBy: "claude"
 translationSlug: "trabajo-empleo-legislación-protección"
 ---
 
-**Respuesta rápida.** Trabajo y empleo: legislación y protección is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Leyes protegen empleo de personas con discapacidad. Prohiben discriminación, requieren ajustes. Conocer derechos es importante.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Leyes De Protección
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+- Igualdad de oportunidades
+- Prohibición de discriminación
+- Derecho a ajustes razonables
+- Protección de explotación
+- Salario justo
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Derechos En Empleo
+
+- Derecho a no discriminación
+- Derecho a capacitación
+- Derecho a ajustes
+- Derecho a confidencialidad
+- Derecho a dignidad
+
+## Ajustes Razonables
+
+- Horario flexible
+- Tareas adaptadas
+- Apoyo de coach
+- Ambiente modificado
+- Comunicación clara
+
+## Si Hay Discriminación
+
+1. Documenta incidente
+2. Comunica con supervisor/HR
+3. Busca asesor legal
+4. Presenta queja formal si necesario
+
+## Lo Más Importante
+
+Discriminación es ilegal.
+
+Empleadores deben dar ajustes razonables.
+
+Conocer derechos previene abuso.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

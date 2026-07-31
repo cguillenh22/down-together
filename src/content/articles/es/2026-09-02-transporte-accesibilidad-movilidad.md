@@ -16,12 +16,56 @@ generatedBy: "claude"
 translationSlug: "transporte-accesibilidad-movilidad"
 ---
 
-**Respuesta rápida.** Transporte: accesibilidad y movilidad is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Transporte accesible es derecho. Opciones incluyen transporte público adaptado, servicios especiales, y conducción personal. Elecciones varían.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Opciones De Transporte
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Transporte público**:
+- Buses/trenes accesibles
+- Rampas/elevadores
+- Descuentos por discapacidad
+- Personal asistente a veces
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Transporte especial**:
+- Servicios para discapacitados
+- Vehículos adaptados
+- Chofer/acompañante
+- Costo variable
+
+**Conducción personal**:
+- Si persona puede conducir
+- Vehículo adaptado posible
+- Independencia total
+
+**Acompañante**:
+- Familia como transporte
+- Amigo/asistente
+- Depende de movilidad persona
+
+## Financiamiento
+
+- Subsidios gobierno
+- Seguros de transporte
+- Préstamos vehiculares
+- Beneficios de empleo
+
+## Cómo Acceder
+
+1. Evalúa capacidad de persona
+2. Identifica opciones disponibles
+3. Solicita/paga acceso
+4. Comienza transporte
+
+## Lo Más Importante
+
+Transporte accesible facilita independencia.
+
+Múltiples opciones existen.
+
+Derecho a movilidad es fundamental.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

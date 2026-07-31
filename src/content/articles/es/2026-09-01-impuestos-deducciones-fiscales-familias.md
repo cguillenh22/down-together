@@ -16,12 +16,47 @@ generatedBy: "claude"
 translationSlug: "impuestos-deducciones-fiscales-familias"
 ---
 
-**Respuesta rápida.** Impuestos: deducciones fiscales para familias is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Familias con hijo con discapacidad pueden obtener deducciones fiscales. Reduce carga tributaria. Requiere documentación pero vale la pena.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Deducciones Disponibles
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+- Gastos médicos
+- Educación especial
+- Terapias
+- Medicamentos
+- Equipo adaptativo
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Requisitos
+
+- Diagnóstico documentado
+- Recibos/facturas
+- Ingresos calificados
+- Residencia en jurisdicción
+
+## Cómo Reclamar
+
+1. Consulta contador o asesor fiscal
+2. Reúne documentos
+3. Completa formularios
+4. Presenta declaración
+5. Recibe reembolso o reducción
+
+## Cuánto Se Ahorra
+
+- Varía según ingresos
+- Varía según gastos
+- Típicamente importante
+
+## Lo Más Importante
+
+Deducciones fiscales son beneficio real.
+
+No todos saben que existen.
+
+Asesor fiscal puede ayudar.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

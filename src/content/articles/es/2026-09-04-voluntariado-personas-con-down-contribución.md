@@ -16,12 +16,56 @@ generatedBy: "claude"
 translationSlug: "voluntariado-personas-con-down-contribución"
 ---
 
-**Respuesta rápida.** Voluntariado: contribución y oportunidades is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Voluntariado es oportunidad de contribución y pertenencia. Muchas personas con síndrome de Down son voluntarios. Es poderoso para autoestima.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Beneficios
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+✅ Propósito
+✅ Contribución
+✅ Autoestima
+✅ Habilidades
+✅ Comunidad
+✅ CV/experiencia
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Tipos De Voluntariado
+
+- Ayuda en animales
+- Limpieza comunitaria
+- Ayuda en eventos
+- Jardinería
+- Empaque/distribución
+- Asistencia en biblioteca
+
+## Cómo Encontrar
+
+**Organizaciones**:
+- ONG locales
+- Voluntariados formales
+- Iglesias/comunidad
+- Asociaciones
+
+**Requisitos típicos**:
+- Capacidad de seguir instrucciones
+- Capacidad física para tareas
+- Comunicación básica
+
+## Apoyo
+
+- Capacitación inicial
+- Supervisor durante
+- Estructura clara
+- Reconocimiento
+
+## Lo Más Importante
+
+Voluntariado empodera.
+
+Contribución es necesidad humana.
+
+Abre puertas a comunidad.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07
