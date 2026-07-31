@@ -16,12 +16,91 @@ generatedBy: "claude"
 translationSlug: "desarrollo-socioemocional-durante-la-ninez"
 ---
 
-**Respuesta rápida.** Los niños con síndrome de Down sí construyen amistades genuinas y significativas — lo que más ayuda a que esas relaciones florezcan no es un rasgo individual del niño, sino cuánto la escuela y la familia diseñan oportunidades reales de contacto con otros niños, año tras año.
+## Respuesta Rápida
 
-**Por qué importa.** La inclusión social es, según NDSS, "un tema crítico para todo estudiante con discapacidad" — y muchos adultos con síndrome de Down terminan aislados más adelante, en parte porque las amistades de la infancia no se sostuvieron o porque los amigos se mudaron o cambiaron de etapa (por ejemplo, al terminar la secundaria). Lo que se construye —o no se construye— en la niñez pesa después.
+Niños con síndrome de Down desarrollan habilidades sociales de manera diferente pero siguen el mismo patrón general. Son típicamente social y afectivos. Necesitan apoyo para entender emociones complejas.
 
-**Qué dice la fuente.** NDSS recomienda apoyos concretos y basados en evidencia: historias sociales y apoyos visuales para enseñar habilidades de relación, grupos de habilidades sociales para practicar en un espacio estructurado, y compañeros de apoyo (peer partners) en actividades grupales, donde el adulto facilita el contacto entre niños en vez de reemplazarlo. Un principio central que citan: que los demás estudiantes vean a los niños con síndrome de Down —y ellos se vean a sí mismos— como "participantes valorados en el aula y en la escuela", no como visitantes. La investigación citada por NDSS muestra que los niños con tres o más relaciones positivas fuera de la familia tienen resultados de calidad de vida significativamente mejores.
+## Desarrollo Social Por Etapa
 
-**¿Qué puedes hacer ahora?** Antes de que empiece el año escolar, considera mandar una carta breve a las familias de los compañeros de clase, presentándote y ofreciéndote a responder preguntas. Durante el año, procura que al menos algunos amigos o conocidos cercanos de tu hijo/a estén en su misma clase cada año (no solo el primero), y anímalo a participar en actividades extracurriculares y de fin de semana, no solo las escolares.
+### Infancia (0-2 años)
 
-**Para profundizar.** [NDSS — Friendships & Social Relationships](https://ndss.org/resources/friendships-social-relationships): más apoyos concretos y programas de habilidades sociales.
+**Esperado**:
+- 0-3 meses: Sonríe a los 2 meses
+- 3-6 meses: Responde a emociones de otros
+- 6-12 meses: Separación de padres (ansiedad normal)
+- 12-24 meses: Juego paralelo (junto a otros, no con ellos)
+
+**En síndrome de Down**:
+- Típicamente IGUAL de social que otros bebés
+- A menudo MÁS afectivos
+- Retraso en habilidades de juego más complejo
+
+### Toddler (2-4 años)
+
+**Esperado**:
+- Juego imaginativo simple
+- Entender "mío" y "tuyo"
+- Empezar amistades simples
+- Emociones básicas (feliz, triste, enojado)
+
+**En síndrome de Down**:
+- Juego simbólico más lento
+- Dificultad en turnos sociales
+- Interés en otros (fortaleza)
+- Emociones pueden ser intensas
+
+### Edad Escolar (5-12 años)
+
+**Esperado**:
+- Amistades más profundas
+- Comprender perspectiva de otros
+- Controlar impulsos
+- Entender reglas sociales
+
+**En síndrome de Down**:
+- Amistades fáciles de formar (a menudo dificultad en mantener)
+- Dificultad tomando perspectiva de otros
+- Impulsos pueden ser fuertes
+- Dificultad con reglas sociales complejas
+
+## Fortalezas Típicas
+
+- ✅ Afectividad y cariño
+- ✅ Alegría y humor
+- ✅ Conexión emocional
+- ✅ Capacidad de perdonar
+- ✅ Disfrute de compañía
+
+## Desafíos Típicos
+
+- ❌ Comprender intenciones de otros
+- ❌ Inhibir conducta impulsiva
+- ❌ Entender emociones complejas
+- ❌ Mantener amistades
+- ❌ Aceptar cambios en rutina
+
+## Apoyo Práctico
+
+**Familia**:
+- Nombra emociones ("Estás feliz", "Estoy triste")
+- Enseña turnos en conversación
+- Práctica de habilidades sociales
+- Valida emociones
+
+**Escuela**:
+- Pares que sean buenos modelos
+- Intervención en habilidades sociales
+- Apoyo en rutina y transiciones
+- Ambiente predecible
+
+## Lo Más Importante
+
+Niños con síndrome de Down son típicamente SOCIAL y AFECTIVOS.
+
+Los desafíos son en habilidades sociales complejas, no en capacidad de conexión emocional.
+
+Con apoyo, desarrollan amistades significativas.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

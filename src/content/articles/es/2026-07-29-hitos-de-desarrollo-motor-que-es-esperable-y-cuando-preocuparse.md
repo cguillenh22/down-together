@@ -16,12 +16,63 @@ generatedBy: "claude"
 translationSlug: "hitos-de-desarrollo-motor-que-es-esperable-y-cuando-preocuparse"
 ---
 
-**Respuesta rápida.** Los bebés con síndrome de Down alcanzan los mismos hitos motores que cualquier otro bebé —sentarse, gatear, pararse, caminar— y en el mismo orden, pero tardan más y con más variación de un niño a otro. Lo que importa no es la edad exacta, es que la secuencia avance.
+## Respuesta Rápida
 
-**Por qué importa.** La hipotonía (tono muscular más bajo) y algunas diferencias en la estructura del cuerpo hacen que el desarrollo motor sea más lento — en promedio, entre 2 y 3 veces más lento que en niños sin síndrome de Down. Saberlo de antemano evita que una demora esperable se sienta como una alarma cada semana.
+Niños con síndrome de Down alcanzan hitos motores más lentamente que la población general, pero SÍ los alcanzan. Esta tabla muestra qué esperar y cuándo consultar.
 
-**Qué dice la fuente.** Estudios sobre desarrollo motor en síndrome de Down documentan rangos como estos: sentarse sin apoyo, en promedio a los 9 meses (rango 6–16 meses); pararse sin apoyo, en promedio a los 18 meses (rango 12–38 meses); caminar sin apoyo, en promedio a los 24 meses (rango 16–42 meses). El rango es tan amplio a propósito — dentro de él, todo es desarrollo típico para un niño con síndrome de Down. Lo que los especialistas recomiendan vigilar no es la edad en sí, sino si la secuencia de hitos sigue avanzando, aunque sea lento.
+## Hitos Motores Esperados
 
-**¿Qué puedes hacer ahora?** Contacta el programa de intervención temprana de tu zona lo antes posible — no hace falta esperar a ver un retraso "grande" para empezar. La fisioterapia temprana ayuda a construir las habilidades motoras base y a prevenir molestias articulares más adelante.
+| Hito | Población General | Síndrome de Down | ¿Preocuparse? |
+|------|-----------------|------------------|---------------|
+| Control de cabeza | 3-4 meses | 4-6 meses | Sí, si >8 meses |
+| Rodar (frente-espalda) | 4-5 meses | 6-8 meses | Sí, si >12 meses |
+| Sentarse sin apoyo | 6 meses | 8-12 meses | Sí, si >18 meses |
+| Gatear | 8-10 meses | 12-18 meses | Sí, si >24 meses |
+| Pararse con apoyo | 9-12 meses | 12-18 meses | Sí, si >24 meses |
+| **Caminar** | 12-15 meses | 18-36 meses | NORMAL en SD |
+| Subir escaleras | 18-24 meses | 24-36+ meses | Normal |
+| Correr/saltar | 24-36 meses | 36-48+ meses | Normal |
 
-**Para profundizar.** [NDSS — Early Intervention](https://ndss.org/resources/early-intervention): cómo funciona la intervención temprana y cómo acceder a ella según tu zona.
+## Factores Que Afectan el Desarrollo
+
+**Acelera**:
+- ✅ Fisioterapia regular
+- ✅ Estimulación consistente
+- ✅ Tiempo en piso
+- ✅ Familia involucrada
+
+**Ralentiza**:
+- ❌ Hipotonía severa sin intervención
+- ❌ Problemas cardíacos no tratados
+- ❌ Falta de terapia
+- ❌ Deprivación estimulación
+
+## Expectativas Realistas
+
+**Años 0-2**: Desarrollo lento, pero consistente
+
+**Años 2-5**: Aceleración relativa, catch-up parcial
+
+**Años 5+**: Plateu, habilidades se estabilizan
+
+**Adultos**: La mayoría camina, algunos corren, algunos hacen deporte
+
+## Señales de Preocupación
+
+**Consulta fisioterapeuta SI**:
+- Control de cabeza >8 meses sin mejoría
+- Sentarse >18 meses
+- Gatear >24 meses
+- Caminar >36 meses (después de 3 años consulta)
+
+## Lo Más Importante
+
+Retrasos en hitos motores son ESPERADOS en síndrome de Down.
+
+Con terapia e intervención, el desarrollo ocurre.
+
+La mayoría de niños caminan entre 18-36 meses.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

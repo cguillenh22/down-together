@@ -16,12 +16,83 @@ generatedBy: "claude"
 translationSlug: "fisioterapia-terapia-ocupacional-diferencias"
 ---
 
-**Respuesta rápida.** Fisioterapia y terapia ocupacional: diferencias is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Fisioterapia entrena movimiento grueso (caminar, correr). Terapia ocupacional entrena habilidades diarias (vestirse, comer). Ambas son críticas en síndrome de Down. Trabajan juntas.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Fisioterapia (PT)
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+### ¿Qué Es?
+Entrenamiento en movimiento grueso del cuerpo
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+### Enfoque
+- Movimiento de grandes músculos
+- Control postural
+- Equilibrio
+- Caminar, correr, movimiento funcional
+
+### Sesiones Típicas
+1. Calentamiento (5 min)
+2. Ejercicios estructurados (20 min)
+3. Actividades funcionales (10 min)
+4. Ejercicios para casa (5 min)
+
+### Objetivo
+- Fortalecer músculos débiles
+- Mejorar control motor
+- Acelerar hitos motores
+- Facilitar independencia en movimiento
+
+## Terapia Ocupacional (OT)
+
+### ¿Qué Es?
+Entrenamiento en habilidades de la vida diaria
+
+### Enfoque
+- Movimiento fino (dedos, manos)
+- Coordinación ojo-mano
+- Habilidades de autocuidado
+- Coordinación bilateral
+- Adaptaciones para independencia
+
+### Sesiones Típicas
+1. Calentamiento (5 min)
+2. Actividad estructurada (15 min)
+3. Juego funcional (10 min)
+4. Recomendaciones para casa (5 min)
+
+### Objetivo
+- Destrezas de movimiento fino
+- Independencia en AVD (actividades de vida diaria)
+- Escritura/manualidades
+- Autoalimentación
+- Higiene personal
+
+## Comparación Directa
+
+| Aspecto | Fisioterapia | Terapia Ocupacional |
+|--------|-------------|-------------------|
+| Enfoque principal | Movimiento grueso | Movimiento fino/AVD |
+| Músculos | Grandes músculos | Pequeños músculos |
+| Habilidad clave | Caminar, correr | Vestirse, comer, escribir |
+| Frecuencia típica | 2x/semana | 2x/semana |
+| Ambiente | A menudo en piso | Mesa, actividades sentado |
+
+## Ambas Son Necesarias
+
+En síndrome de Down, típicamente necesitas AMBAS porque:
+- Bajo tono afecta movimiento grueso Y fino
+- Desarrollo motor requiere intervención completa
+- Las habilidades se integran (caminar requiere equilibrio + destreza)
+
+## Lo Más Importante
+
+Fisioterapia y Terapia Ocupacional no compiten.
+
+Trabajan juntas para desarrollo motor completo.
+
+Ambas son críticas para máxima independencia.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07
