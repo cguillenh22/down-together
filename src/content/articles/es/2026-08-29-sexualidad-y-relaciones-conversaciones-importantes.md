@@ -16,12 +16,63 @@ generatedBy: "claude"
 translationSlug: "sexualidad-y-relaciones-conversaciones-importantes"
 ---
 
-**Respuesta rápida.** Sexualidad y relaciones: conversaciones importantes is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Sexualidad es parte normal de desarrollo humano. Personas con síndrome de Down tienen deseos sexuales. Educación honesta es necesaria. Protección contra abuso también.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Educación Sexual Apropiada
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**No es opcional**:
+- Todos merecen educación sexual
+- Ignorancia NO previene actividad
+- Ignorancia AUMENTA riesgo de abuso
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Contenido**:
+- Nombres reales de partes del cuerpo
+- Consentimiento
+- Respeto
+- Protección contra abuso
+- Higiene
+- Anticoncepción si relevante
+
+## Relaciones Románticas
+
+**Posible**: Sí, algunos tienen parejas
+
+**Realista**: Típicamente relaciones supervisadas
+
+**Importante**: Consentimiento, respeto, seguridad
+
+## Anticoncepción
+
+**¿Cuándo**:
+- Si sexualmente activo
+- Conversación con médico
+
+**Opciones**:
+- Anticonceptivos orales
+- IUD
+- Inyecciones
+- Esterilización (controversial)
+
+## Protección Contra Abuso
+
+**Riesgo aumentado** en discapacidad intelectual
+
+**Enseña**:
+- Privacidad del cuerpo
+- Toque "bueno" vs "malo"
+- A quién recurrir si incómodo
+- Que no es culpa suya
+
+## Lo Más Importante
+
+Sexualidad no es tabú.
+
+Educación honesta es protección.
+
+Autonomía y seguridad pueden coexistir.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

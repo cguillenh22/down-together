@@ -16,12 +16,58 @@ generatedBy: "claude"
 translationSlug: "abuelos-y-familia-extendida-roles-roles"
 ---
 
-**Respuesta rápida.** Abuelos y familia extendida: roles is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Abuelos y familia extendida juegan rol crítico. Pueden ser sistema de apoyo o complicación. Comunicación clara de roles es importante.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Roles Potenciales De Abuelos
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Apoyo emocional**: Escuchar, validar
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Apoyo práctico**: Cuidar, dinero
+
+**Cuidador permanente**: Si padres no pueden
+
+**Conexión familiar**: Relación especial con nieto
+
+## Beneficios
+
+✅ Sistema de apoyo expandido
+✅ Relación especial con abuelos
+✅ Respiro para padres
+✅ Seguridad financiera (a veces)
+
+## Desafíos Comunes
+
+- Diferencias en expectativas
+- Culpa que abuelos cargan
+- Dinero/recursos
+- Comunicación de necesidades
+
+## Comunicación De Roles
+
+**Claro es clave**:
+- "¿Qué apoyo queremos de ustedes?"
+- "¿Cuánto pueden dar?"
+- "¿Qué límites tenemos?"
+
+**NO asumir**: Habla explícitamente
+
+## Família Extendida (Tíos, Primos)
+
+- Pueden ser sistema de apoyo
+- Pueden no entender
+- Comunicación sobre diagnóstico importante
+- Amabilidad > lástima
+
+## Lo Más Importante
+
+Familia extendida es recurso valioso.
+
+Comunicación clara previene conflicto.
+
+Cada rol es diferente e importante.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07
