@@ -16,12 +16,62 @@ generatedBy: "claude"
 translationSlug: "transicion-a-secundaria-preparación"
 ---
 
-**Respuesta rápida.** Transición a secundaria: preparación is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Transición de primaria a secundaria es momento crítico. Requiere preparación emocional, académica y práctica. Planificación es clave.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Cuándo Comenzar A Preparar
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Idealmente**: Año antes de transición
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Comienza con**: Visitas a escuela, conversaciones, preparación emocional
+
+## Preparación Emocional
+
+- Lee libros sobre transición
+- Habla sobre cambios
+- Visita escuela múltiples veces
+- Conoce maestros/personal
+- Normaliza miedo (es normal)
+
+## Preparación Académica
+
+- Revisa currículo
+- Identifica adaptaciones necesarias
+- Valida capacidad de aprendizaje
+- Establece metas realistas
+
+## Preparación Práctica
+
+- Navegar edificio más grande
+- Llegar a clase correcta
+- Cambiar de maestro
+- Usar casillero
+- Moverse entre clases
+
+## IEP/Plan Educativo
+
+**Requiere actualización**:
+- Metas para secundaria
+- Apoyos necesarios
+- Ajustes académicos
+- Planes post-secundarios
+
+## Primeros Días/Semanas
+
+- Sistema de "buddy" (compañero)
+- Horario visual
+- Reductor de ansiedad (tiempo familiar después)
+- Revisión de qué salió bien
+
+## Lo Más Importante
+
+Transición es desafiante pero manejable.
+
+Preparación temprana = menor ansiedad.
+
+Tu hijo puede tener éxito en secundaria.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

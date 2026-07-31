@@ -16,12 +16,71 @@ generatedBy: "claude"
 translationSlug: "habilidades-sociales-amistades-interaccion"
 ---
 
-**Respuesta rápida.** Habilidades sociales: amistades e interacción is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Habilidades sociales son ensenables. Niños con síndrome de Down pueden formar amistades. Requiere enseñanza explícita y práctica.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Habilidades Sociales Básicas
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+### Conversación
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+- Turnarse en habla
+- Escuchar sin interrumpir
+- Hacer preguntas
+- Mantener contacto visual (cultural)
+
+### Interacción
+
+- Saludar apropiadamente
+- Responder a preguntas
+- Compartir
+- Tomar turnos en juego
+
+### Comprensión
+
+- Leer emociones (faciales)
+- Entender intenciones de otros
+- Reconocer bromas vs insultos
+- Respetar espacio personal
+
+## Cómo Enseñar
+
+**Práctica explícita**:
+- Role play
+- Modelar comportamiento
+- Practicar situaciones
+- Feedback inmediato
+
+**Naturalmente**:
+- Juego con hermanos
+- Tiempo con pares
+- Actividades estructuradas
+- Menctoría de pares
+
+## Amistades
+
+**Realidad**: Pueden ser difíciles pero posibles
+
+**¿Cómo fostering?**:
+- Actividades compartidas
+- Tiempo regular con pares
+- Facilitar interacción
+- Enseña habilidades explícitamente
+
+**¿Qué esperar?**:
+- Puede tomar tiempo
+- Pueden ser superficiales
+- Mejor con pares similares
+- Algunos logran profundas
+
+## Lo Más Importante
+
+Habilidades sociales son ensenables, no innatas.
+
+Práctica consistente = mejora real.
+
+Amistades son posibles con apoyo.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

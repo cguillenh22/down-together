@@ -16,12 +16,65 @@ generatedBy: "claude"
 translationSlug: "educacion-fisica-adaptada-deporte"
 ---
 
-**Respuesta rápida.** Educación física adaptada: deporte is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Educación física adaptada y deporte son críticos para síndrome de Down. Mejoran salud física, confianza y socialización. Existen opciones para todos.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Beneficios
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+✅ Mejora fuerza y coordinación
+✅ Mejora cardiovascular
+✅ Previene obesidad
+✅ Mejora confianza
+✅ Facilita amistad
+✅ Diversión y alegría
+✅ Salud mental mejorada
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Opciones Deportivas
+
+### Adaptadas (Oficial)
+
+- **Special Olympics**: Programas para competencia
+- **Deportes adaptados**: Baloncesto, natación, atletismo adaptado
+- **Programas integrados**: Deporte regular con apoyo
+
+### Recreacionales
+
+- Natación
+- Caminar/trotar
+- Yoga
+- Danza
+- Equitación terapéutica
+
+### En Escuela
+
+- Educación física adaptada
+- Clubes deportivos
+- Equipos intramurales
+
+## Cómo Empezar
+
+1. **Identifica interés del niño**
+2. **Busca programa accesible**
+3. **Comienza lentamente**
+4. **Celebra participación, no solo victoria**
+5. **Haz consistente**
+
+## Expectativas
+
+- NO necesita ser competitivo
+- SÍ necesita ser consistente
+- Participación > perfección
+- Diversión es objetivo
+
+## Lo Más Importante
+
+Actividad física es medicina.
+
+Deporte construye confianza y amistades.
+
+Todos pueden participar de alguna forma.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

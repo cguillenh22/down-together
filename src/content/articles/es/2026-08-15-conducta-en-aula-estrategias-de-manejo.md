@@ -16,12 +16,76 @@ generatedBy: "claude"
 translationSlug: "conducta-en-aula-estrategias-de-manejo"
 ---
 
-**Respuesta rápida.** Conducta en aula: estrategias de manejo is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Problemas de conducta en escuela son comunes pero manejables. Estrategias consistentes en casa y escuela funcionan. Comunicación entre padres y maestros es crítica.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Comportamientos Comunes
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+- Distracción (dificultad concentrarse)
+- Impulsividad (habla sin levantar mano)
+- Hiperactividad (no puede quedarse quieto)
+- Resistencia a cambios
+- Comportamiento disruptivo
+- Baja tolerancia a frustración
+- Agresión si muy frustrado
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Estrategias Que Funcionan
+
+### En Aula
+
+**Estructura clara**:
+- Rutina predecible
+- Horario visual
+- Expectativas claras
+- Transiciones suave
+
+**Refuerzo positivo**:
+- Elogiar comportamiento correcto
+- Recompensas frecuentes
+- NO solo correcciones
+- Construcción de confianza
+
+**Reducción de distracción**:
+- Asiento frente
+- Menos estímulos visuales
+- Pausas frecuentes
+- Descansos de movimiento
+
+**Apoyo físico si necesario**:
+- Guía verbal
+- Demostración
+- Ayuda práctica
+
+### En Casa
+
+**Consistencia con escuela**:
+- Mismas estrategias
+- Comunicación diaria
+- Trabajo colaborativo
+
+**Ambiente estructurado**:
+- Rutina
+- Expectativas claras
+- Recompensas
+
+## Cuándo Considerar Evaluación
+
+- Comportamiento no mejora
+- Agresión frecuente
+- Autolesión
+- Escuela no tiene recursos
+
+**Posibles evaluaciones**: ADHD, ansiedad, otros
+
+## Lo Más Importante
+
+Conducta es comunicación.
+
+Comportamiento "malo" a menudo es resultado de frustración/confusión.
+
+Estrategias consistentes funcionan mejor que castigo.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07
