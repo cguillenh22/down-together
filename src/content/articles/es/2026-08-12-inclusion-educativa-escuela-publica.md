@@ -16,12 +16,62 @@ generatedBy: "claude"
 translationSlug: "inclusion-educativa-escuela-publica"
 ---
 
-**Respuesta rápida.** Inclusión educativa en escuela pública is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Inclusión educativa en escuela pública es derecho y realidad cada vez más. Requiere adaptaciones pero beneficia a todos: al niño con síndrome de Down y a pares.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Qué Es Inclusión Educativa
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Definición**: Niño con discapacidad en escuela regular con apoyos
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Diferencia**: NO segregación en escuela especial
+
+**Objetivo**: Aprendizaje juntos, comunidad compartida
+
+## Beneficios
+
+**Para niño con SD**:
+- Modelos de pares típicos
+- Expectativas más altas
+- Inclusión social
+- Acceso a currículo
+
+**Para pares**:
+- Aprender diferencia
+- Empatía
+- Comunidad inclusiva
+
+## Adaptaciones Necesarias
+
+- Asistente personal
+- Currículo modificado
+- Evaluación adaptada
+- Ambiente accesible
+- Comunicación clara
+
+## Desafíos
+
+- Maestros no preparados
+- Pares pueden no entender
+- Recursos limitados
+- Adaptaciones no siempre disponibles
+
+## Cómo Facilitar
+
+- Educación a maestros
+- Educación a pares
+- Comunicación clara de necesidades
+- Apoyo a maestro (asistente)
+- Conexión con otros padres
+
+## Lo Más Importante
+
+Inclusión es posible y beneficiosa.
+
+Requiere intención y apoyo.
+
+Transforma comunidad escolar.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

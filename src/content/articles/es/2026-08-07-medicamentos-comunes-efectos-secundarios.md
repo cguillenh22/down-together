@@ -16,12 +16,43 @@ generatedBy: "claude"
 translationSlug: "medicamentos-comunes-efectos-secundarios"
 ---
 
-**Respuesta rápida.** Medicamentos comunes: efectos secundarios is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Muchas medicinas comúnmente prescritas tienen efectos secundarios específicos. Vigilancia es importante. Educación sobre medicamentos es necesaria.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Medicamentos Comunes
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Levotiroxina** (hipotiroidismo):
+- EF: Ninguno típicamente
+- Monitoreo: TSH regular
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Omeprazol** (reflujo):
+- EF: Leve
+- Largo plazo: Considerar otros
+
+**Anticonvulsivos** (si convulsiones):
+- EF: Sedación, cambio de conducta
+- Monitoreo: Niveles en sangre
+
+**Estimulantes** (si hiperactividad):
+- EF: Apetito reducido, sueño alterado
+- Monitoreo: Crecimiento, comportamiento
+
+## Cómo Minimizar EF
+
+- Dosis baja posible
+- Tiempo correcto
+- Alimentos si necesario
+- Monitoreo regular
+
+## Lo Más Importante
+
+Medicamentos son herramientas valiosas.
+
+Efectos secundarios son monitoréables.
+
+Beneficio > riesgo típicamente.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

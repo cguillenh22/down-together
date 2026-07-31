@@ -18,80 +18,43 @@ translationSlug: "fisioterapia-terapia-ocupacional-diferencias"
 
 ## Respuesta Rápida
 
-Fisioterapia entrena movimiento grueso (caminar, correr). Terapia ocupacional entrena habilidades diarias (vestirse, comer). Ambas son críticas en síndrome de Down. Trabajan juntas.
+Fisioterapia entrena movimiento grueso. Terapia ocupacional entrena habilidades diarias. Ambas son críticas en síndrome de Down.
 
-## Fisioterapia (PT)
+## Fisioterapia
 
-### ¿Qué Es?
-Entrenamiento en movimiento grueso del cuerpo
+**Enfoque**: Movimiento grueso del cuerpo
 
-### Enfoque
-- Movimiento de grandes músculos
-- Control postural
-- Equilibrio
-- Caminar, correr, movimiento funcional
+**Objetivos**: Fortalecer, equilibrio, coordinación
 
-### Sesiones Típicas
-1. Calentamiento (5 min)
-2. Ejercicios estructurados (20 min)
-3. Actividades funcionales (10 min)
-4. Ejercicios para casa (5 min)
+**Habilidades**: Caminar, correr, movimiento funcional
 
-### Objetivo
-- Fortalecer músculos débiles
-- Mejorar control motor
-- Acelerar hitos motores
-- Facilitar independencia en movimiento
+## Terapia Ocupacional
 
-## Terapia Ocupacional (OT)
+**Enfoque**: Movimiento fino + vida diaria
 
-### ¿Qué Es?
-Entrenamiento en habilidades de la vida diaria
+**Objetivos**: Independencia en AVD
 
-### Enfoque
-- Movimiento fino (dedos, manos)
-- Coordinación ojo-mano
-- Habilidades de autocuidado
-- Coordinación bilateral
-- Adaptaciones para independencia
+**Habilidades**: Vestirse, comer, escribir
 
-### Sesiones Típicas
-1. Calentamiento (5 min)
-2. Actividad estructurada (15 min)
-3. Juego funcional (10 min)
-4. Recomendaciones para casa (5 min)
-
-### Objetivo
-- Destrezas de movimiento fino
-- Independencia en AVD (actividades de vida diaria)
-- Escritura/manualidades
-- Autoalimentación
-- Higiene personal
-
-## Comparación Directa
+## Comparación
 
 | Aspecto | Fisioterapia | Terapia Ocupacional |
 |--------|-------------|-------------------|
-| Enfoque principal | Movimiento grueso | Movimiento fino/AVD |
-| Músculos | Grandes músculos | Pequeños músculos |
-| Habilidad clave | Caminar, correr | Vestirse, comer, escribir |
-| Frecuencia típica | 2x/semana | 2x/semana |
-| Ambiente | A menudo en piso | Mesa, actividades sentado |
+| Músculos | Grandes | Pequeños |
+| Habilidad | Movimiento grueso | Movimiento fino/AVD |
+| Lugar | Piso, equipo | Mesa, actividades |
 
 ## Ambas Son Necesarias
 
-En síndrome de Down, típicamente necesitas AMBAS porque:
-- Bajo tono afecta movimiento grueso Y fino
-- Desarrollo motor requiere intervención completa
-- Las habilidades se integran (caminar requiere equilibrio + destreza)
+En síndrome de Down, bajo tono afecta ambas.
 
 ## Lo Más Importante
 
-Fisioterapia y Terapia Ocupacional no compiten.
+Fisioterapia Y Terapia Ocupacional juntas.
 
-Trabajan juntas para desarrollo motor completo.
+Máxima independencia requiere ambas.
 
-Ambas son críticas para máxima independencia.
+Transforman capacidades reales.
 
 ---
 

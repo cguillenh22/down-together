@@ -16,12 +16,53 @@ generatedBy: "claude"
 translationSlug: "recursos-educativos-adaptados-currículum"
 ---
 
-**Respuesta rápida.** Recursos educativos adaptados: currículum is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Recursos educativos adaptados hacen accesible el currículo. Desde libros simples hasta apps, existen herramientas. Adaptación correcta = aprendizaje real.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Tipos De Recursos
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Libros**:
+- Libros ilustrados
+- Texto grande
+- Símbolos simples
+- Adaptados para SD
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Tecnología**:
+- Apps educativas
+- Sofware adaptativo
+- Dispositivos de entrada modificados
+- Audio-books
+
+**Manipulables**:
+- Bloques
+- Figuras
+- Objetos reales
+- Tangibles
+
+## Principios De Adaptación
+
+✅ Concreto antes de abstracto
+✅ Visual + auditivo
+✅ Repetición frecuente
+✅ Éxito graduado
+✅ Motivación intrínseca
+
+## Cómo Acceder
+
+- Escuela debe proveer
+- Educador especial adapta
+- Recursos en línea
+- Compra personal
+
+## Lo Más Importante
+
+Adaptación correcta mejora aprendizaje.
+
+Concreto y visual funcionan mejor.
+
+Todos pueden aprender con herramientas correctas.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07
