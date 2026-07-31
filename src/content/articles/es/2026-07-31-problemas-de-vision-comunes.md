@@ -15,10 +15,55 @@ reviewed: true
 generatedBy: "claude"
 translationSlug: "problemas-de-vision-comunes"
 ---
-**Respuesta rápida.** [Contenido pendiente de redacción específica].
 
-**Por qué importa.** [Contexto relevante].
+## Respuesta Rápida
 
-**¿Qué puedes hacer ahora?** [Acción concreta].
+30-50% de personas con síndrome de Down tienen problemas de visión. Los más comunes: miopía, astigmatismo, y cataratas. Screening anual es importante.
 
-**Para profundizar.** [Recursos].
+## Problemas Comunes
+
+**Miopía** (visión de cerca deficiente):
+- Muy común (30%)
+- Gafas resuelven
+- Progresa con edad
+
+**Astigmatismo** (visión borrosa):
+- Común (25%)
+- Gafas resuelven
+- Combinado con miopía frecuente
+
+**Cataratas**:
+- Opacidad en lente
+- Raro pero posible
+- Puede requerir cirugía
+
+**Estrabismo** (ojos no alineados):
+- Común
+- Puede mejorar con edad
+- A veces necesita terapia/cirugía
+
+## Screening
+
+**Primeros meses**: Examen oftalmológico
+
+**Anualmente después**: Para detectar cambios
+
+**Si tiene gafas**: Revisar cada año (cambios de graduación)
+
+## Tratamiento
+
+**Gafas**: Solución simple para mayoría
+
+**Cirugía**: Para cataratas o estrabismo severo
+
+**Seguimiento**: Regular para detectar cambios
+
+## Lo Más Importante
+
+Visión es crítica para desarrollo. Detectar y corregir problemas temprano es importante.
+
+Muchos problemas resueltos con gafas simples.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

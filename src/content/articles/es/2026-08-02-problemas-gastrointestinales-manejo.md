@@ -16,12 +16,62 @@ generatedBy: "claude"
 translationSlug: "problemas-gastrointestinales-manejo"
 ---
 
-**Respuesta rápida.** Problemas gastrointestinales: manejo is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Problemas gastrointestinales son comunes en síndrome de Down: reflujo, constipación, diarrea. Mayoría se manejan bien con cambios simples.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Problemas Comunes
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Reflujo gastroesofágico** (más común):
+- Ácido sube del estómago
+- Síntomas: Escupir, irritabilidad, dolor
+- Manejo: Posición elevada, comidas pequeñas, medicamento si necesario
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Constipación**:
+- Muy común (40%)
+- Síntomas: Deposiciones duras, infrecuentes, dolor
+- Manejo: Fibra, agua, actividad, medicamento si necesario
+
+**Diarrea**:
+- A menudo relacionada con celíaca o alergia
+- Síntomas: Deposiciones blandas frecuentes
+- Manejo: Dieta blanda, fluidos, investigar causa
+
+**Problemas de deglución**:
+- A veces presente
+- Requiere fonoaudiólogo
+- Técnicas especiales pueden ayudar
+
+## Manejo Práctico
+
+**Reflujo**:
+- Posición elevada (30°) después de comer
+- Comidas pequeñas más frecuentes
+- Medicamentos (omeprazol, ranitidina) si necesario
+
+**Constipación**:
+- Aumentar fibra (frutas, verduras)
+- Aumentar agua
+- Actividad física
+- Medicamentos (miralax, senokot)
+
+**Diarrea**:
+- Dieta blanda inicialmente
+- Rehidratación
+- Investigar causa (celíaca, alergia, infección)
+
+## Cuándo Consultar
+
+- Síntomas no mejoran con cambios
+- Sangre en heces
+- Dolor severo
+- Vómito persistente
+- Pérdida de peso
+
+## Lo Más Importante
+
+Mayoría de problemas gastrointestinales se manejan bien. Consulta pediatra si cambios simples no funcionan.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

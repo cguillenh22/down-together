@@ -16,12 +16,66 @@ generatedBy: "claude"
 translationSlug: "cardiopatias-congenitas-que-revisa-el-ecocardiograma-neonatal"
 ---
 
-**Respuesta rápida.** Si tu bebé tiene síndrome de Down, los pediatras recomiendan hacerle un ecocardiograma en los primeros dos o tres meses de vida — incluso si no ves ningún síntoma. Es un examen con ultrasonido, no duele, y revisa si el corazón tiene alguna conexión que no se cerró como se esperaba.
+## Respuesta Rápida
 
-**Por qué importa.** Aproximadamente la mitad de los bebés que nacen con síndrome de Down tiene alguna condición cardíaca. Muchos de estos defectos no dan ninguna señal visible al nacer — el bebé puede verse y comportarse con total normalidad. Por eso el examen se recomienda para todos los recién nacidos con síndrome de Down, no solo para quienes muestran síntomas.
+40-60% de bebés con síndrome de Down tienen cardiopatía congénita. El ecocardiograma neonatal detecta esto. Mayoría son tratables, algunos se cierran solos.
 
-**Qué dice la fuente.** Según las guías de salud de NDSS (National Down Syndrome Society), el defecto más común es el defecto septal atrioventricular (también llamado "canal AV"), seguido de la comunicación interventricular, el conducto arterioso persistente y la tetralogía de Fallot. El ecocardiograma es el examen de referencia para diagnosticar estos defectos porque permite ver el músculo y las válvulas del corazón en movimiento. Detectarlo en los primeros meses permite planear el tratamiento —que puede ir desde solo observación hasta cirugía— antes de que aparezcan complicaciones como insuficiencia cardíaca.
+## ¿Qué Es?
 
-**¿Qué puedes hacer ahora?** Si tu bebé todavía no se ha hecho un ecocardiograma, pídeselo a tu pediatra o a un cardiólogo pediátrico esta semana. No hace falta esperar a que aparezca un síntoma.
+Cardiopatía congénita = malformación del corazón presente desde nacimiento.
 
-**Para profundizar.** [NDSS — The Heart & Down Syndrome](https://ndss.org/resources/the-heart-down-syndrome): explica cada tipo de defecto cardíaco y qué esperar del tratamiento.
+## Tipos Comunes en SD
+
+**Comunicación interauricular (ASD)**:
+- Agujero entre aurículas
+- Muchos se cierran solos
+- Algunos necesitan cirugía
+
+**Comunicación interventricular (VSD)**:
+- Agujero entre ventrículos
+- A menudo se cierra solo
+- Los grandes necesitan cirugía
+
+**Tetralogía de Fallot**:
+- Cuatro defectos combinados
+- Usualmente requiere cirugía
+- Prognosis bueno con cirugía
+
+**Conducto arterioso permeable (PDA)**:
+- Vaso que no se cierra
+- Algunos se cierran solos
+- Algunos necesitan medicamento/cirugía
+
+## Ecocardiograma
+
+**Qué es**: Ultrasound del corazón
+
+**Cuándo**: Primeras semanas de vida (idealmente antes de salir hospital)
+
+**Procedimiento**: No invasivo, sin dolor
+
+**Duración**: 20-30 minutos
+
+**Resultados**: Cardiólogo evalúa
+
+## Tratamiento
+
+**Observación**: Muchos defectos pequeños se monitorean
+
+**Medicamentos**: Algunos defectos
+
+**Cirugía**: Defectos más grandes, típicamente entre 3-6 meses
+
+## Prognosis
+
+**Con tratamiento**: Mayoría viven vidas normales
+
+**Sin detección**: Pueden tener problemas de desarrollo
+
+## Lo Más Importante
+
+Detección temprana es crítica. Mayoría de cardiopatías en SD son tratables.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

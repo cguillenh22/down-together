@@ -16,12 +16,61 @@ generatedBy: "claude"
 translationSlug: "salud-mental-depresion-ansiedad"
 ---
 
-**Respuesta rápida.** Salud mental: depresión y ansiedad is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Depresión y ansiedad son más comunes en síndrome de Down que en población general. Son tratables con terapia y/o medicamentos.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Señales de Depresión
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+- Tristeza persistente
+- Pérdida de interés en actividades
+- Cambio de apetito/sueño
+- Irritabilidad
+- Sentimientos de inutilidad
+- Aislamiento
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Señales de Ansiedad
+
+- Preocupación excesiva
+- Inquietud
+- Dificultad concentrarse
+- Tensión muscular
+- Irritabilidad
+- Problema de sueño
+
+## Por Qué Es Más Común en SD
+
+- Conciencia de diferencias
+- Desafíos sociales
+- Problemas médicos recurrentes
+- Cambios hormonales
+
+## Tratamiento
+
+**Terapia psicológica**:
+- Terapia cognitivo-conductual
+- Terapia de apoyo
+- Muy efectiva
+
+**Medicamentos**:
+- Antidepresivos (SSRI)
+- Ansiolíticos
+- Prescritos por psiquiatra
+
+**Cambios de estilo de vida**:
+- Ejercicio regular
+- Sueño adecuado
+- Conexión social
+- Actividades significativas
+
+## Cuándo Consultar
+
+Si síntomas persisten >2 semanas, consulta pediatra o psicólogo.
+
+## Lo Más Importante
+
+Depresión y ansiedad son médicamente tratables. No son fracaso. Buscar ayuda es fortaleza.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07
