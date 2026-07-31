@@ -16,12 +16,63 @@ generatedBy: "claude"
 translationSlug: "cáncer-detección-prevención-temprana"
 ---
 
-**Respuesta rápida.** Cáncer: detección y prevención temprana is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Riesgo de cáncer es similar o ligeramente diferente en síndrome de Down. Detección temprana es igual de importante. Screening regular es necesario.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Tipos De Riesgo
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Mayor riesgo**:
+- Leucemia (infantil)
+- Tumores GI
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Igual riesgo**:
+- Mayoría de cánceres
+
+**Menor riesgo**:
+- Algunos cánceres (raramente)
+
+## Prevención
+
+✅ Evitar tabaco (segunda mano)
+✅ No exposición a radiación innecesaria
+✅ Nutrición
+✅ Actividad
+✅ Peso saludable
+
+## Screening
+
+**Pediátrico**:
+- Vigilancia médica regular
+- Reportar síntomas
+
+**Adulto**:
+- Screening de cáncer estándar
+- Colonoscopio (si edad/capacidad)
+- Mamografía (si aplica)
+
+## Síntomas De Alerta
+
+- Bultos/inflamación
+- Sangrado inusual
+- Pérdida de peso
+- Fatiga persistente
+
+## Si Se Diagnostica
+
+- Oncólogo especializado
+- Tratamientos disponibles
+- Apoyo emocional
+- Plan de cuidado
+
+## Lo Más Importante
+
+Cáncer es riesgo como otros.
+
+Detección temprana mejora resultados.
+
+Síntomas deben ser evaluados.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

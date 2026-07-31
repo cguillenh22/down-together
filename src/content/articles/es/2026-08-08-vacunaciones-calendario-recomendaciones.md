@@ -16,12 +16,62 @@ generatedBy: "claude"
 translationSlug: "vacunaciones-calendario-recomendaciones"
 ---
 
-**Respuesta rápida.** Vacunaciones: calendario y recomendaciones is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Calendario de vacunación en síndrome de Down es igual a población general, MÁS algunas adicionales. Vacunación es prevención crítica de enfermedades.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Calendario Estándar
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Bebé (0-2 años)**:
+- Rotavirus
+- Poliomielitis
+- Difteria/Tétanos/Tos Ferina
+- Haemophilus influenzae B
+- Neumonía
+- Hepatitis B
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Toddler (2-5 años)**:
+- Refuerzos de vacunas
+- MMR (Sarampión/Paperas/Rubéola)
+- Varicela
+
+**Escolar**:
+- Refuerzos
+- HPV (cuando edad apropiada)
+- Meningococo
+
+## Adicionales Para Síndrome de Down
+
+**Más importante**:
+- Gripe anual
+- Neumococo (a veces más frecuente)
+- RSV (si riesgo)
+
+**Considerar**:
+- Consulta cardiólogo sobre vacunaciones si cardiopatía
+
+## Reacciones Esperadas
+
+- Dolor en sitio
+- Fiebre leve
+- Irritabilidad
+- Típicamente pasan en 24-48h
+
+## Reacciones Preocupantes
+
+- Fiebre muy alta (>40°C)
+- Convulsiones
+- Reacción alérgica
+- Contacta médico
+
+## Lo Más Importante
+
+Vacunación protege vida.
+
+Reacciones leves son normales.
+
+No vacunar es riesgo mayor.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

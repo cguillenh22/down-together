@@ -16,12 +16,56 @@ generatedBy: "claude"
 translationSlug: "virus-rsv-bronquiolitis-prevencion"
 ---
 
-**Respuesta rápida.** Virus RSV y bronquiolitis: prevención is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Virus RSV causa bronquiolitis (inflamación de vías respiratorias). Más grave en bebés. Prevención es importante en síndrome de Down.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Qué Es RSV
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+**Virus**: Respira virus sincitial
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+**Síntomas**: Congestionamiento, tos, dificultad respiratoria
+
+**Severidad**: Leve en mayores, severo en bebés
+
+**Riesgo en SD**: Cardiopatías/bajo tono = más riesgo
+
+## Síntomas
+
+- Congestión nasal
+- Tos
+- Fiebre
+- Respiración dificultosa
+- Rechazo a comer
+
+## Prevención
+
+✅ Lavado frecuente de manos
+✅ Evitar aglomeración
+✅ Vacuna RSV (si existe en tu país)
+✅ Anticuerpos monoclonales (si muy riesgo)
+
+## Tratamiento
+
+- Típicamente: Apoyo de síntomas
+- Oxígeno si necesario
+- Hospitalización si severo
+
+## Cuándo Buscar Emergencia
+
+- Dificultad respiratoria severa
+- Letargo
+- Rechazo total a comer
+- Labios azules
+
+## Lo Más Importante
+
+RSV es común pero prevenible.
+
+Bebés con síndrome de Down: mayor cuidado necesario.
+
+Busca atención si dificultad respiratoria.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

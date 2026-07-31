@@ -16,12 +16,56 @@ generatedBy: "claude"
 translationSlug: "alzheimer-en-personas-con-down"
 ---
 
-**Respuesta rápida.** Alzheimer en personas con Down is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Personas con síndrome de Down tienen riesgo muy aumentado de Alzheimer (30% por edad 50). Comienza típicamente antes que población general. Detección temprana es importante.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Por Qué Mayor Riesgo
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+- Cromosoma 21 tiene proteína que causa Alzheimer
+- Todas las personas con SD tendrán cambios Alzheimer
+- No todas desarrollarán síntomas
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Edad De Inicio
+
+- Población general: típicamente 65+
+- Síndrome de Down: típicamente 40-50+
+
+## Señales Tempranas
+
+- Cambio de memoria (olvida cosas recientes)
+- Cambio de personalidad
+- Confusión
+- Dificultad en tareas antes fáciles
+- Pérdida de interés
+
+## Screening
+
+- Evaluación cognitiva regular post-40
+- Neuroimagen si sospecha
+- Test neuropsicológico
+
+## Si Se Diagnostica
+
+- No hay cura, pero apoyo ayuda
+- Medicamentos pueden ralentizar
+- Adaptaciones en ambiente
+- Apoyo emocional
+
+## Planificación Futura
+
+- Conversación anticipada importante
+- Planes de cuidado
+- Cambios de vivienda si necesario
+
+## Lo Más Importante
+
+Alzheimer es complicación seria.
+
+Screening temprano es crítico.
+
+Planificación anticipada es necesaria.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

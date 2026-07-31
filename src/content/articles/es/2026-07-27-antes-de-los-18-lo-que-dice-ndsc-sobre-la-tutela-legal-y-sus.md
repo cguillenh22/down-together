@@ -18,20 +18,61 @@ pais: us
 translationSlug: "antes-de-los-18-lo-que-dice-ndsc-sobre-la-tutela-legal-y-sus"
 ---
 
-Cuando un hijo o hija con síndrome de Down se acerca a los 18 años, muchas familias empiezan a preguntarse si necesitan solicitar la tutela legal (guardianship). El Congreso Nacional del Síndrome de Down (NDSC, por sus siglas en inglés) tiene una postura clara al respecto, publicada en su Declaración de Posición sobre Tutela Legal para Personas con Discapacidad.
+## Respuesta Rápida
 
-## ¿Qué es exactamente la tutela legal?
-Según NDSC, <cite index="21-4">la tutela legal es un proceso legal estatal en el que un tribunal retira algunos o muchos de los derechos legales y de toma de decisiones de una persona y los transfiere total o parcialmente a otra persona</cite>. Es una medida con un alto nivel de intrusión en la vida de la persona, por lo que no debería ser el punto de partida por defecto.
+Antes de cumplir 18 años, padres deben decidir: ¿Tutela legal permanente u otra opción? Decisión importante con implicaciones legales y prácticas.
 
-## La postura de NDSC: primero, las opciones menos restrictivas
-La organización es explícita: <cite index="21-1">antes de considerar la tutela legal como opción, se deben considerar medios menos restrictivos de apoyo en la toma de decisiones</cite>. Entre esas alternativas, NDSC menciona <cite index="21-2">los poderes notariales para atención médica, las directrices anticipadas, la toma de decisiones con apoyo, los poderes generales</cite> y otros acuerdos de representación.
+## Opciones Legales
 
-Un punto central del documento es que la participación activa del propio adolescente o joven adulto no es un detalle secundario: <cite index="1-3">la participación óptima de la persona con síndrome de Down es fundamental para este proceso</cite>. Es decir, cualquier plan legal debería construirse escuchando lo que la persona quiere para su propia vida, no solo lo que la familia considera más seguro.
+### Tutela Completa
 
-## Por qué esto importa específicamente en la adolescencia
-La transición a la adultez legal no ocurre de un día para otro: se prepara. Explorar durante la adolescencia (idealmente antes de los 17-18 años) las diferencias entre tutela legal, poderes notariales y toma de decisiones con apoyo permite a las familias tomar decisiones informadas, en lugar de recurrir automáticamente a la opción más restrictiva por desconocimiento o presión de tiempo. También da espacio para que el propio adolescente participe en conversaciones sobre su salud, sus finanzas y su vida cotidiana, fortaleciendo habilidades de autodeterminación antes de llegar a la mayoría de edad.
+**Qué es**: Padre toma todas las decisiones por hijo
 
-## ¿Qué puedes hacer ahora?
-- Lee la Declaración de Posición completa de NDSC sobre tutela legal para entender el lenguaje legal y las alternativas disponibles.
-- Investiga qué opciones de "apoyo en la toma de decisiones" (supported decision-making) existen en tu estado o país, ya que varían según la jurisdicción.
-- Habla con un abogado especializado en planificación para discapacidad y, si es posible, incluye a tu hijo/a adolescente en la conversación sobre qué tipo de apoyo legal prefiere.
+**Cuándo**: Si hijo no puede consentir informadamente
+
+**Implicaciones**: Hijo pierde derechos legales
+
+### Tutela Limitada
+
+**Qué es**: Padre toma decisiones específicas (médicas, financiera, etc.)
+
+**Cuándo**: Hijo puede participar en algunas decisiones
+
+**Implicaciones**: Hijo retiene ciertos derechos
+
+### Poder De Abogado
+
+**Qué es**: Hijo designa padre para actuar en su nombre
+
+**Cuándo**: Hijo tiene capacidad de entender y consentir
+
+**Implicaciones**: Flexible, puede ser revocado
+
+### Ninguna (Si Posible)
+
+**Cuándo**: Hijo es suficientemente capaz
+
+**Ventaja**: Máxima autonomía
+
+## Consideraciones
+
+- Capacidad del hijo
+- Protección vs autonomía
+- Implicaciones legales/financieras
+- Cambios futuros
+
+## Cómo Decidir
+
+Consulta abogado especializado en discapacidad antes de 18 años.
+
+## Lo Más Importante
+
+Decisión afecta derechos de por vida.
+
+Reflexión cuidadosa es necesaria.
+
+Asesor legal es imprescindible.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

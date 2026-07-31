@@ -16,12 +16,52 @@ generatedBy: "claude"
 translationSlug: "hipertensión-en-adultos-con-down"
 ---
 
-**Respuesta rápida.** Hipertensión en adultos: monitoreo is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Hipertensión (presión alta) es más común en adultos con síndrome de Down. Causa silenciosa de problemas de corazón. Screening regular es necesario.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Por Qué Mayor Riesgo
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+- Cardiopatías congénitas
+- Obesidad más común
+- Sedentarismo
+- Genética
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Síntomas
+
+- A menudo sin síntomas (silenciosa)
+- Dolores de cabeza
+- Dificultad respiratoria
+- Dolor de pecho
+
+## Screening
+
+- Verificar presión regularmente
+- Meta: <120/80
+- A partir de adolescencia
+
+## Prevención
+
+✅ Peso saludable
+✅ Actividad física
+✅ Reducir sodio
+✅ Estrés reducido
+
+## Tratamiento
+
+- Cambios de estilo de vida primero
+- Medicamentos si necesario
+- Monitoreo regular
+- Cardiólogo puede ayudar
+
+## Lo Más Importante
+
+Hipertensión es silenciosa.
+
+Screening regular detecta temprano.
+
+Prevención y tratamiento evitan complicaciones.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

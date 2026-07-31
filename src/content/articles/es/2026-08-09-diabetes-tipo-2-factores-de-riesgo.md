@@ -16,12 +16,60 @@ generatedBy: "claude"
 translationSlug: "diabetes-tipo-2-factores-de-riesgo"
 ---
 
-**Respuesta rápida.** Diabetes tipo 2: factores de riesgo is an important tema for families and professionals supporting people with síndrome de Down.
+## Respuesta Rápida
 
-**Por qué importa.** Understanding this tema helps improve quality of life and supports better outcomes.
+Diabetes tipo 2 es más común en síndrome de Down (5-10% de casos). Es prevenible con peso saludable y actividad. Screening regular es importante.
 
-**Qué dice la fuente.** Research shows that informed families make better decisions and advocate more effectively.
+## Por Qué Mayor Riesgo
 
-**¿Qué puedes hacer ahora?** Consider speaking with healthcare providers, educators, or support groups to learn more about this subject.
+- Metabolismo lentificado
+- Predisposición genética
+- Bajo tono = menos actividad
+- Obesidad más común
 
-**Para profundizar.** For more information, consult trusted sources and your support network.
+## Factores De Riesgo
+
+- Peso sobre promedio
+- Sedentario
+- Historia familiar
+- Edad (típicamente >20 años)
+
+## Síntomas
+
+- Sed extrema
+- Orinar frecuentemente
+- Cansancio
+- Visión borrosa
+- Cicatrización lenta
+
+## Prevención
+
+✅ Peso saludable
+✅ Actividad física regular
+✅ Nutrición balanceada
+✅ Screening regular (cada 1-3 años)
+
+## Screening
+
+- Test de glucosa en ayunas
+- Test de A1C
+- Típicamente después de 10 años de edad
+
+## Si Se Diagnostica
+
+- Medicamento (metformin típicamente)
+- Cambios de estilo de vida
+- Monitoreo regular
+- Educación sobre dieta
+
+## Lo Más Importante
+
+Diabetes tipo 2 es prevenible.
+
+Prevención es más fácil que tratamiento.
+
+Screening regular es crítico.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07

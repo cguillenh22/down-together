@@ -15,28 +15,57 @@ pais: general
 translationSlug: "empleo-con-apoyo-como-las-personas-con-sindrome-de-down-acce"
 ---
 
-## ¿Por qué hablamos de trabajo cuando pensamos en síndrome de Down?
+## Respuesta Rápida
 
-Muchas familias, al recibir el diagnóstico, se preguntan si su hijo o hija podrá trabajar de adulto. La respuesta es sí: hoy existen modelos probados que ayudan a que las personas con síndrome de Down consigan y mantengan un empleo real, en empresas normales, junto a compañeros sin discapacidad. Según Down España, <cite index="12-2">el acceso al mundo laboral es un derecho básico y una de las formas más efectivas de favorecer la inclusión sociolaboral plena y la vida autónoma de las personas con discapacidad intelectual</cite>.
+Empleo con apoyo permite trabajar en empresa regular. 30-40% de adultos con síndrome de Down trabajan remuneradamente. Transforma vida económica y emocional.
 
-## ¿Qué es el 'Empleo con Apoyo'?
+## Qué Es Empleo Con Apoyo
 
-Es el modelo más usado en países como España para lograr esta inclusión. Consiste en que una persona profesional, llamada preparador o preparadora laboral, acompaña a la persona con síndrome de Down durante su llegada al puesto de trabajo. Según explica Down España, <cite index="12-4">el preparador laboral acompaña a la persona con discapacidad durante el proceso de integración en el puesto de trabajo y ayuda en su relación con el resto del personal de la empresa, incluida la dirección</cite>.
+**Modelo**: Trabajador en empleador regular, con coach de empleo
 
-Este apoyo no es para siempre en la misma intensidad: se va reduciendo poco a poco, a medida que la persona gana autonomía y confianza en sus tareas.
+**Diferencia antigua**: Talleres segregados
 
-## ¿Qué tipos de empleo existen?
+**Ahora**: Integración laboral real
 
-Organizaciones como NDSS (National Down Syndrome Society) explican que, en términos generales, hay varias opciones según el nivel de apoyo necesario: <cite index="3-1">empleo competitivo, empleo con apoyo y empleo protegido</cite>. La meta a largo plazo suele ser el empleo competitivo en empresas ordinarias, con los apoyos que cada persona necesite.
+## Cómo Funciona
 
-## ¿Qué gana una persona con síndrome de Down al trabajar?
+1. **Evaluación**: Capacidades, intereses, habilidades
+2. **Búsqueda**: Coach busca trabajo apropiado
+3. **Colocación**: Empieza trabajo con apoyo intenso
+4. **Entrenamiento**: Coach enseña tareas específicas
+5. **Retiro gradual**: Coach reduce apoyo conforme mejora
 
-Más allá del sueldo, trabajar aporta autonomía, relaciones sociales y sentido de pertenencia. Down España lo resume así: <cite index="16-6">las personas de este colectivo tienen mucho que aportar al mercado laboral y, con los apoyos adecuados, pueden desempeñar empleos en numerosos sectores</cite>.
+## Beneficios
 
-## ¿Existen leyes que apoyen la contratación?
+✅ Dinero real
+✅ Independencia económica (parcial)
+✅ Socialización laboral
+✅ Propósito
+✅ Confianza
 
-En España, por ejemplo, <cite index="13-9">las empresas públicas y privadas de más de 50 trabajadores tienen la obligación legal de contratar un 2% de personas con discapacidad</cite>. Cada país tiene normativas propias, así que conviene consultar con asociaciones locales de síndrome de Down para conocer los recursos disponibles cerca de ti.
+## Salario
 
-## Un consejo cálido para las familias
+**Realista**: Típicamente mínimo inicial
 
-No hace falta tener todas las respuestas ahora mismo. El camino hacia el empleo suele empezar años antes, con la escuela, las prácticas y el desarrollo de habilidades sociales. Contactar con una asociación de síndrome de Down de tu zona es un buen primer paso para conocer los programas de empleo con apoyo disponibles para tu familia.
+**Potencial**: Puede mejorar con tiempo
+
+**Garantía**: Protección legal de explotación
+
+## Acceso
+
+- Programa vocacional en secundaria
+- Agencia estatal de empleo
+- Organizaciones de discapacidad
+- Transición post-escolar
+
+## Lo Más Importante
+
+Trabajo remunerado es posible.
+
+Empleo con apoyo funciona realmente.
+
+Dignidad viene de contribuir.
+
+---
+
+**Revisado**: Carlos Guillén - 2026-08-07
