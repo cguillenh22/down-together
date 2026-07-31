@@ -1,0 +1,187 @@
+---
+// Cookie Consent Banner Component
+// Shows once per browser until user accepts/rejects
+
+export interface Props {
+  lang?: 'es' | 'en';
+}
+
+const { lang = 'es' } = Astro.props;
+
+const content = {
+  es: {
+    title: 'Usamos cookies para mejorar tu experiencia',
+    description: 'Este sitio usa Google Analytics y Cloudflare para entender cómo usas Down Together y mejorar nuestros servicios.',
+    accept: 'Aceptar cookies',
+    reject: 'Rechazar',
+    policy: 'Política de privacidad',
+  },
+  en: {
+    title: 'We use cookies to improve your experience',
+    description: 'This site uses Google Analytics and Cloudflare to understand how you use Down Together and improve our services.',
+    accept: 'Accept cookies',
+    reject: 'Reject',
+    policy: 'Privacy policy',
+  },
+};
+
+const t = content[lang];
+---
+
+<div id="cookie-consent" class="cookie-banner" style="display: none;">
+  <div class="cookie-content">
+    <div class="cookie-text">
+      <h3>{t.title}</h3>
+      <p>{t.description}</p>
+    </div>
+    <div class="cookie-actions">
+      <button id="cookie-reject" class="cookie-btn reject">{t.reject}</button>
+      <button id="cookie-accept" class="cookie-btn accept">{t.accept}</button>
+    </div>
+    <a href={lang === 'es' ? '/es/politica-privacidad/' : '/en/privacy-policy/'} class="cookie-link">
+      {t.policy}
+    </a>
+  </div>
+</div>
+
+<script>
+  const CONSENT_KEY = 'cookie-consent';
+  const banner = document.getElementById('cookie-consent');
+  const acceptBtn = document.getElementById('cookie-accept');
+  const rejectBtn = document.getElementById('cookie-reject');
+
+  // Check if user already made a choice
+  const consent = localStorage.getItem(CONSENT_KEY);
+
+  if (!consent && banner) {
+    banner.style.display = 'block';
+  }
+
+  acceptBtn?.addEventListener('click', () => {
+    localStorage.setItem(CONSENT_KEY, 'accepted');
+    banner!.style.display = 'none';
+
+    // Load analytics when user accepts
+    window.gtag?.('consent', 'update', {
+      'analytics_storage': 'granted',
+    });
+
+    // Reload to apply GA tracking
+    window.location.reload();
+  });
+
+  rejectBtn?.addEventListener('click', () => {
+    localStorage.setItem(CONSENT_KEY, 'rejected');
+    banner!.style.display = 'none';
+  });
+</script>
+
+<style>
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, var(--blue), var(--purple));
+    color: white;
+    padding: 1.5rem;
+    z-index: 1000;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .cookie-text h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .cookie-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.95;
+    line-height: 1.4;
+  }
+
+  .cookie-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .cookie-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  .cookie-btn.accept {
+    background: white;
+    color: var(--blue);
+  }
+
+  .cookie-btn.accept:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .cookie-btn.reject {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .cookie-btn.reject:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .cookie-link {
+    color: white;
+    text-decoration: underline;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .cookie-link:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 640px) {
+    .cookie-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+
+    .cookie-text p {
+      font-size: 0.85rem;
+    }
+
+    .cookie-actions {
+      width: 100%;
+    }
+
+    .cookie-btn {
+      flex: 1;
+      min-width: 120px;
+    }
+
+    .cookie-link {
+      text-align: center;
+      display: block;
+    }
+  }
+</style>

@@ -1,14 +1,18 @@
 ---
+import CookieConsent from '../components/CookieConsent.astro';
+
 interface Props {
   title: string;
   description?: string;
   lang?: 'es' | 'en';
-  // Si esta página tiene una traducción específica (ej. un artículo con
-  // translationSlug), pásala aquí para que "Cambiar idioma" lleve al
-  // artículo traducido en vez de al home del otro idioma.
   switchHrefOverride?: string;
+  // Article metadata for schema.org
+  pubDate?: Date;
+  author?: string;
+  category?: string;
+  isArticle?: boolean;
 }
-const { title, description = '', lang = 'es', switchHrefOverride } = Astro.props;
+const { title, description = '', lang = 'es', switchHrefOverride, pubDate, author, category, isArticle } = Astro.props;
 
 const nav = {
   es: {
@@ -48,21 +52,77 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="canonical" href={canonicalUrl} />
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Down Together" />
+    <meta property="og:image" content={new URL('/og-image.jpg', Astro.site)} />
+    <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'en_US'} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL('/og-image.jpg', Astro.site)} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
 
-    <!-- Fuse.js for advanced search -->
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+    <!-- Fuse.js for advanced search (deferred to not block LCP) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-    <!-- Google Analytics -->
+    <!-- Google Analytics (deferred for better LCP) -->
     {import.meta.env.PUBLIC_GA_ID && (
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
+      <script defer src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
     )}
 
     <slot name="head" />
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "853e837f72674205847ee30c592163c0"}'></script>
+
+    <!-- Schema.org Organization -->
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Down Together",
+        "url": Astro.site?.toString().slice(0, -1),
+        "description": "Información verificada sobre síndrome de Down para familias",
+        "sameAs": [
+          "https://twitter.com/downtogether",
+          "https://instagram.com/downtogether.org",
+          "https://facebook.com/downtogether"
+        ]
+      })}
+    </script>
+
+    <!-- Schema.org BlogPosting (if article) -->
+    {isArticle && (
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": title,
+          "description": description,
+          "author": {
+            "@type": "Organization",
+            "name": author || "Down Together"
+          },
+          "datePublished": pubDate?.toISOString(),
+          "articleSection": category,
+          "url": canonicalUrl.toString(),
+          "image": new URL('/og-image.jpg', Astro.site)?.toString()
+        })}
+      </script>
+    )}
+    {import.meta.env.CLOUDFLARE_TOKEN && (
+      <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({token: import.meta.env.CLOUDFLARE_TOKEN})}></script>
+    )}
     <script>
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -70,6 +130,14 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
         document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
       });
+      // Lazy load images (performance optimization)
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('img:not([loading])').forEach(img => {
+          img.loading = 'lazy';
+          img.decoding = 'async';
+        });
+      });
+
       // Scroll animations
       const observer = new IntersectionObserver(entries => {
         entries.forEach(e => {
@@ -84,8 +152,18 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       });
     </script>
     <style is:global>
+      @font-face {
+        font-family: 'Poppins';
+        src: local('Poppins'), local('Poppins-Regular');
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: 'Inter';
+        src: local('Inter'), local('Inter-Regular');
+        font-weight: 400;
+      }
       :root {
-        --blue: #2563EB;
+        --blue: #1546A8;
         --yellow: #FBBF24;
         --orange: #F97316;
         --green: #10b981;
@@ -94,7 +172,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         --bg-light: #ffffff;
         --bg-alt: #f3f4f6;
         --text-dark: #1f2937;
-        --text-muted: #6b7280;
+        --text-muted: #525B68;
         --border-light: #e5e7eb;
         --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
         --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
@@ -110,6 +188,18 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--blue);
+        color: white;
+        padding: 8px;
+        z-index: 100;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
       @keyframes fadeInUp {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
@@ -118,17 +208,9 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         from { opacity: 0; transform: translateY(-10px); }
         to { opacity: 1; transform: translateY(0); }
       }
-      @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.7; }
-      }
       @keyframes parallax {
         0% { transform: translateY(0px); }
         100% { transform: translateY(20px); }
-      }
-      @keyframes ripple {
-        0% { width: 0; height: 0; opacity: 1; }
-        100% { width: 300px; height: 300px; opacity: 0; }
       }
       @keyframes shimmer {
         0% { background-position: -1000px 0; }
@@ -1019,7 +1101,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         }
       }
       body {
-        animation: pageEnter 0.5s ease-out;
+        animation: pageEnter 0.3s ease-out;
       }
       /* Enhanced label animations */
       label {
@@ -3155,6 +3237,13 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         });
       }
 
+      // ==================== SERVICE WORKER REGISTRATION ====================
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {
+          // SW registration failed (non-critical)
+        });
+      }
+
       // ==================== INITIALIZATION ====================
       document.addEventListener('DOMContentLoaded', () => {
         // Phase 3 features
@@ -3184,6 +3273,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     </script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Ir al contenido principal</a>
     <header>
       <a class="brand" href={lang === 'es' ? '/es/' : '/en/'}>
         <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -3204,10 +3294,11 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
         <a href={switchHref}>{t.switch}</a>
       </nav>
     </header>
-    <main>
+    <main id="main-content">
       <slot />
     </main>
     <footer>
+      <CookieConsent lang={lang} />
       <div class="newsletter">
         <h3>{lang === 'es' ? 'Suscríbete' : 'Subscribe'}</h3>
         <p>{lang === 'es' ? 'Recibe actualizaciones sobre síndrome de Down' : 'Get updates about Down syndrome'}</p>
@@ -3218,10 +3309,12 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       </div>
 
       <div class="social-links">
-        <a href="https://twitter.com" class="social-link" title="Twitter" target="_blank" rel="noopener noreferrer">𝕏</a>
-        <a href="https://facebook.com" class="social-link" title="Facebook" target="_blank" rel="noopener noreferrer">f</a>
-        <a href="https://instagram.com" class="social-link" title="Instagram" target="_blank" rel="noopener noreferrer">📷</a>
-        <a href="https://linkedin.com" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+        <a href="https://twitter.com/downtogether" class="social-link" title="Twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+        <a href="https://facebook.com/downtogether" class="social-link" title="Facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+        <a href="https://instagram.com/downtogether.org" class="social-link" title="Instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+        <a href="https://linkedin.com/company/down-together" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+        <a href="https://youtube.com/downtogether" class="social-link" title="YouTube" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶️</a>
+        <a href="https://tiktok.com/@downtogether" class="social-link" title="TikTok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">🎵</a>
       </div>
 
       <div class="footer-divider">
