@@ -1,0 +1,154 @@
+---
+// Portada cálida de la home en español.
+// Ilustración propia en SVG (sin personas reales ni fotos de terceros).
+// Paleta y tipografía viven en las variables --w-* de esta sección, así no
+// afectan al resto del sitio mientras se revisa.
+---
+<section class="warm-hero" aria-labelledby="warm-hero-title">
+  <div class="warm-copy">
+    <h1 id="warm-hero-title">Acabas de recibir el diagnóstico. Respira: no estás solo.</h1>
+    <p class="warm-lede">Respuestas verificadas, escritas por especialistas y revisadas por personas, en un lenguaje claro y sin prisas.</p>
+    <div class="warm-actions">
+      <a href="/es/empieza-aqui/" class="warm-btn warm-btn-primary">Empieza por aquí</a>
+      <a href="#featured" class="warm-btn warm-btn-ghost">Guías esenciales</a>
+    </div>
+  </div>
+
+  <div class="warm-art" aria-hidden="true">
+    <svg viewBox="0 0 480 380" role="presentation" focusable="false">
+      <!-- Sol -->
+      <circle cx="338" cy="104" r="78" class="w-sun" />
+      <!-- Casa: cuerpo y tejado con esquinas suaves (no arco: evita lectura de lápida) -->
+      <path d="M124 208 L206 136 L288 208 V318 H124 Z" class="w-house" stroke-linejoin="round" />
+      <!-- Ventana cuadrada redondeada -->
+      <rect x="150" y="232" width="32" height="32" rx="8" class="w-window" />
+      <!-- Puerta con techo redondeado -->
+      <path d="M220 318 V262 Q220 246 236 246 Q252 246 252 262 V318 Z" class="w-window" />
+      <!-- Tallo y hojas -->
+      <path d="M338 318 C338 270 332 236 344 196" class="w-stem" />
+      <path d="M342 262 C312 258 296 236 298 214 C324 218 340 236 342 262 Z" class="w-leaf" />
+      <path d="M342 226 C370 222 388 202 386 180 C360 184 344 202 342 226 Z" class="w-leaf w-leaf-2" />
+      <!-- Dos círculos que se tocan: apoyo mutuo -->
+      <circle cx="372" cy="286" r="26" class="w-circle-a" />
+      <circle cx="404" cy="286" r="26" class="w-circle-b" />
+      <!-- Suelo -->
+      <rect x="40" y="318" width="400" height="12" rx="6" class="w-ground" />
+    </svg>
+  </div>
+</section>
+
+<style>
+  .warm-hero {
+    --w-bg: #fbf4ea;
+    --w-ink: #3a2e27;
+    --w-muted: #6b5346;
+    --w-terra: #a94a33;
+    --w-ochre: #e9a94b;
+    --w-sage: #6e8b67;
+    --w-clay: #f3e6d3;
+    --w-sand: #e7d3b8;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 2rem;
+    align-items: center;
+    padding: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 4vw, 3rem);
+    margin: 1rem 0 2rem;
+    background: var(--w-bg);
+    border-radius: 28px;
+    color: var(--w-ink);
+  }
+
+  html[data-theme="dark"] .warm-hero {
+    --w-bg: #241c18;
+    --w-ink: #f6ebdc;
+    --w-muted: #d9c7b3;
+    --w-terra: #e07a5f;
+    --w-ochre: #f2c15f;
+    --w-sage: #9dbb93;
+    --w-clay: #332820;
+    --w-sand: #4a3b30;
+  }
+
+  .warm-copy h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 4.2vw, 2.9rem);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 1rem;
+    text-wrap: balance;
+    color: var(--w-ink);
+  }
+
+  .warm-lede {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--w-muted);
+    max-width: 36ch;
+    margin: 0 0 1.75rem;
+    text-wrap: pretty;
+  }
+
+  .warm-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .warm-btn {
+    display: inline-block;
+    padding: 0.9rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .warm-btn-primary {
+    background: var(--w-terra);
+    color: #fff;
+  }
+
+  .warm-btn-ghost {
+    color: var(--w-ink);
+    box-shadow: inset 0 0 0 2px var(--w-sand);
+  }
+
+  .warm-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .warm-btn:focus-visible {
+    outline: 3px solid var(--w-ochre);
+    outline-offset: 3px;
+  }
+
+  .warm-art svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .w-sun { fill: var(--w-ochre); opacity: 0.9; }
+  .w-house { fill: var(--w-clay); stroke: var(--w-sand); stroke-width: 2; }
+  .w-window { fill: var(--w-ochre); }
+  .w-stem { fill: none; stroke: var(--w-sage); stroke-width: 4; stroke-linecap: round; }
+  .w-leaf { fill: var(--w-sage); }
+  .w-leaf-2 { opacity: 0.85; }
+  .w-circle-a { fill: var(--w-terra); opacity: 0.85; }
+  .w-circle-b { fill: var(--w-ochre); opacity: 0.85; }
+  .w-ground { fill: var(--w-sand); }
+
+  @media (max-width: 760px) {
+    .warm-hero {
+      grid-template-columns: 1fr;
+      border-radius: 20px;
+    }
+    .warm-art { order: 2; max-width: 360px; margin: 0 auto; width: 100%; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .warm-btn { transition: none; }
+  }
+</style>
