@@ -1,6 +1,6 @@
 ---
 title: "Trabajo y empleo: legislación y protección"
-description: "Información sobre Trabajo y empleo: legislación y protección"
+description: "Trabajo y empleo: legislación y protección is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-09-02
 lang: "en"
 level: "avanzado"

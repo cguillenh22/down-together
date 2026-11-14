@@ -1,6 +1,6 @@
 ---
 title: "Decisiones médicas: autonomía del hijo"
-description: "Información sobre Decisiones médicas: autonomía del hijo"
+description: "Respuesta rápida. Decisiones médicas: autonomía del hijo is an important tema for families and professionals supporting people with síndrome de Down."
 pubDate: 2026-08-28
 lang: "es"
 level: "avanzado"

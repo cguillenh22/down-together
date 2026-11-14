@@ -1,6 +1,6 @@
 ---
 title: "Enfermedad celíaca y síndrome de Down"
-description: "Información sobre Enfermedad celíaca y síndrome de Down"
+description: "Enfermedad celíaca y síndrome de Down is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-03
 lang: "en"
 level: "avanzado"

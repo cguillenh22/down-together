@@ -1,6 +1,6 @@
 ---
 title: "Sexualidad y relaciones: conversaciones importantes"
-description: "Información sobre Sexualidad y relaciones: conversaciones importantes"
+description: "Sexualidad es parte normal de desarrollo humano. Personas con síndrome de Down tienen deseos sexuales."
 pubDate: 2026-08-29
 lang: "es"
 level: "avanzado"

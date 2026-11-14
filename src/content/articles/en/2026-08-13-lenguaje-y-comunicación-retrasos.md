@@ -1,6 +1,6 @@
 ---
 title: "Lenguaje y comunicación: retrasos"
-description: "Información sobre Lenguaje y comunicación: retrasos"
+description: "Lenguaje y comunicación: retrasos is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-13
 lang: "en"
 level: "avanzado"

@@ -1,6 +1,6 @@
 ---
 title: "Cáncer: detección y prevención temprana"
-description: "Información sobre Cáncer: detección y prevención temprana"
+description: "Riesgo de cáncer es similar o ligeramente diferente en síndrome de Down. Detección temprana es igual de importante."
 pubDate: 2026-08-10
 lang: "es"
 level: "avanzado"

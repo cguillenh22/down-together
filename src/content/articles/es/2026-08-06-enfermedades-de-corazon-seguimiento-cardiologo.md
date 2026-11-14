@@ -1,6 +1,6 @@
 ---
 title: "Enfermedades de corazón: seguimiento cardiológo"
-description: "Información sobre Enfermedades de corazón: seguimiento cardiológo"
+description: "Cardiopatías congénitas requieren seguimiento de por vida. Cardiología pediátrica es primer paso."
 pubDate: 2026-08-06
 lang: "es"
 level: "avanzado"

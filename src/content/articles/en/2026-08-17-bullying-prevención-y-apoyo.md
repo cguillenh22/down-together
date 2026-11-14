@@ -1,6 +1,6 @@
 ---
 title: "Bullying: prevención y apoyo"
-description: "Información sobre Bullying: prevención y apoyo"
+description: "Bullying: prevención y apoyo is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-17
 lang: "en"
 level: "avanzado"

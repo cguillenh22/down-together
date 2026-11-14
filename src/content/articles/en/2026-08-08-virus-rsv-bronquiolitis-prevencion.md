@@ -1,6 +1,6 @@
 ---
 title: "Virus RSV y bronquiolitis: prevención"
-description: "Información sobre Virus RSV y bronquiolitis: prevención"
+description: "Virus RSV y bronquiolitis: prevención is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-08
 lang: "en"
 level: "avanzado"

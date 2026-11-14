@@ -1,6 +1,6 @@
 ---
 title: "Hermanos: impacto emocional y apoyo"
-description: "Información sobre Hermanos: impacto emocional y apoyo"
+description: "Hermanos: impacto emocional y apoyo is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-23
 lang: "en"
 level: "avanzado"

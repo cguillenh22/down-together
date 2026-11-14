@@ -1,6 +1,6 @@
 ---
 title: "Problemas de sueño: insomnio y tratamiento"
-description: "Información sobre Problemas de sueño: insomnio y tratamiento"
+description: "Problemas de sueño: insomnio y tratamiento is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-04
 lang: "en"
 level: "avanzado"

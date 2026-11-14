@@ -1,6 +1,6 @@
 ---
 title: "Ahorro e inversión: futuro económico"
-description: "Información sobre Ahorro e inversión: futuro económico"
+description: "Respuesta rápida. Ahorro e inversión: futuro económico is an important tema for families and professionals supporting people with síndrome de Down."
 pubDate: 2026-08-31
 lang: "es"
 level: "avanzado"

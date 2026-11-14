@@ -1,6 +1,6 @@
 ---
 title: "Alzheimer en personas con Down"
-description: "Información sobre Alzheimer en personas con Down"
+description: "Personas con síndrome de Down tienen riesgo muy aumentado de Alzheimer (30% por edad 50). Comienza típicamente antes que población general."
 pubDate: 2026-08-10
 lang: "es"
 level: "avanzado"

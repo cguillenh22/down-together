@@ -1,6 +1,6 @@
 ---
 title: "Resiliencia en familias: fortaleza y recursos"
-description: "Información sobre Resiliencia en familias: fortaleza y recursos"
+description: "Resiliencia NO es \"todo está bien.\" Es capacidad de caer, llorar, procesar, y levantarse DIFERENTE pero más fuerte. Las familias con síndrome de Down desarrollan resiliencia porque tienen que."
 pubDate: 2026-08-26
 lang: "es"
 level: "basico"

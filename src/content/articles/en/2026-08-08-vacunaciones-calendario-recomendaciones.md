@@ -1,6 +1,6 @@
 ---
 title: "Vacunaciones: calendario y recomendaciones"
-description: "Información sobre Vacunaciones: calendario y recomendaciones"
+description: "Vacunaciones: calendario y recomendaciones is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-08
 lang: "en"
 level: "basico"

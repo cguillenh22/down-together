@@ -1,6 +1,6 @@
 ---
 title: "Obesidad en niños: prevención"
-description: "Información sobre Obesidad en niños: prevención"
+description: "Obesidad en niños: prevención is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-04
 lang: "en"
 level: "avanzado"

@@ -1,6 +1,6 @@
 ---
 title: "Voluntariado: contribución y oportunidades"
-description: "Información sobre Voluntariado: contribución y oportunidades"
+description: "Voluntariado es oportunidad de contribución y pertenencia. Muchas personas con síndrome de Down son voluntarios."
 pubDate: 2026-09-04
 lang: "es"
 level: "basico"

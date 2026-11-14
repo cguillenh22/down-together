@@ -1,6 +1,6 @@
 ---
 title: "Inclusión educativa en escuela pública"
-description: "Información sobre Inclusión educativa en escuela pública"
+description: "Inclusión educativa en escuela pública es derecho y realidad cada vez más. Requiere adaptaciones pero beneficia a todos: al niño con síndrome de Down y a pares."
 pubDate: 2026-08-12
 lang: "es"
 level: "basico"

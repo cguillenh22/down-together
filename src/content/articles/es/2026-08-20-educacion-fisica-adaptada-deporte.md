@@ -1,6 +1,6 @@
 ---
 title: "Educación física adaptada: deporte"
-description: "Información sobre Educación física adaptada: deporte"
+description: "Educación física adaptada y deporte son críticos para síndrome de Down. Mejoran salud física, confianza y socialización."
 pubDate: 2026-08-20
 lang: "es"
 level: "basico"

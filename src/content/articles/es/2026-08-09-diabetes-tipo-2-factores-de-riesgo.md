@@ -1,6 +1,6 @@
 ---
 title: "Diabetes tipo 2: factores de riesgo"
-description: "Información sobre Diabetes tipo 2: factores de riesgo"
+description: "Diabetes tipo 2 es más común en síndrome de Down (5-10% de casos). Es prevenible con peso saludable y actividad."
 pubDate: 2026-08-09
 lang: "es"
 level: "avanzado"

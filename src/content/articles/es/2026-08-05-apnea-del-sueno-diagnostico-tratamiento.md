@@ -1,6 +1,6 @@
 ---
 title: "Apnea del sueño: diagnóstico y tratamiento"
-description: "Información sobre Apnea del sueño: diagnóstico y tratamiento"
+description: "Apnea del sueño es común en síndrome de Down (50-75% de casos). Ocurre cuando respiración se detiene durante sueño."
 pubDate: 2026-08-05
 lang: "es"
 level: "avanzado"

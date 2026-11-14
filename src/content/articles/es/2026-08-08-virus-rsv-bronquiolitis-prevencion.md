@@ -1,6 +1,6 @@
 ---
 title: "Virus RSV y bronquiolitis: prevención"
-description: "Información sobre Virus RSV y bronquiolitis: prevención"
+description: "Virus RSV causa bronquiolitis (inflamación de vías respiratorias). Más grave en bebés."
 pubDate: 2026-08-08
 lang: "es"
 level: "avanzado"

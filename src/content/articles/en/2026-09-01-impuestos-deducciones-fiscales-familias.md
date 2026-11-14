@@ -1,6 +1,6 @@
 ---
 title: "Impuestos: deducciones fiscales para familias"
-description: "Información sobre Impuestos: deducciones fiscales para familias"
+description: "Impuestos: deducciones fiscales para familias is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-09-01
 lang: "en"
 level: "avanzado"

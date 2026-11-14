@@ -1,6 +1,6 @@
 ---
 title: "Transición a secundaria: preparación"
-description: "Información sobre Transición a secundaria: preparación"
+description: "Transición de primaria a secundaria es momento crítico. Requiere preparación emocional, académica y práctica."
 pubDate: 2026-08-18
 lang: "es"
 level: "basico"

@@ -1,6 +1,6 @@
 ---
 title: "Evaluación psicoeducativa: testing y pruebas"
-description: "Información sobre Evaluación psicoeducativa: testing y pruebas"
+description: "Evaluación psicoeducativa (testing) mide capacidad cognitiva, académica, y funcional. Resultados guían educación y servicios."
 pubDate: 2026-08-21
 lang: "es"
 level: "avanzado"

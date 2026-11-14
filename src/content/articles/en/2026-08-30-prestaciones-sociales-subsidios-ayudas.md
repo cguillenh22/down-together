@@ -1,6 +1,6 @@
 ---
 title: "Prestaciones sociales: subsidios y ayudas"
-description: "Información sobre Prestaciones sociales: subsidios y ayudas"
+description: "Prestaciones sociales: subsidios y ayudas is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-30
 lang: "en"
 level: "basico"

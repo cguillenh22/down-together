@@ -1,6 +1,6 @@
 ---
 title: "Padres cuidadores: síndrome de burnout"
-description: "Información sobre Padres cuidadores: síndrome de burnout"
+description: "Padres cuidadores: síndrome de burnout is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-22
 lang: "en"
 level: "avanzado"

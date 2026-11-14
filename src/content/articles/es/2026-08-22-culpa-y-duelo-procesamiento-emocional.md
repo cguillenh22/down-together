@@ -1,6 +1,6 @@
 ---
 title: "Culpa y duelo: procesamiento emocional"
-description: "Información sobre Culpa y duelo: procesamiento emocional"
+description: "Culpa y duelo son emociones normales después de diagnóstico de síndrome de Down. No son debilidad."
 pubDate: 2026-08-22
 lang: "es"
 level: "avanzado"

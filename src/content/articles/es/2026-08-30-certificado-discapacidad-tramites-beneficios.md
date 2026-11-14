@@ -1,6 +1,6 @@
 ---
 title: "Certificado de discapacidad: trámites y beneficios"
-description: "Información sobre Certificado de discapacidad: trámites y beneficios"
+description: "Certificado de discapacidad abre acceso a beneficios. Proceso varía por país."
 pubDate: 2026-08-30
 lang: "es"
 level: "basico"

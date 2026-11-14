@@ -1,6 +1,6 @@
 ---
 title: "Enfermedad celíaca y síndrome de Down"
-description: "Información sobre Enfermedad celíaca y síndrome de Down"
+description: "15-30% de personas con síndrome de Down tienen enfermedad celíaca (versus 1% en población general). Es una intolerancia permanente al gluten."
 pubDate: 2026-08-03
 lang: "es"
 level: "avanzado"

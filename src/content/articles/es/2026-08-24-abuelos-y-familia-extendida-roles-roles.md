@@ -1,6 +1,6 @@
 ---
 title: "Abuelos y familia extendida: roles"
-description: "Información sobre Abuelos y familia extendida: roles"
+description: "Abuelos y familia extendida juegan rol crítico. Pueden ser sistema de apoyo o complicación."
 pubDate: 2026-08-24
 lang: "es"
 level: "basico"

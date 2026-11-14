@@ -1,6 +1,6 @@
 ---
 title: "Vida independiente: habilidades necesarias"
-description: "Información sobre Vida independiente: habilidades necesarias"
+description: "Vida independiente: habilidades necesarias is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-19
 lang: "en"
 level: "avanzado"

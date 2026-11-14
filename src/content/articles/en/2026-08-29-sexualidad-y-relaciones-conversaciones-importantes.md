@@ -1,6 +1,6 @@
 ---
 title: "Sexualidad y relaciones: conversaciones importantes"
-description: "Información sobre Sexualidad y relaciones: conversaciones importantes"
+description: "Sexualidad y relaciones: conversaciones importantes is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-29
 lang: "en"
 level: "avanzado"

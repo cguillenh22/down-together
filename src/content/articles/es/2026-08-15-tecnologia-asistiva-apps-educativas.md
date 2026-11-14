@@ -1,6 +1,6 @@
 ---
 title: "Tecnología asistiva: apps educativas"
-description: "Información sobre Tecnología asistiva: apps educativas"
+description: "Tecnología asistiva puede transformar educación y comunicación. Desde apps de lenguaje hasta dispositivos de comunicación, existen herramientas poderosas."
 pubDate: 2026-08-15
 lang: "es"
 level: "basico"

@@ -1,6 +1,6 @@
 ---
 title: "Alzheimer en personas con Down"
-description: "Información sobre Alzheimer en personas con Down"
+description: "Alzheimer en personas con Down is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-10
 lang: "en"
 level: "avanzado"

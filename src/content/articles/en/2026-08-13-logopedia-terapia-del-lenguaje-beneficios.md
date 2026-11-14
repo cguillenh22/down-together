@@ -1,6 +1,6 @@
 ---
 title: "Logopedia: terapia del lenguaje"
-description: "Información sobre Logopedia: terapia del lenguaje"
+description: "Logopedia: terapia del lenguaje is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-13
 lang: "en"
 level: "basico"

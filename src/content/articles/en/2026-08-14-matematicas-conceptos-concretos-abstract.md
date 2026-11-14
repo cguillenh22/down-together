@@ -1,6 +1,6 @@
 ---
 title: "Matemáticas: conceptos concretos vs. abstractos"
-description: "Información sobre Matemáticas: conceptos concretos vs. abstractos"
+description: "Matemáticas: conceptos concretos vs. abstractos is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-14
 lang: "en"
 level: "avanzado"

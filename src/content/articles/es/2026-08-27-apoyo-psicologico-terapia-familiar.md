@@ -1,6 +1,6 @@
 ---
 title: "Apoyo psicológico: terapia familiar"
-description: "Información sobre Apoyo psicológico: terapia familiar"
+description: "La terapia familiar es un tratamiento donde un psicólogo trabaja con la FAMILIA completa (no solo el niño) para mejorar comunicación, resolver conflictos y fortalecer lazos."
 pubDate: 2026-08-27
 lang: "es"
 level: "basico"

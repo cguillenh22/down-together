@@ -1,6 +1,6 @@
 ---
 title: "Logopedia: terapia del lenguaje"
-description: "Información sobre Logopedia: terapia del lenguaje"
+description: "Logopedia es intervención crítica. Mejora comunicación, inteligibilidad, calidad de vida."
 pubDate: 2026-08-13
 lang: "es"
 level: "basico"

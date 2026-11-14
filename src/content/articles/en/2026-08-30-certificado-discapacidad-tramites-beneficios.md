@@ -1,6 +1,6 @@
 ---
 title: "Certificado de discapacidad: trámites y beneficios"
-description: "Información sobre Certificado de discapacidad: trámites y beneficios"
+description: "Certificado de discapacidad: trámites y beneficios is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-30
 lang: "en"
 level: "basico"

@@ -1,6 +1,6 @@
 ---
 title: "Vacunaciones: calendario y recomendaciones"
-description: "Información sobre Vacunaciones: calendario y recomendaciones"
+description: "Calendario de vacunación en síndrome de Down es igual a población general, MÁS algunas adicionales. Vacunación es prevención crítica de enfermedades."
 pubDate: 2026-08-08
 lang: "es"
 level: "basico"

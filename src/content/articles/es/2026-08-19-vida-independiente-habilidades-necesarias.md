@@ -1,6 +1,6 @@
 ---
 title: "Vida independiente: habilidades necesarias"
-description: "Información sobre Vida independiente: habilidades necesarias"
+description: "Vida independiente (vivir solo o con apoyo mínimo) es posible para algunos adultos con síndrome de Down. Requiere habilidades prácticas y sistema de apoyo."
 pubDate: 2026-08-19
 lang: "es"
 level: "avanzado"

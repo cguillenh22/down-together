@@ -1,6 +1,6 @@
 ---
 title: "Hipotiroidismo en niños: síntomas"
-description: "Información sobre Hipotiroidismo en niños: síntomas"
+description: "Hipotiroidismo es muy común en síndrome de Down (10-50% de casos). Si tu hijo fue diagnosticado, es manejable con levotiroxina."
 pubDate: 2026-08-03
 lang: "es"
 level: "basico"

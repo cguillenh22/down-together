@@ -1,6 +1,6 @@
 ---
 title: "Comunicación familiar: diálogos difíciles"
-description: "Información sobre Comunicación familiar: diálogos difíciles"
+description: "Respuesta rápida. Comunicación familiar: diálogos difíciles is an important tema for families and professionals supporting people with síndrome de Down."
 pubDate: 2026-08-24
 lang: "es"
 level: "avanzado"

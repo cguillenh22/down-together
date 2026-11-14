@@ -1,6 +1,6 @@
 ---
 title: "Bullying: prevención y apoyo"
-description: "Información sobre Bullying: prevención y apoyo"
+description: "Bullying es riesgo real para niños con síndrome de Down. Es prevenible y tratable."
 pubDate: 2026-08-17
 lang: "es"
 level: "avanzado"

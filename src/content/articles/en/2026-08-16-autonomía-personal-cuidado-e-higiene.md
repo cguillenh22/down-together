@@ -1,6 +1,6 @@
 ---
 title: "Autonomía personal: cuidado e higiene"
-description: "Información sobre Autonomía personal: cuidado e higiene"
+description: "Autonomía personal: cuidado e higiene is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-16
 lang: "en"
 level: "basico"

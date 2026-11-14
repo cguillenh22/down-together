@@ -1,6 +1,6 @@
 ---
 title: "Transición a servicios para adultos"
-description: "Información sobre Transición a servicios para adultos"
+description: "Respuesta rápida. Transición a servicios para adultos is an important tema for families and professionals supporting people with síndrome de Down."
 pubDate: 2026-08-28
 lang: "es"
 level: "avanzado"

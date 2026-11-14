@@ -1,6 +1,6 @@
 ---
 title: "Empleo apoyado: programas de entrenamiento"
-description: "Información sobre Empleo apoyado: programas de entrenamiento"
+description: "Empleo apoyado significa trabajo remunerado en empresa regular con apoyo. 30-40% de adultos con síndrome de Down trabajan."
 pubDate: 2026-08-19
 lang: "es"
 level: "avanzado"

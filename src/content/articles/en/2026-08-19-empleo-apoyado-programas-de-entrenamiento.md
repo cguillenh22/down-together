@@ -1,6 +1,6 @@
 ---
 title: "Empleo apoyado: programas de entrenamiento"
-description: "Información sobre Empleo apoyado: programas de entrenamiento"
+description: "Empleo apoyado: programas de entrenamiento is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-19
 lang: "en"
 level: "avanzado"

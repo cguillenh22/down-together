@@ -1,6 +1,6 @@
 ---
 title: "Inclusión social: participación en comunidad"
-description: "Información sobre Inclusión social: participación en comunidad"
+description: "Respuesta rápida. Inclusión social: participación en comunidad is an important tema for families and professionals supporting people with síndrome de Down."
 pubDate: 2026-09-03
 lang: "es"
 level: "basico"

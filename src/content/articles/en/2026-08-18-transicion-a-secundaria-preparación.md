@@ -1,6 +1,6 @@
 ---
 title: "Transición a secundaria: preparación"
-description: "Información sobre Transición a secundaria: preparación"
+description: "Transición a secundaria: preparación is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-18
 lang: "en"
 level: "basico"

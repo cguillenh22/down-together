@@ -1,6 +1,6 @@
 ---
 title: "Lenguaje y comunicación: retrasos"
-description: "Información sobre Lenguaje y comunicación: retrasos"
+description: "Retrasos en lenguaje son muy comunes en síndrome de Down (afecta ~80%). Es uno de los desafíos mayores pero MUY TRATABLE con terapia."
 pubDate: 2026-08-13
 lang: "es"
 level: "avanzado"

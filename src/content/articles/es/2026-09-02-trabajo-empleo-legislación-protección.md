@@ -1,6 +1,6 @@
 ---
 title: "Trabajo y empleo: legislación y protección"
-description: "Información sobre Trabajo y empleo: legislación y protección"
+description: "Leyes protegen empleo de personas con discapacidad. Prohiben discriminación, requieren ajustes."
 pubDate: 2026-09-02
 lang: "es"
 level: "avanzado"

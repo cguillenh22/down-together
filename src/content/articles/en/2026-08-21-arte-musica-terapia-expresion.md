@@ -1,6 +1,6 @@
 ---
 title: "Arte y música: terapia y expresión"
-description: "Información sobre Arte y música: terapia y expresión"
+description: "Arte y música: terapia y expresión is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-21
 lang: "en"
 level: "basico"

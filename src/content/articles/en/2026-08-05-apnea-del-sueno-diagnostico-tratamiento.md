@@ -1,6 +1,6 @@
 ---
 title: "Apnea del sueño: diagnóstico y tratamiento"
-description: "Información sobre Apnea del sueño: diagnóstico y tratamiento"
+description: "Apnea del sueño: diagnóstico y tratamiento is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-05
 lang: "en"
 level: "avanzado"

@@ -1,6 +1,6 @@
 ---
 title: "Evaluación psicoeducativa: testing y pruebas"
-description: "Información sobre Evaluación psicoeducativa: testing y pruebas"
+description: "Evaluación psicoeducativa: testing y pruebas is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-21
 lang: "en"
 level: "avanzado"

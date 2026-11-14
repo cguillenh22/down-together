@@ -1,6 +1,6 @@
 ---
 title: "Duelo anticipado: preparación consciente"
-description: "Información sobre Duelo anticipado: preparación consciente"
+description: "Respuesta rápida. Duelo anticipado: preparación consciente is an important tema for families and professionals supporting people with síndrome de Down."
 pubDate: 2026-08-26
 lang: "es"
 level: "avanzado"

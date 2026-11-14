@@ -1,6 +1,6 @@
 ---
 title: "Síndrome de West: convulsiones infantiles"
-description: "Información sobre Síndrome de West: convulsiones infantiles"
+description: "Síndrome de West (espasmos infantiles) puede ocurrir en síndrome de Down (5-10% de casos). Es condición seria pero tratable."
 pubDate: 2026-08-02
 lang: "es"
 level: "avanzado"

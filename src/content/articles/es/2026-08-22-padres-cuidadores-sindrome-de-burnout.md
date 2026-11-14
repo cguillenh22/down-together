@@ -1,6 +1,6 @@
 ---
 title: "Padres cuidadores: síndrome de burnout"
-description: "Información sobre Padres cuidadores: síndrome de burnout"
+description: "Burnout de cuidador es real, común, y peligroso. Es agotamiento físico/emocional de cuidar constantemente."
 pubDate: 2026-08-22
 lang: "es"
 level: "avanzado"

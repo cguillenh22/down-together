@@ -1,6 +1,6 @@
 ---
 title: "Habilidades sociales: amistades e interacción"
-description: "Información sobre Habilidades sociales: amistades e interacción"
+description: "Habilidades sociales son ensenables. Niños con síndrome de Down pueden formar amistades."
 pubDate: 2026-08-17
 lang: "es"
 level: "avanzado"

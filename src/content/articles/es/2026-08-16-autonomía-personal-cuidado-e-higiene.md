@@ -1,6 +1,6 @@
 ---
 title: "Autonomía personal: cuidado e higiene"
-description: "Información sobre Autonomía personal: cuidado e higiene"
+description: "Independencia en higiene y autocuidado es meta realista para mayoría de niños con síndrome de Down. Comienza temprano, practica consistentemente, permite errores."
 pubDate: 2026-08-16
 lang: "es"
 level: "basico"

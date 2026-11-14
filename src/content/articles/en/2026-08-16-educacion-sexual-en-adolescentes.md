@@ -1,6 +1,6 @@
 ---
 title: "Educación sexual en adolescentes"
-description: "Información sobre Educación sexual en adolescentes"
+description: "Educación sexual en adolescentes is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-16
 lang: "en"
 level: "avanzado"

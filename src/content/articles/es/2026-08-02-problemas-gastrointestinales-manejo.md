@@ -1,6 +1,6 @@
 ---
 title: "Problemas gastrointestinales: manejo"
-description: "Información sobre Problemas gastrointestinales: manejo"
+description: "Problemas gastrointestinales son comunes en síndrome de Down: reflujo, constipación, diarrea. Mayoría se manejan bien con cambios simples."
 pubDate: 2026-08-02
 lang: "es"
 level: "avanzado"

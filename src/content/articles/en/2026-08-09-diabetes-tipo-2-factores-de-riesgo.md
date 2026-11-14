@@ -1,6 +1,6 @@
 ---
 title: "Diabetes tipo 2: factores de riesgo"
-description: "Información sobre Diabetes tipo 2: factores de riesgo"
+description: "Diabetes tipo 2: factores de riesgo is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-09
 lang: "en"
 level: "avanzado"

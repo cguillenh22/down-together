@@ -1,6 +1,6 @@
 ---
 title: "Deporte y recreación: acceso a programas"
-description: "Información sobre Deporte y recreación: acceso a programas"
+description: "Deporte y recreación: acceso a programas is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-09-04
 lang: "en"
 level: "basico"

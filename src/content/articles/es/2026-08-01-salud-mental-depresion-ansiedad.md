@@ -1,6 +1,6 @@
 ---
 title: "Salud mental: depresión y ansiedad"
-description: "Información sobre Salud mental: depresión y ansiedad"
+description: "Depresión y ansiedad son más comunes en síndrome de Down que en población general. Son tratables con terapia y/o medicamentos."
 pubDate: 2026-08-01
 lang: "es"
 level: "avanzado"

@@ -1,6 +1,6 @@
 ---
 title: "Hipertensión en adultos: monitoreo"
-description: "Información sobre Hipertensión en adultos: monitoreo"
+description: "Hipertensión (presión alta) es más común en adultos con síndrome de Down. Causa silenciosa de problemas de corazón."
 pubDate: 2026-08-09
 lang: "es"
 level: "avanzado"

@@ -1,6 +1,6 @@
 ---
 title: "Derechos legales: Convención sobre Discapacidad"
-description: "Información sobre Derechos legales: Convención sobre Discapacidad"
+description: "Derechos legales: Convención sobre Discapacidad is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-29
 lang: "en"
 level: "avanzado"

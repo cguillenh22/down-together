@@ -1,6 +1,6 @@
 ---
 title: "Salud mental: depresión y ansiedad"
-description: "Información sobre Salud mental: depresión y ansiedad"
+description: "Salud mental: depresión y ansiedad is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-01
 lang: "en"
 level: "avanzado"

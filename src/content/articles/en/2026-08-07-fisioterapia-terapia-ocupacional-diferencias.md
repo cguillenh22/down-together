@@ -1,6 +1,6 @@
 ---
 title: "Fisioterapia y terapia ocupacional: diferencias"
-description: "Información sobre Fisioterapia y terapia ocupacional: diferencias"
+description: "Fisioterapia y terapia ocupacional: diferencias is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-07
 lang: "en"
 level: "basico"

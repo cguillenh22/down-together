@@ -1,6 +1,6 @@
 ---
 title: "Vacaciones y descanso: autocuidado para padres"
-description: "Información sobre Vacaciones y descanso: autocuidado para padres"
+description: "Vacaciones y descanso: autocuidado para padres is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-27
 lang: "en"
 level: "basico"

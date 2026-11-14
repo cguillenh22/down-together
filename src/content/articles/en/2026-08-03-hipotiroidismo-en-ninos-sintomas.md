@@ -1,6 +1,6 @@
 ---
 title: "Hipotiroidismo en niños: síntomas"
-description: "Información sobre Hipotiroidismo en niños: síntomas"
+description: "Hipotiroidismo en niños: síntomas is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-03
 lang: "en"
 level: "basico"

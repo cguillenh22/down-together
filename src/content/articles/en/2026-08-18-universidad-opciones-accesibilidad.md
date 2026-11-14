@@ -1,6 +1,6 @@
 ---
 title: "Universidad: opciones y accesibilidad"
-description: "Información sobre Universidad: opciones y accesibilidad"
+description: "Universidad: opciones y accesibilidad is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-18
 lang: "en"
 level: "avanzado"

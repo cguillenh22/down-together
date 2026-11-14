@@ -1,6 +1,6 @@
 ---
 title: "Vacaciones y descanso: autocuidado para padres"
-description: "Información sobre Vacaciones y descanso: autocuidado para padres"
+description: "Los padres de niños con síndrome de Down NO necesitan estar disponibles 24/7. Necesitan descansar, recargar, ser padres de su relación además de padres de su hijo."
 pubDate: 2026-08-27
 lang: "es"
 level: "basico"

@@ -1,6 +1,6 @@
 ---
 title: "Recursos educativos adaptados: currículum"
-description: "Información sobre Recursos educativos adaptados: currículum"
+description: "Recursos educativos adaptados hacen accesible el currículo. Desde libros simples hasta apps, existen herramientas."
 pubDate: 2026-08-12
 lang: "es"
 level: "avanzado"

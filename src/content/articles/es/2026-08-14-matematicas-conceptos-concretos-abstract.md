@@ -1,6 +1,6 @@
 ---
 title: "Matemáticas: conceptos concretos vs. abstractos"
-description: "Información sobre Matemáticas: conceptos concretos vs. abstractos"
+description: "Matemáticas en síndrome de Down requiere empezar MUY concreto (objetos reales) antes de pasar a números abstractos. Progresión es lenta pero posible."
 pubDate: 2026-08-14
 lang: "es"
 level: "avanzado"

@@ -1,6 +1,6 @@
 ---
 title: "Lectura y escritura: métodos efectivos"
-description: "Información sobre Lectura y escritura: métodos efectivos"
+description: "Lectura y escritura: métodos efectivos is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-14
 lang: "en"
 level: "avanzado"

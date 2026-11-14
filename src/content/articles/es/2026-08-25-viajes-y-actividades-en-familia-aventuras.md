@@ -1,6 +1,6 @@
 ---
 title: "Viajes y actividades en familia: aventuras"
-description: "Información sobre Viajes y actividades en familia: aventuras"
+description: "Viajes y actividades en familia son posibles y valiosos. Requieren más planificación pero enriquecen vidas."
 pubDate: 2026-08-25
 lang: "es"
 level: "basico"

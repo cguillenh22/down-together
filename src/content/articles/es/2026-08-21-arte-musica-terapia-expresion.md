@@ -1,6 +1,6 @@
 ---
 title: "Arte y música: terapia y expresión"
-description: "Información sobre Arte y música: terapia y expresión"
+description: "Arte, música y movimiento son terapias poderosas para síndrome de Down. Son medios de expresión cuando lenguaje es limitado."
 pubDate: 2026-08-21
 lang: "es"
 level: "basico"

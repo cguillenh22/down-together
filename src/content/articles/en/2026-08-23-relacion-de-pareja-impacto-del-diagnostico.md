@@ -1,6 +1,6 @@
 ---
 title: "Relación de pareja: impacto del diagnóstico"
-description: "Información sobre Relación de pareja: impacto del diagnóstico"
+description: "Relación de pareja: impacto del diagnóstico is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-23
 lang: "en"
 level: "avanzado"

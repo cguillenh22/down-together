@@ -1,6 +1,6 @@
 ---
 title: "Planificación futura: tutela y herencia"
-description: "Información sobre Planificación futura: tutela y herencia"
+description: "Respuesta rápida. Planificación futura: tutela y herencia is an important tema for families and professionals supporting people with síndrome de Down."
 pubDate: 2026-08-25
 lang: "es"
 level: "avanzado"

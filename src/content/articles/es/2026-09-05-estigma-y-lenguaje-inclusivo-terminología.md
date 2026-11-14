@@ -1,6 +1,6 @@
 ---
 title: "Estigma y lenguaje inclusivo: terminología"
-description: "Información sobre Estigma y lenguaje inclusivo: terminología"
+description: "Estigma es barrera mayor que síndrome de Down. Lenguaje importa."
 pubDate: 2026-09-05
 lang: "es"
 level: "basico"

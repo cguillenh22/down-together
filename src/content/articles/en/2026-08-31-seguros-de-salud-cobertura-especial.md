@@ -1,6 +1,6 @@
 ---
 title: "Seguros de salud: cobertura especial"
-description: "Información sobre Seguros de salud: cobertura especial"
+description: "Seguros de salud: cobertura especial is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-31
 lang: "en"
 level: "avanzado"

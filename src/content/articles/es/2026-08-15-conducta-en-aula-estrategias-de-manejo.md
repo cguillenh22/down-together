@@ -1,6 +1,6 @@
 ---
 title: "Conducta en aula: estrategias de manejo"
-description: "Información sobre Conducta en aula: estrategias de manejo"
+description: "Problemas de conducta en escuela son comunes pero manejables. Estrategias consistentes en casa y escuela funcionan."
 pubDate: 2026-08-15
 lang: "es"
 level: "avanzado"

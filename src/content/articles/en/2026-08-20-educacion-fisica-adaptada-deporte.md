@@ -1,6 +1,6 @@
 ---
 title: "Educación física adaptada: deporte"
-description: "Información sobre Educación física adaptada: deporte"
+description: "Educación física adaptada: deporte is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-20
 lang: "en"
 level: "basico"

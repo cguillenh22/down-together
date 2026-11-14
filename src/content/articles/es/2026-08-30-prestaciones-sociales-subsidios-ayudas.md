@@ -1,6 +1,6 @@
 ---
 title: "Prestaciones sociales: subsidios y ayudas"
-description: "Información sobre Prestaciones sociales: subsidios y ayudas"
+description: "Muchas prestaciones, subsidios y ayudas existen. Acceso requiere conocimiento y paperwork."
 pubDate: 2026-08-30
 lang: "es"
 level: "basico"

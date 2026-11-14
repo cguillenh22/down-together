@@ -1,6 +1,6 @@
 ---
 title: "Viajes y actividades en familia: aventuras"
-description: "Información sobre Viajes y actividades en familia: aventuras"
+description: "Viajes y actividades en familia: aventuras is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-25
 lang: "en"
 level: "basico"

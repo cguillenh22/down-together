@@ -1,6 +1,6 @@
 ---
 title: "Voluntariado: contribución y oportunidades"
-description: "Información sobre Voluntariado: contribución y oportunidades"
+description: "Voluntariado: contribución y oportunidades is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-09-04
 lang: "en"
 level: "basico"

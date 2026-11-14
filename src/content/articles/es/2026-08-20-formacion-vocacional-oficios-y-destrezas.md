@@ -1,6 +1,6 @@
 ---
 title: "Formación vocacional: oficios y destrezas"
-description: "Información sobre Formación vocacional: oficios y destrezas"
+description: "Formación vocacional enseña oficios prácticos (carpintería, jardinería, cocina). Más práctico que académico."
 pubDate: 2026-08-20
 lang: "es"
 level: "basico"

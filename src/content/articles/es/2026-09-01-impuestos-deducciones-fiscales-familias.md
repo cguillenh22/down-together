@@ -1,6 +1,6 @@
 ---
 title: "Impuestos: deducciones fiscales para familias"
-description: "Información sobre Impuestos: deducciones fiscales para familias"
+description: "Familias con hijo con discapacidad pueden obtener deducciones fiscales. Reduce carga tributaria."
 pubDate: 2026-09-01
 lang: "es"
 level: "avanzado"

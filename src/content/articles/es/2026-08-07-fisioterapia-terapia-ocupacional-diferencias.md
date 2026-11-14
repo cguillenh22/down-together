@@ -1,6 +1,6 @@
 ---
 title: "Fisioterapia y terapia ocupacional: diferencias"
-description: "Información sobre Fisioterapia y terapia ocupacional: diferencias"
+description: "Fisioterapia entrena movimiento grueso. Terapia ocupacional entrena habilidades diarias."
 pubDate: 2026-08-07
 lang: "es"
 level: "basico"

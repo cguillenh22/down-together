@@ -1,6 +1,6 @@
 ---
 title: "Lectura y escritura: métodos efectivos"
-description: "Información sobre Lectura y escritura: métodos efectivos"
+description: "Muchos niños con síndrome de Down pueden aprender a leer y escribir. Métodos visuales y concretos funcionan mejor."
 pubDate: 2026-08-14
 lang: "es"
 level: "avanzado"

@@ -1,6 +1,6 @@
 ---
 title: "Discriminación en educación: recursos legales"
-description: "Información sobre Discriminación en educación: recursos legales"
+description: "Discriminación en educación: recursos legales is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-09-03
 lang: "en"
 level: "avanzado"

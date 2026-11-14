@@ -1,6 +1,6 @@
 ---
 title: "Relación de pareja: impacto del diagnóstico"
-description: "Información sobre Relación de pareja: impacto del diagnóstico"
+description: "Diagnóstico de síndrome de Down afecta relación de pareja. Puede fortalecer o fracturar."
 pubDate: 2026-08-23
 lang: "es"
 level: "avanzado"

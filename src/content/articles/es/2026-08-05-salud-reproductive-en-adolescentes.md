@@ -1,6 +1,6 @@
 ---
 title: "Salud reproductiva en adolescentes"
-description: "Información sobre Salud reproductiva en adolescentes"
+description: "Adolescentes con síndrome de Down tienen cuerpos que cambian como cualquier otro. Educación sexual apropiada, desarrollo corporal, y protección son importantes."
 pubDate: 2026-08-05
 lang: "es"
 level: "avanzado"

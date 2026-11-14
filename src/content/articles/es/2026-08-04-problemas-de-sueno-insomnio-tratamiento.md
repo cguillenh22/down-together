@@ -1,6 +1,6 @@
 ---
 title: "Problemas de sueño: insomnio y tratamiento"
-description: "Información sobre Problemas de sueño: insomnio y tratamiento"
+description: "Problemas de sueño son comunes (50%+). Causas varían."
 pubDate: 2026-08-04
 lang: "es"
 level: "avanzado"

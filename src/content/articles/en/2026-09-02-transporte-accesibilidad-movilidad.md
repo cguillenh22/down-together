@@ -1,6 +1,6 @@
 ---
 title: "Transporte: accesibilidad y movilidad"
-description: "Información sobre Transporte: accesibilidad y movilidad"
+description: "Transporte: accesibilidad y movilidad is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-09-02
 lang: "en"
 level: "basico"

@@ -1,6 +1,6 @@
 ---
 title: "Deporte y recreación: acceso a programas"
-description: "Información sobre Deporte y recreación: acceso a programas"
+description: "Deporte y recreación son derechos. Programas adaptados existen."
 pubDate: 2026-09-04
 lang: "es"
 level: "basico"

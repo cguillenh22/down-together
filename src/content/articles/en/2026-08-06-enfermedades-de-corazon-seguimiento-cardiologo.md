@@ -1,6 +1,6 @@
 ---
 title: "Enfermedades de corazón: seguimiento cardiológo"
-description: "Información sobre Enfermedades de corazón: seguimiento cardiológo"
+description: "Enfermedades de corazón: seguimiento cardiológo is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-06
 lang: "en"
 level: "avanzado"

@@ -1,6 +1,6 @@
 ---
 title: "Apoyo psicológico: terapia familiar"
-description: "Información sobre Apoyo psicológico: terapia familiar"
+description: "Apoyo psicológico: terapia familiar is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-27
 lang: "en"
 level: "basico"

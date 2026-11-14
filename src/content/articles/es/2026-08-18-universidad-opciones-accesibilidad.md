@@ -1,6 +1,6 @@
 ---
 title: "Universidad: opciones y accesibilidad"
-description: "Información sobre Universidad: opciones y accesibilidad"
+description: "Universidad es posible para algunos estudiantes con síndrome de Down. Opciones varían desde programas especiales hasta auditar clases."
 pubDate: 2026-08-18
 lang: "es"
 level: "avanzado"

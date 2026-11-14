@@ -1,6 +1,6 @@
 ---
 title: "Investigación participativa: voz de la comunidad"
-description: "Información sobre Investigación participativa: voz de la comunidad"
+description: "Investigación participativa incluye voces de personas con síndrome de Down. Sus perspectivas importan."
 pubDate: 2026-09-05
 lang: "es"
 level: "avanzado"

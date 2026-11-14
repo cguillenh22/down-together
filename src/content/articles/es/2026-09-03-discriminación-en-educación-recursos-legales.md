@@ -1,6 +1,6 @@
 ---
 title: "Discriminación en educación: recursos legales"
-description: "Información sobre Discriminación en educación: recursos legales"
+description: "Discriminación en escuela es ilegal. Si tu hijo es rechazado, discriminado o no recibe apoyo debido a discapacidad, tienes recursos legales."
 pubDate: 2026-09-03
 lang: "es"
 level: "avanzado"

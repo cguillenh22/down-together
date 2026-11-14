@@ -1,6 +1,6 @@
 ---
 title: "Obesidad en niños: prevención"
-description: "Información sobre Obesidad en niños: prevención"
+description: "Obesidad es común en síndrome de Down (30-50% de casos) debido a metabolismo lento y bajo tono. Prevención es más fácil que tratar obesidad."
 pubDate: 2026-08-04
 lang: "es"
 level: "avanzado"

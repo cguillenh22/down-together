@@ -1,6 +1,6 @@
 ---
 title: "Habilidades sociales: amistades e interacción"
-description: "Información sobre Habilidades sociales: amistades e interacción"
+description: "Habilidades sociales: amistades e interacción is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-17
 lang: "en"
 level: "avanzado"

@@ -1,6 +1,6 @@
 ---
 title: "Investigación participativa: voz de la comunidad"
-description: "Información sobre Investigación participativa: voz de la comunidad"
+description: "Investigación participativa: voz de la comunidad is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-09-05
 lang: "en"
 level: "avanzado"

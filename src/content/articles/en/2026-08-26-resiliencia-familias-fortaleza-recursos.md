@@ -1,6 +1,6 @@
 ---
 title: "Resiliencia en familias: fortaleza y recursos"
-description: "Información sobre Resiliencia en familias: fortaleza y recursos"
+description: "Resiliencia en familias: fortaleza y recursos is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-26
 lang: "en"
 level: "basico"

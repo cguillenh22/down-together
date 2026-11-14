@@ -1,6 +1,6 @@
 ---
 title: "Transición a servicios para adultos"
-description: "Información sobre Transición a servicios para adultos"
+description: "Transición a servicios para adultos is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-28
 lang: "en"
 level: "avanzado"

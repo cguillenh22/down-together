@@ -1,6 +1,6 @@
 ---
 title: "Inclusión educativa en escuela pública"
-description: "Información sobre Inclusión educativa en escuela pública"
+description: "Inclusión educativa en escuela pública is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-12
 lang: "en"
 level: "basico"

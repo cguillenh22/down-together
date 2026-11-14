@@ -1,6 +1,6 @@
 ---
 title: "Conducta en aula: estrategias de manejo"
-description: "Información sobre Conducta en aula: estrategias de manejo"
+description: "Conducta en aula: estrategias de manejo is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-15
 lang: "en"
 level: "avanzado"

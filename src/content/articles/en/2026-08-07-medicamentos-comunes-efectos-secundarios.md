@@ -1,6 +1,6 @@
 ---
 title: "Medicamentos comunes: efectos secundarios"
-description: "Información sobre Medicamentos comunes: efectos secundarios"
+description: "Medicamentos comunes: efectos secundarios is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-07
 lang: "en"
 level: "avanzado"

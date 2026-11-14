@@ -1,6 +1,6 @@
 ---
 title: "Problemas gastrointestinales: manejo"
-description: "Información sobre Problemas gastrointestinales: manejo"
+description: "Problemas gastrointestinales: manejo is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-02
 lang: "en"
 level: "avanzado"

@@ -1,6 +1,6 @@
 ---
 title: "Hermanos: impacto emocional y apoyo"
-description: "Información sobre Hermanos: impacto emocional y apoyo"
+description: "Hermanos se ven afectados emocional y prácticamente. Algunos sienten abandono, otros responsabilidad futura."
 pubDate: 2026-08-23
 lang: "es"
 level: "avanzado"

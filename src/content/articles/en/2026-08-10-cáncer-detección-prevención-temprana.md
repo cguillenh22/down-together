@@ -1,6 +1,6 @@
 ---
 title: "Cáncer: detección y prevención temprana"
-description: "Información sobre Cáncer: detección y prevención temprana"
+description: "Cáncer: detección y prevención temprana is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-10
 lang: "en"
 level: "avanzado"

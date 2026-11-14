@@ -1,6 +1,6 @@
 ---
 title: "Vivienda accesible: adaptaciones del hogar"
-description: "Información sobre Vivienda accesible: adaptaciones del hogar"
+description: "Vivienda accesible: adaptaciones del hogar is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-09-01
 lang: "en"
 level: "basico"

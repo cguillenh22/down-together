@@ -1,6 +1,6 @@
 ---
 title: "Medicamentos comunes: efectos secundarios"
-description: "Información sobre Medicamentos comunes: efectos secundarios"
+description: "Muchas medicinas comúnmente prescritas tienen efectos secundarios específicos. Vigilancia es importante."
 pubDate: 2026-08-07
 lang: "es"
 level: "avanzado"

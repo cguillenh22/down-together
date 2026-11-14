@@ -1,6 +1,6 @@
 ---
 title: "Recursos educativos adaptados: currículum"
-description: "Información sobre Recursos educativos adaptados: currículum"
+description: "Recursos educativos adaptados: currículum is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-12
 lang: "en"
 level: "avanzado"

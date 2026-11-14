@@ -1,6 +1,6 @@
 ---
 title: "Culpa y duelo: procesamiento emocional"
-description: "Información sobre Culpa y duelo: procesamiento emocional"
+description: "Culpa y duelo: procesamiento emocional is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-22
 lang: "en"
 level: "avanzado"

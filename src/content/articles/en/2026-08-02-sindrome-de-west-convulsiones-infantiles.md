@@ -1,6 +1,6 @@
 ---
 title: "Síndrome de West: convulsiones infantiles"
-description: "Información sobre Síndrome de West: convulsiones infantiles"
+description: "Síndrome de West: convulsiones infantiles is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-02
 lang: "en"
 level: "avanzado"

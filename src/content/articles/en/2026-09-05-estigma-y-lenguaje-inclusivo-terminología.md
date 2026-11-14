@@ -1,6 +1,6 @@
 ---
 title: "Estigma y lenguaje inclusivo: terminología"
-description: "Información sobre Estigma y lenguaje inclusivo: terminología"
+description: "Estigma y lenguaje inclusivo: terminología is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-09-05
 lang: "en"
 level: "basico"

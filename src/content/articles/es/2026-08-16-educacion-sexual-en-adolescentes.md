@@ -1,6 +1,6 @@
 ---
 title: "Educación sexual en adolescentes"
-description: "Información sobre Educación sexual en adolescentes"
+description: "Educación sexual es derecho y necesidad. Adolescentes con síndrome de Down tienen cuerpos que maduran."
 pubDate: 2026-08-16
 lang: "es"
 level: "avanzado"

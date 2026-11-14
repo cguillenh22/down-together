@@ -1,6 +1,6 @@
 ---
 title: "Hipertensión en adultos: monitoreo"
-description: "Información sobre Hipertensión en adultos: monitoreo"
+description: "Hipertensión en adultos: monitoreo is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-09
 lang: "en"
 level: "avanzado"

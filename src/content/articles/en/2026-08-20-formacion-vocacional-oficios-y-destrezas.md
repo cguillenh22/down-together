@@ -1,6 +1,6 @@
 ---
 title: "Formación vocacional: oficios y destrezas"
-description: "Información sobre Formación vocacional: oficios y destrezas"
+description: "Formación vocacional: oficios y destrezas is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-20
 lang: "en"
 level: "basico"

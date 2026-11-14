@@ -194,7 +194,7 @@ function localSlug(entry) {
       <div class="featured-grid">
         {pillar.map((entry) => (
           <article class="featured-card premium-card">
-            <span class="badge-new">Essencial</span>
+            <span class="badge-new">Esencial</span>
             <span class="tag">{CATEGORY_LABELS.es[entry.data.category]}</span>
             <span class="tag">{ETAPA_LABELS_ES[entry.data.etapa]}</span>
             <h3><a href={`/es/${localSlug(entry)}/`}>{entry.data.title}</a></h3>
@@ -219,6 +219,7 @@ function localSlug(entry) {
   <h2 id="basico">Lo básico</h2>
   <p>Preguntas frecuentes y fundamentos, pensado para quienes recién reciben el diagnóstico.</p>
   {basico.length === 0 && <p><em>Aún no hay artículos publicados en esta sección.</em></p>}
+  <div class="card-grid">
   {basico.map((entry) => (
     <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`} data-category={entry.data.category} data-etapa={entry.data.etapa} data-level="basico">
       <a class="tag" href={categoryHref('es', entry.data.category)}>{CATEGORY_LABELS.es[entry.data.category]}</a>
@@ -228,10 +229,12 @@ function localSlug(entry) {
       <p>{entry.data.description}</p>
     </div>
   ))}
+  </div>
 
   <h2 id="avanzado">Actualidad e investigación</h2>
   <p>Noticias, estudios y avances, para quienes ya conocen lo básico.</p>
   {avanzado.length === 0 && <p><em>Aún no hay artículos publicados en esta sección.</em></p>}
+  <div class="card-grid">
   {avanzado.map((entry) => (
     <div class={`card ${entry.data.pillar ? 'card-pillar' : ''}`} data-category={entry.data.category} data-etapa={entry.data.etapa} data-level="avanzado">
       <a class="tag" href={categoryHref('es', entry.data.category)}>{CATEGORY_LABELS.es[entry.data.category]}</a>
@@ -241,6 +244,7 @@ function localSlug(entry) {
       <p>{entry.data.description}</p>
     </div>
   ))}
+  </div>
 
   <!-- BÚSQUEDA Y FILTROS EN JAVASCRIPT -->
   <script is:inline define:vars={{ articles: JSON.stringify(all.map(e => ({ title: e.data.title, description: e.data.description, category: e.data.category, etapa: e.data.etapa, url: `/es/${e.slug.replace(/^es\//, '')}/`, pillar: e.data.pillar }))) }}>
@@ -630,7 +634,7 @@ function localSlug(entry) {
 
     .clear-filters-btn {
       padding: 0.75rem 1rem;
-      background: linear-gradient(135deg, var(--blue), var(--orange));
+      background: var(--blue);
       color: white;
       border: none;
       border-radius: 8px;
@@ -670,16 +674,21 @@ function localSlug(entry) {
     .stat-value {
       font-size: 1.5rem;
       font-weight: 700;
-      background: linear-gradient(135deg, var(--blue), var(--orange));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--blue);
+      font-variant-numeric: tabular-nums;
     }
 
     .main-content {
       display: flex;
       flex-direction: column;
       gap: 2rem;
+    }
+
+    /* CARD GRID: fills available width; 4 columns from ~1300px main width */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
     }
 
     /* CARD HIERARCHY */
@@ -768,6 +777,12 @@ function localSlug(entry) {
         grid-template-columns: 1fr;
       }
     }
+  </style>
+
+  <!-- Layout's global <main> caps width at 800px for reading; the home page needs the full 1400px layout -->
+  <style is:global>
+    main:has(> .page-with-sidebar) { max-width: 1400px; }
+    main:has(> .page-with-sidebar) .main-content { max-width: none; }
   </style>
 
   <!-- CLOSE MAIN CONTENT AND PAGE WITH SIDEBAR -->

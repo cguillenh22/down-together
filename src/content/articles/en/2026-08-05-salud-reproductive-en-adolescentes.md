@@ -1,6 +1,6 @@
 ---
 title: "Salud reproductiva en adolescentes"
-description: "Información sobre Salud reproductiva en adolescentes"
+description: "Salud reproductiva en adolescentes is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-05
 lang: "en"
 level: "avanzado"

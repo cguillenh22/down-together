@@ -1,6 +1,6 @@
 ---
 title: "Transporte: accesibilidad y movilidad"
-description: "Información sobre Transporte: accesibilidad y movilidad"
+description: "Transporte accesible es derecho. Opciones incluyen transporte público adaptado, servicios especiales, y conducción personal."
 pubDate: 2026-09-02
 lang: "es"
 level: "basico"

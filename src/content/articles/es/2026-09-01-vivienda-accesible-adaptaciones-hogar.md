@@ -1,6 +1,6 @@
 ---
 title: "Vivienda accesible: adaptaciones del hogar"
-description: "Información sobre Vivienda accesible: adaptaciones del hogar"
+description: "Casa accesible mejora independencia y seguridad. Adaptaciones varían desde simples a complejas."
 pubDate: 2026-09-01
 lang: "es"
 level: "basico"

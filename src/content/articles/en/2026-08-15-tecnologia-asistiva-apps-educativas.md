@@ -1,6 +1,6 @@
 ---
 title: "Tecnología asistiva: apps educativas"
-description: "Información sobre Tecnología asistiva: apps educativas"
+description: "Tecnología asistiva: apps educativas is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-15
 lang: "en"
 level: "basico"

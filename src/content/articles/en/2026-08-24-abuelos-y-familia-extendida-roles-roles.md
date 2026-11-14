@@ -1,6 +1,6 @@
 ---
 title: "Abuelos y familia extendida: roles"
-description: "Información sobre Abuelos y familia extendida: roles"
+description: "Abuelos y familia extendida: roles is an important topic for families and professionals supporting people with Down syndrome."
 pubDate: 2026-08-24
 lang: "en"
 level: "basico"
