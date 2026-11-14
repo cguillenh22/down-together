@@ -1,6 +1,6 @@
 ---
 // Portada cálida de la home en español.
-// Ilustración propia en SVG (sin personas reales ni fotos de terceros).
+// Foto de archivo de Pexels (licencia Pexels, uso gratuito), optimizada en WebP.
 // Paleta y tipografía viven en las variables --w-* de esta sección, así no
 // afectan al resto del sitio mientras se revisa.
 ---
@@ -14,27 +14,18 @@
     </div>
   </div>
 
-  <div class="warm-art" aria-hidden="true">
-    <svg viewBox="0 0 480 380" role="presentation" focusable="false">
-      <!-- Sol -->
-      <circle cx="338" cy="104" r="78" class="w-sun" />
-      <!-- Casa: cuerpo y tejado con esquinas suaves (no arco: evita lectura de lápida) -->
-      <path d="M124 208 L206 136 L288 208 V318 H124 Z" class="w-house" stroke-linejoin="round" />
-      <!-- Ventana cuadrada redondeada -->
-      <rect x="150" y="232" width="32" height="32" rx="8" class="w-window" />
-      <!-- Puerta con techo redondeado -->
-      <path d="M220 318 V262 Q220 246 236 246 Q252 246 252 262 V318 Z" class="w-window" />
-      <!-- Tallo y hojas -->
-      <path d="M338 318 C338 270 332 236 344 196" class="w-stem" />
-      <path d="M342 262 C312 258 296 236 298 214 C324 218 340 236 342 262 Z" class="w-leaf" />
-      <path d="M342 226 C370 222 388 202 386 180 C360 184 344 202 342 226 Z" class="w-leaf w-leaf-2" />
-      <!-- Dos círculos que se tocan: apoyo mutuo -->
-      <circle cx="372" cy="286" r="26" class="w-circle-a" />
-      <circle cx="404" cy="286" r="26" class="w-circle-b" />
-      <!-- Suelo -->
-      <rect x="40" y="318" width="400" height="12" rx="6" class="w-ground" />
-    </svg>
-  </div>
+  <figure class="warm-art">
+    <img
+      src="/images/familia-abrazo-patio.webp"
+      width="1200"
+      height="800"
+      alt="Madre abrazando a su hija en un patio soleado"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+    />
+    <figcaption>Imagen de archivo con fines ilustrativos. Foto: RDNE Stock project, Pexels.</figcaption>
+  </figure>
 </section>
 
 <style>
@@ -124,28 +115,32 @@
     outline-offset: 3px;
   }
 
-  .warm-art svg {
+  .warm-art {
+    margin: 0;
+  }
+
+  .warm-art img {
     display: block;
     width: 100%;
     height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 20px;
   }
 
-  .w-sun { fill: var(--w-ochre); opacity: 0.9; }
-  .w-house { fill: var(--w-clay); stroke: var(--w-sand); stroke-width: 2; }
-  .w-window { fill: var(--w-ochre); }
-  .w-stem { fill: none; stroke: var(--w-sage); stroke-width: 4; stroke-linecap: round; }
-  .w-leaf { fill: var(--w-sage); }
-  .w-leaf-2 { opacity: 0.85; }
-  .w-circle-a { fill: var(--w-terra); opacity: 0.85; }
-  .w-circle-b { fill: var(--w-ochre); opacity: 0.85; }
-  .w-ground { fill: var(--w-sand); }
+  .warm-art figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: var(--w-muted);
+  }
 
   @media (max-width: 760px) {
     .warm-hero {
       grid-template-columns: 1fr;
       border-radius: 20px;
     }
-    .warm-art { order: 2; max-width: 360px; margin: 0 auto; width: 100%; }
+    .warm-art { order: 2; width: 100%; }
   }
 
   @media (prefers-reduced-motion: reduce) {
