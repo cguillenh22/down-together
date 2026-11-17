@@ -1,0 +1,38 @@
+name: Publicar contenido aprobado (escalonado)
+
+# Mergea automaticamente, unos pocos por dia y a horas distintas, los PRs
+# de contenido que YA revisaste: marcaste reviewed:true en los articulos
+# que apruebas y le agregaste la etiqueta "listo-para-publicar" al PR.
+#
+# Este workflow NO revisa ni aprueba nada por su cuenta - solo ejecuta el
+# merge (que dispara el deploy a GitHub Pages) una vez que tu ya diste luz
+# verde con la etiqueta. Si no hay ningun PR con esa etiqueta, no hace nada.
+on:
+  schedule:
+    - cron: "0 13 * * *"
+    - cron: "30 16 * * *"
+    - cron: "0 20 * * *"
+    - cron: "30 23 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  merge-one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Buscar el PR mas antiguo listo para publicar
+        id: find
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR=$(gh pr list --repo "${{ github.repository }}" --label "listo-para-publicar" --state open --json number,createdAt --jq 'sort_by(.createdAt) | .[0].number // ""')
+          echo "pr=$PR" >> "$GITHUB_OUTPUT"
+
+      - name: Mergear el PR encontrado
+        if: steps.find.outputs.pr != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr merge "${{ steps.find.outputs.pr }}" --repo "${{ github.repository }}" --merge --delete-branch
